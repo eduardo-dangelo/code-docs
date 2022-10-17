@@ -1,15 +1,21 @@
-# STARTER PACK
+# 🎒 STARTER PACK
 
 ### Choose your IDE
-IDE (Integrated Development Environment) is the software that will help us code efficiently.
-These are the best IDEs in my opinion.
-Choose yours from the list below.
-- [web-storm](https://www.jetbrains.com/webstorm/)
-- [vs-code - FREE](https://code.visualstudio.com/)
+IDE (Integrated Development Environment) is the software that will help you code efficiently.
+These are the best IDEs (in my opinion).
+Choose your IDE from list below.
+- [download Web Storm](https://www.jetbrains.com/webstorm/)
+- [download Visual Studio Code](https://code.visualstudio.com/)
+
+### Customise your IDE
+Make sure you get the most of your IDE.
+Check out the guides on how to customise yours.
+- [customise Web Storm]()
+- [customise Visual Studio Code]()
 
 ### Install Node.js
-Node is an open source platform for executing JavaScript code server-side.
-Download version "Recomended for most user" [here](https://nodejs.org/en/).
+An open source platform for executing JavaScript code server-side.
+- [install Node](https://nodejs.org/en/).
 
 ### Install GIT
 Git is a free and open-source version control system that enables multiple developers to work together on non-linear development.
