@@ -14,13 +14,6 @@ Choose your IDE from list below.
 - [download Web Storm](https://www.jetbrains.com/webstorm/)
 
 
-## 2️⃣ Customise your IDE
-Make sure you get the most of your IDE.
-Check out the guides on how to customise yours.
-- [customise Visual Studio Code]()
-- [customise Web Storm]()
-
-
 ## 3️⃣ Install Node.js
 An open source platform for executing JavaScript code server-side. 
 - [install Node](https://nodejs.org/en/).
@@ -53,3 +46,5 @@ Check full documentation [here](https://ohmyz.sh/)
 ## 6️⃣ Configure a SSH key
 SSH (Secure Shell) is a protocol used for connect and authenticate to remote servers and services. With SSH keys, you can connect to GitHub without supplying your username and personal access token at each visit.
 Check how can you generate a new ssh key [here](SSH.md).
+
+[↪ NEXT | Create First Repository](./CREATE_FIRST_REPOSITORY.md)
