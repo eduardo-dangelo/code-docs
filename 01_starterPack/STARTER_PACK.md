@@ -6,7 +6,7 @@
 > Just make sure you follow the process until the end. 
 
 
-## 1️⃣ Download your IDE
+## Download your IDE
 >IDE (Integrated Development Environment) is the software that will help you code efficiently.
 These are the best IDEs (in my opinion).
 Choose your IDE from list below.
@@ -14,13 +14,13 @@ Choose your IDE from list below.
 - [download Web Storm](https://www.jetbrains.com/webstorm/)
 
 
-## 3️⃣ Install Node.js
+### Install Node.js
 >An open source platform for executing JavaScript code server-side.
 Find more about what is node.js [here](https://nodejs.org/en/about/).
 - [install Node](https://nodejs.org/en/). 
 
 
-## 4️⃣ Install GIT
+### 4️⃣ Install GIT
 >Git is a free and open-source version control system that enables multiple developers to work together on non-linear development.
 We will be installing git via [homebrew](https://brew.sh/).
 Find out other forms you can install git [here](https://nodejs.org/en/about/).
