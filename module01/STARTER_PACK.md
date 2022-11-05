@@ -42,4 +42,4 @@ Check full documentation [here](https://ohmyz.sh/)
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     ```
 
-[↪ NEXT | Configure a new SSH key](./SSH.md)
+[NEXT | Configure a new SSH key](./SSH.md)
