@@ -47,4 +47,6 @@ Check full documentation [here](https://ohmyz.sh/)
 SSH (Secure Shell) is a protocol used for connect and authenticate to remote servers and services. With SSH keys, you can connect to GitHub without supplying your username and personal access token at each visit.
 Check how can you generate a new ssh key [here](SSH.md).
 
-[↪ NEXT | Create First Repository](./CREATE_FIRST_REPOSITORY.md)
+<div style="text-align: right">
+    <a href="./SSH.md">↪ NEXT | Create First Repository</a>
+</div>
