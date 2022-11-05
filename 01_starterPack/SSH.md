@@ -1,12 +1,11 @@
-# SSH
+# 🛠 SSH
 
-SSH (Secure Shell) is a protocol used for connect and authenticate to remote servers and services.
+>SSH (Secure Shell) is a protocol used for connect and authenticate to remote servers and services.
 With SSH keys, you can connect to GitHub without supplying your username and personal access token at each visit.
-
->  You need to have a [Github](https://github.com/) account at this point.
+You need to have a [Github](https://github.com/) account at this point.
 
 ### Generate new SSH key
-Check the official documentation on how to generate a new ssh key [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+>Check the official documentation on how to generate a new ssh key [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 1. Open a terminal and run:
     ```
     ssh-keygen -t ed25519 -C "your_email@example.com"
@@ -21,7 +20,7 @@ Check the official documentation on how to generate a new ssh key [here](https:/
     > Enter same passphrase again: [Type passphrase again]
     ```
 
-### Adding your SSH key to the ssh-agent
+### Add your SSH key to the ssh-agent
 1. Start the ssh-agent in the background.
     ```
     eval "$(ssh-agent -s)"
@@ -48,4 +47,4 @@ Check the official documentation on how to generate a new ssh key [here](https:/
     ```
 
 ### Add a new SSH key to your github account
-Check how to add a new SSH key to your github account [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+> Check how to add a new SSH key to your github account [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
