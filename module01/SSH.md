@@ -4,7 +4,7 @@
 With SSH keys, you can connect to GitHub without supplying your username and personal access token at each visit.
 You need to have a [Github](https://github.com/) account at this point.
 
-### Generate new SSH key
+## Generate new SSH key
 >Check the official documentation on how to generate a new ssh key [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 1. Open a terminal and run:
     ```
@@ -20,7 +20,7 @@ You need to have a [Github](https://github.com/) account at this point.
     > Enter same passphrase again: [Type passphrase again]
     ```
 
-### Add your SSH key to the ssh-agent
+## Add your SSH key to the ssh-agent
 1. Start the ssh-agent in the background.
     ```
     eval "$(ssh-agent -s)"
@@ -46,7 +46,7 @@ You need to have a [Github](https://github.com/) account at this point.
     $ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
     ```
 
-### Add a new SSH key to your github account
+## Add a new SSH key to your github account
 > Check how to add a new SSH key to your github account [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
 [NEXT | Create your first repository](./CREATE_FIRST_REPOSITORY.md)
