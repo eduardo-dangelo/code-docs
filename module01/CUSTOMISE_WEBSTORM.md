@@ -83,3 +83,12 @@
 5. From the Prettier package list, select the prettier installation to use.
     > If you followed the standard installation procedure, WebStorm locates the prettier package itself and the field is filled in automatically.
 6. Also tick the option to run prettier `onSave`
+
+## Commit changes and push
+1. Open the embedded Terminal `(⌥ F12)` and add new files to git:
+   ```
+   git add .
+   ```
+2. Use the git toolbar on the top-right to commit changes
+3. Add a commit message
+4. Use the dropdown and click `Commit and Push`
