@@ -1,4 +1,4 @@
-# <img src="../imgs/vscode_logo.png" alt="drawing" width="25"/> Customise Visual Studio Code
+# <img src="../imgs/vscode_logo.png" alt="drawing" width="25"/> VS-CODE | CONFIGURATION
 
 ## Install Plugins
 - Install the following pluggins

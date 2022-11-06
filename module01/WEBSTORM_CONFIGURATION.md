@@ -1,4 +1,4 @@
-# <img src="../imgs/webstorm_logo.svg" alt="drawing" width="25"/> CODE FORMAT | WEB-STORM
+# <img src="../imgs/webstorm_logo.svg" width="25"/> WEB-STORM | CONFIGURATION
 
 ## Install ESlint
 1. Open the embedded Terminal using the shortcut `(⌥ F12)` or by clicking `Terminal` button on the bottom-left corner:
