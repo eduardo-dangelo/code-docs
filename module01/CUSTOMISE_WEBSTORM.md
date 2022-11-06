@@ -1,4 +1,4 @@
-# CODE FORMAT | WEB-STORM
+# <img src="../imgs/webstorm_logo.svg" alt="drawing" width="25"/> CODE FORMAT | WEB-STORM
 
 ## Install ESlint
 1. Open a terminal & navigate to your respository directory
