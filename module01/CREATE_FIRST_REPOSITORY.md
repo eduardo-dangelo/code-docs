@@ -1,10 +1,10 @@
-# CREATE YOUR FIRST APP
-> lets create your first repository and push it to github
+# 👨‍🎨 CREATE YOUR FIRST REPOSITORY
 
 ## Create React App
->We will use create-react-app to generate our first app
+>We will be using the `create-react-app` command to generate our first app.
+> Check out the full documentation on how to create a react app [here](https://reactjs.org/docs/create-a-new-react-app.html).
 1. Open a terminal
-2. Create a `projects` directory: 
+2. Create a `projects` directory by running: 
     ```
     mkdir projects
     ```
@@ -40,7 +40,7 @@
    ```
    cd projects/code-playground
     ```
-3. Run these 3 commands, one at a time. Make sure to update `[YOUR-USERNAME]` with your github username:
+3. Run these 3 commands, one at a time, and make sure to update `[YOUR-USERNAME]` with your github username:
    ```
    git remote add origin https://github.com/[YOUR-USERNAME]/code-playground.git
    git branch -M master
