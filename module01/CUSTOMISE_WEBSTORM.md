@@ -32,11 +32,8 @@
    
     Which package manager do you want to use? … 
     > npm
-
     ````
-
    > This should have created a `.eslintrc.js` on your root folder.
-
 4. Open `.eslintrc.js` and update the rules:
    ```
     'rules': {
@@ -49,10 +46,40 @@
       'unused-imports/no-unused-vars': 'off',
     }
    ```
-   
+   > Find out about ESLint rules [here](https://eslint.org/docs/latest/rules/).
 
 ## Run ESLint on save
-
 - On Web-Storm, open `Preferences > Languages & Frameworks > Javascript > Code quality tools > ESLint` and tick `run eslint on save`
   
     <img src="../imgs/run_eslint_onsave.png" alt="drawing" width="350"/>
+
+## Install Prettier
+1. Open the embedded Terminal `(⌥ F12)` and run:
+    ```
+    npm install --save-dev --save-exact prettier
+    ```
+2. Create an empty config file to let editors and other tools know you are using Prettier:
+    ```
+    echo {}> .prettierrc.json
+    ```
+3. Open `.prettierrc.json` and add the following options:
+   ```
+    {
+      "arrowParens": "always",
+      "bracketSpacing": true,
+      "jsxBracketSameLine": false,
+      "jsxSingleQuote": true,
+      "printWidth": 120,
+      "proseWrap": "preserve",
+      "quoteProps": "preserve",
+      "semi": false,
+      "singleQuote": true,
+      "tabWidth": 2,
+      "trailingComma": "all",
+      "useTabs": false
+   }
+    ```
+4. In the `Settings/Preferences` dialog (⌘ ,), go to `Languages & Frameworks > JavaScript > Prettier`.
+5. From the Prettier package list, select the prettier installation to use.
+    > If you followed the standard installation procedure, WebStorm locates the prettier package itself and the field is filled in automatically.
+6. Also tick the option to run prettier `onSave`
