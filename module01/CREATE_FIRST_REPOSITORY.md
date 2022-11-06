@@ -26,9 +26,13 @@
 
 ## Create a github repository
 1. [Create a new repository on Github](https://github.com/new)
-2. Name it `code-playground`
+2. Name it `code-playground`:
+   
+   <img src="../imgs/repository_name.png" alt="repository_name" width="200"/>
 3. Leave all other options blank
-4. Click on create repository
+4. Click on create repository:
+
+   <img src="../imgs/create_repository.png" alt="repository_name" width="200"/>
 
 ## Push an existing app to Github
 1. Open a terminal
