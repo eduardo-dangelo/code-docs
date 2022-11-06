@@ -1,7 +1,9 @@
 # <img src="../imgs/webstorm_logo.svg" alt="drawing" width="25"/> CODE FORMAT | WEB-STORM
 
 ## Install ESlint
-1. Open a terminal & navigate to your respository directory
+1. Open the embedded Terminal using the shortcut `(⌥ F12)` or by clicking `Terminal` button on the bottom-left corner:
+
+   <img src="../imgs/open_terminal_webstorm.png" alt="Open Terminal" width="300"/>
 2. Install & configure `ESLint` using this command:
     ```
     npm init @eslint/config
@@ -89,6 +91,12 @@
    ```
    git add .
    ```
-2. Use the git toolbar on the top-right to commit changes
-3. Add a commit message
-4. Use the dropdown and click `Commit and Push`
+2. Use the git toolbar on the top-right to commit changes:
+
+   <img src="../imgs/commit_webstorm.png" alt="Open Terminal" width="200"/>
+3. Add a commit message:
+   
+   <img src="../imgs/commit_message_webstorm.png" alt="Open Terminal" width="400"/>
+4. Use the dropdown and click `Commit and Push`:
+   
+   <img src="../imgs/commit_and_push_webstorm.png" alt="Open Terminal" width="300"/>
