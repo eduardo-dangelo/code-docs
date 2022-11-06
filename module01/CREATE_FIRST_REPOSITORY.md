@@ -46,10 +46,6 @@
    git branch -M master
    git push -u origin master
    ```
+#### Congratulations! Now you have your first repository in github 🎉
 
-
-## Code Format with ESLint & Prettier
->Make sure you get the most of your IDE.
-Check out the guides on how to customise yours.
-- [customise Visual Studio Code](./CUSTOMISE_VSCODE.md)
-- [customise Web Storm](./CUSTOMISE_WEBSTORM.md)
+[NEXT | Code format with ESLint & Prettier](./CODE_FORMAT_WITH_ESLINT_&_PRETTIER.md)
