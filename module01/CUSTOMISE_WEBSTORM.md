@@ -54,4 +54,5 @@
 ## Run ESLint on save
 
 - On Web-Storm, open `Preferences > Languages & Frameworks > Javascript > Code quality tools > ESLint` and tick `run eslint on save`
-  <img src="../imgs/run_eslint_onsave.png" alt="drawing" width="350"/>
+  
+    <img src="../imgs/run_eslint_onsave.png" alt="drawing" width="350"/>
