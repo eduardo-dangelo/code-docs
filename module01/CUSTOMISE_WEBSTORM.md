@@ -89,7 +89,8 @@
 ## Commit changes and push
 1. Open the embedded Terminal `(⌥ F12)` and add new files to git:
    ```
-   git add .
+   git add .prettierrc.json
+   git add .eslintrc.js
    ```
 2. Use the git toolbar on the top-right to commit changes:
 
