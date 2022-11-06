@@ -1,10 +1,11 @@
-# ⚙️ Customise Visual Studio Code
+# <img src="../imgs/vscode_logo.png" alt="drawing" width="25"/> Customise Visual Studio Code
 
 ## Install Plugins
 - Install the following pluggins
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
   - [Prettier](https://marketplace.visualstudio.com/items?itemName=SimonSiefke.prettier-vscode)
   - [Semantic Highlighting](https://marketplace.visualstudio.com/items?itemName=malcolmmielle.semantic-highlighting)
+  - [Rainbow Brackets](https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets)
   - [Open Terminal](https://marketplace.visualstudio.com/items?itemName=whatwewant.open-terminal)
   - [PreviewJs](https://marketplace.visualstudio.com/items?itemName=zenclabs.previewjs)
 
