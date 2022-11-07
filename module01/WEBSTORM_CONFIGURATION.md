@@ -114,3 +114,9 @@ and check the option to enable `Semantic Highlighting`
 4. Use the dropdown and click `Commit and Push`:
    
    <img src="../imgs/commit_and_push_webstorm.png" alt="Open Terminal" width="300"/>
+
+> Alternatively you can use the command line to perform the same action:
+> ```
+> git commit -M "configure ESLint & Prettier"
+> git push
+> ```
