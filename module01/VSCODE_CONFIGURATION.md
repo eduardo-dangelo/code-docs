@@ -18,6 +18,33 @@
     ```
     npm init @eslint/config
     ```
+3. When prompt with questions use this answers:
+    ```
+    How would you like to use ESLint?
+    > To check syntax and find problems
+    
+    What type of modules does your project use? 
+    > JavaScript modules (import/export)
+   
+    Which framework does your project use? 
+    > React
+   
+    Does your project use TypeScript?
+    > No 
+   
+    Where does your code run?
+    > Browser & Node
+
+    What format do you want your config file to be in? … 
+    > JavaScript
+
+    eslint-plugin-react@latest eslint@latest
+    Would you like to install them now?
+    > Yes
+   
+    Which package manager do you want to use? … 
+    > npm
+    ````
     > This should have created a `.eslintrc.js` on your root folder.
 
 3. Open `.eslintrc.js` and update the rules:
