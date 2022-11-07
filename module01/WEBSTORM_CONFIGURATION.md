@@ -1,5 +1,18 @@
 # <img src="../imgs/webstorm_logo.svg" width="25"/> WEB-STORM | CONFIGURATION
 
+## Install Plugins
+- Install the following plugins:
+  - [Prettier](https://plugins.jetbrains.com/plugin/10456-prettier)
+  - [Preview.js](https://plugins.jetbrains.com/plugin/18384-preview-js)
+  - [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080-rainbow-brackets)
+
+## Semantic Highlighting
+- In the `Settings/Preferences` dialog (⌘ ,), go to `Editor > Color Scheme > Language Defaults > Semantic Highlighting`
+and check the option to enable `Semantic Highlighting`
+
+    <img src="../imgs/semantic_highlighting.png" alt="Open Terminal" width="300"/>
+
+
 ## Install ESlint
 1. Open the embedded Terminal using the shortcut `(⌥ F12)` or by clicking `Terminal` button on the bottom-left corner:
 

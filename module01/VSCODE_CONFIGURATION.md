@@ -9,7 +9,7 @@
   - [Open Terminal](https://marketplace.visualstudio.com/items?itemName=whatwewant.open-terminal)
   - [PreviewJs](https://marketplace.visualstudio.com/items?itemName=zenclabs.previewjs)
 
-## Configure ESLint
+## Install ESLint
 
 1. Open the embedded terminal window using `Open Terminal` extension:
 
