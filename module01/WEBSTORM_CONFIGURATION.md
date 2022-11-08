@@ -1,4 +1,4 @@
-# <img src="../imgs/webstorm_logo.svg" width="25"/> WEB-STORM | CONFIGURATION
+# <img src="../imgs/webstorm_logo.svg" width="25"/> WEB-STORM | CONFIGURATION GUIDE
 
 ## Install Plugins
 - Install the following plugins:
