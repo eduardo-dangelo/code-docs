@@ -11,7 +11,7 @@
 
 ## Install ESLint
 
-1. Open the embedded terminal window using `Open Terminal` extension:
+1. Open the embedded Terminal using the shortcut `(shift ⌥ C)` or using the toggle button on the bottom-right: 
 
     <img src="../imgs/open_terminal.png" alt="drawing" width="250"/>
 2. Install ESLint by running:  
@@ -88,3 +88,26 @@
   "editor.formatOnSave": true,
   ```
   > Now every time you save a js or jsx file your code will be formatted
+
+## Commit and push changes
+1. Open the embedded Terminal `(shift ⌥ C)` and add new files to git:
+   ```
+   git add .eslintrc.js
+   ```
+   <img src="../imgs/open_terminal.png" alt="Open Terminal" width="200"/>
+
+2. Use the vcs toolbar on the top-right to commit changes:
+
+   <img src="../imgs/commit_vscode.png" alt="Open Terminal" width="100"/>
+3. Add a commit message:
+
+   <img src="../imgs/commit_message_vccode.png" alt="Open Terminal" width="200"/>
+4. Use the dropdown and click `Commit & Push`:
+
+   <img src="../imgs/commit_and_push_vscode.png" alt="Open Terminal" width="200"/>
+
+> Alternatively you can use the command line to perform the same action:
+> ```
+> git commit -M "configure ESLint"
+> git push
+> ```

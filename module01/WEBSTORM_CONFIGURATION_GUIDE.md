@@ -99,7 +99,7 @@ and check the option to enable `Semantic Highlighting`
     > If you followed the standard installation procedure, WebStorm locates the prettier package itself and the field is filled in automatically.
 6. Also tick the option to run prettier `onSave`
 
-## Commit changes and push
+## Commit and push changes
 1. Open the embedded Terminal `(⌥ F12)` and add new files to git:
    ```
    git add .prettierrc.json
