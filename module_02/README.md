@@ -1,4 +1,4 @@
-# CODE DOCS | MOD 1 - GETTING STARTED
+# CODE DOCS | MOD 2 - GETTING STARTED
 
 ## Table of content
 - [🎒 Starter Pack](./STARTER_PACK.md)
