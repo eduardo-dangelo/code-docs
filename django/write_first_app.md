@@ -101,3 +101,42 @@ python3 manage.py startapp polls
 > >>> q.choice_set.all()
 > >>> quit()
 > ```
+
+## Set up Admin area
+
+- Create superuser:
+  ```
+  python3 manage.py createsuperuser
+  ```
+- Run server
+    ```
+    python3 manage.py runserver
+    ```
+- Go to `localhost:8000/admin` and log-in user superuser credentials
+- Open `pollster/polls/admin.py` and register `Question` & `Choice`:
+  ```
+  from .models import Question, Choice
+  
+  admin.site.register(Question)
+  admin.site.register(Choice)
+  ```
+  >You should see on `localhost:8000/admin` that 2 items apprear on the admin site
+- Modify `admin.py` again to see choices inside question
+  ```
+  class ChoiceInline(admin.TabularInline):
+      model = Choice
+      extra = 3
+  
+  
+  class QuestionAdmin(admin.ModelAdmin):
+      fieldsets = [
+          (None, {'fields': ['title', 'question_text', 'pub_date']}),
+      ]
+      inlines = [ChoiceInline]
+  
+  # admin.site.register(Question)
+  # admin.site.register(Choice)
+  admin.site.register(Question, QuestionAdmin)
+  ```
+  
+## Set up Front Face App
