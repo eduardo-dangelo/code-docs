@@ -49,4 +49,4 @@ You need to have a [Github](https://github.com/) account at this point.
 ## Add a new SSH key to your github account
 > Check how to add a new SSH key to your github account [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
-[NEXT | Create your first repository](./CREATE_FIRST_REPOSITORY.md)
+[NEXT | Create your first repository](./createFirstRepository.md)
