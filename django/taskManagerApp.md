@@ -104,13 +104,15 @@
   from django.utils import timezone
   
   # Create your models here.
-  class Status(models.Model):
-      title = models.CharField(max_length=120)
-      color_code = models.CharField(max_length=6)
-  
-      def __str__(self):
-          return self.title
-  
+  STATUS = [
+    ('IN', 'initiated'),
+    ('IP', 'in progress'),
+    ('PK', 'inactive'),
+    ('BK', 'blocked'),
+    ('CP', 'completed'),
+    ('CC', 'canceled'),
+  ]
+
   
   class Project(models.Model):
       title = models.CharField(max_length=120)
@@ -138,7 +140,7 @@
       created_at = models.DateTimeField('created at', default=timezone.now)
       project = models.ForeignKey(Project, on_delete=models.CASCADE)
       result = models.TextField(null=True, blank=True)
-      completed = models.BooleanField(default=False)
+      status = models.ForeignKey(Status, on_delete=models.PROTECT, default=None)
   
       def __str__(self):
           return self.title
@@ -150,7 +152,7 @@
       description = models.TextField(null=True, blank=True)
       okr = models.ForeignKey(Okr, on_delete=models.CASCADE)
       sprint = models.ForeignKey(Sprint, on_delete=models.PROTECT, null=True, blank=True)
-      status = models.ForeignKey(Status, on_delete=models.PROTECT, null=True, blank=True)
+      status = models.ForeignKey(Status, on_delete=models.PROTECT, default=None)
       project = models.ForeignKey(Project, on_delete=models.CASCADE, null=True, blank=True)
   
       def __str__(self):
@@ -179,7 +181,7 @@
 - Now open `backend/task_manager/admin.py` and register models:
   ```
   from django.contrib import admin
-  from .models import Project, Okr, Note, Status, Task, Checklist, Sprint
+  from .models import Project, Okr, Note, Task, Checklist, Sprint
   
   class NoteInline(admin.TabularInline):
       model = Note
@@ -194,7 +196,7 @@
   class TaskInline(admin.TabularInline):
       model = Task
       fieldsets = [
-          (None, {'fields': ['id', 'title', 'status', 'okr', 'sprint', 'project']}),
+          (None, {'fields': ['id', 'title', 'status', 'okr', 'sprint']}),
       ]
       extra = 0
   
@@ -202,7 +204,7 @@
   class OkrInline(admin.TabularInline):
       model = Okr
       fieldsets = [
-          (None, {'fields': ['id', 'title', 'status']}),
+          (None, {'fields': ['id', 'title', 'description', 'status']}),
       ]
       extra = 0
   
@@ -216,7 +218,7 @@
       fieldsets = [
           (None, {'fields': ['title', 'created_at', 'status']}),
       ]
-      inlines = [OkrInline, SprintInline, NoteInline]
+      inlines = [OkrInline, SprintInline, NoteInline, TaskInline]
   
   
   class OkrAdmin(admin.ModelAdmin):
@@ -235,13 +237,12 @@
   
   class SprintAdmin(admin.ModelAdmin):
       fieldsets = [
-          (None, {'fields': ['title', 'created_at', 'project', 'result', 'completed']}),
+          (None, {'fields': ['title', 'created_at', 'project', 'result', 'status']}),
       ]
       inlines = [TaskInline]
   
   
   admin.site.register(Okr, OkrAdmin)
-  admin.site.register(Status)
   admin.site.register(Project, ProjectAdmin)
   admin.site.register(Task, TaskAdmin)
   admin.site.register(Sprint, SprintAdmin)
@@ -277,3 +278,5 @@
   git commit -m "create backend models and register on admin site"
   git push
   ```
+  
+## Djago Rest Frameworks
