@@ -280,3 +280,198 @@
   ```
   
 ## Djago Rest Frameworks
+
+- Create new file `backend/task_manager/serializers.py` and add the follow:
+  ```
+  from rest_framework import serializers
+  from .models import Project, Okr, Note, Task, Checklist, Sprint
+  
+  
+  class ProjectSerializer(serializers.ModelSerializer):
+      class Meta:
+          model = Project
+          fields = ('id', 'title', 'created_at', 'status')
+  
+  
+  class OkrSerializer(serializers.ModelSerializer):
+      class Meta:
+          model = Okr
+          fields = ('id', 'title', 'description','created_at', 'status', 'project')
+  
+  
+  class SprintSerializer(serializers.ModelSerializer):
+      class Meta:
+          model = Sprint
+          fields = ('id', 'title', 'result','created_at', 'status', 'project,' 'results')
+  
+  
+  class TaskSerializer(serializers.ModelSerializer):
+      class Meta:
+          model = Task
+          fields = ('id', 'title', 'description', 'created_at', 'status', 'project,' 'sprint')
+  
+  
+  class ChecklistSerializer(serializers.ModelSerializer):
+      class Meta:
+          model = Checklist
+          fields = ('id', 'title', 'completed', 'created_at', 'task')
+  
+  
+  class NoteSerializer(serializers.ModelSerializer):
+      class Meta:
+          model = Note
+          fields = ('id', 'content', 'project', 'created_at', 'task')
+  
+  
+  ```
+  
+- Open `task_manager/views.py` and add the following:
+  ```
+  from django.shortcuts import render
+  from rest_framework import viewsets, permissions
+  from .serializers import ProjectSerializer, OkrSerializer, SprintSerializer, TaskSerializer, ChecklistSerializer, NoteSerializer
+  from .models import Project, Okr, Sprint, Task, Checklist, Note
+  
+  
+  class ProjectViewSet(viewsets.ModelViewSet):
+      queryset = Project.objects.all()
+      serializer_class = ProjectSerializer
+      permission_classes = [
+          permissions.AllowAny
+      ]
+  
+  
+  class OkrViewSet(viewsets.ModelViewSet):
+      queryset = Okr.objects.all()
+      serializer_class = OkrSerializer
+      permission_classes = [
+          permissions.AllowAny
+      ]
+  
+  
+  class SprintViewSet(viewsets.ModelViewSet):
+      queryset = Sprint.objects.all()
+      serializer_class = SprintSerializer
+      permission_classes = [
+          permissions.AllowAny
+      ]
+  
+  
+  class TaskViewSet(viewsets.ModelViewSet):
+      queryset = Task.objects.all()
+      serializer_class = TaskSerializer
+      permission_classes = [
+          permissions.AllowAny
+      ]
+  
+  
+  class ChecklistViewSet(viewsets.ModelViewSet):
+      queryset = Checklist.objects.all()
+      serializer_class = ChecklistSerializer
+      permission_classes = [
+          permissions.AllowAny
+      ]
+  
+  
+  class NoteViewSet(viewsets.ModelViewSet):
+      queryset = Note.objects.all()
+      serializer_class = NoteSerializer
+      permission_classes = [
+          permissions.AllowAny
+      ]
+  ```
+  
+- Open `backend/backend/urls.py` and update with the following:
+  ```
+  from django.contrib import admin
+  from task_manager import views
+  from django.urls import path, include
+  from rest_framework import routers
+  
+  router = routers.DefaultRouter()
+  router.register(r'projects', views.ProjectViewSet, 'project')
+  router.register(r'okrs', views.OkrViewSet, 'okr')
+  router.register(r'tasks', views.TaskViewSet, 'task')
+  router.register(r'sprints', views.SprintViewSet, 'sprints')
+  router.register(r'checklists', views.ChecklistViewSet, 'checklists')
+  router.register(r'notes', views.NoteViewSet, 'notes')
+  
+  urlpatterns = [
+      path('admin/', admin.site.urls),
+      path('api/', include(router.urls))
+  ]
+  ```
+  
+- Open your browser on `http://localhost:8000/api`, you should see django_rest_framework page.
+
+### Commit Changes
+- commit and push your changes at this point:
+  ```
+  git commit -m "create serializers.py views.py & urls"
+  git push
+  ```
+  
+## Frontend
+
+## Create next app
+
+- Open a terminal inside `task-manger-pro` and run:
+  ```
+  npx create-next-app@latest --ts frontend
+  ```
+- Go to frontend folder `cd frontend` and install [MUI](https://mui.com/) packages and [axios](https://github.com/axios/axios):
+  ```
+  npm install @mui/icons-material @mui/material @emotion/react @emotion/styled @next/font axios
+  ```
+- Install [prettier & config eslint rules](../module_02/webstormConfigurationGuide.md):
+
+##Add Theme
+
+- Inside `frontend` folder create `src/theme.ts` file and add:
+  ```
+  import { Roboto } from '@next/font/google';
+  import { createTheme } from '@mui/material/styles';
+  import { red } from '@mui/material/colors';
+  
+  export const roboto = Roboto({
+    weight: ['300', '400', '500', '700'],
+    subsets: ['latin'],
+    display: 'swap',
+    fallback: ['Helvetica', 'Arial', 'sans-serif'],
+  });
+  
+  // Create a theme instance.
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: '#556cd6',
+      },
+      secondary: {
+        main: '#19857b',
+      },
+      error: {
+        main: red.A400,
+      },
+    },
+    typography: {
+      fontFamily: roboto.style.fontFamily,
+    },
+  });
+  
+  export default theme;
+  ```
+- Open `_app.ts` and add a themeProvider:
+  ```
+  import '../styles/globals.css'
+  import type { AppProps } from 'next/app'
+  import {ThemeProvider} from "@mui/material";
+  import theme from "../src/theme";
+  
+  export default function App({ Component, pageProps }: AppProps) {
+    return (
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
+    )
+  }
+  ```
