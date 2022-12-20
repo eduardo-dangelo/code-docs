@@ -44,7 +44,7 @@ These are just a few of the many commands available in Git. For more information
 
 Here is an example of how you might use these Git commands in a typical workflow:
 
-```
+```shell
 # Initialize a new Git repository
 git init
 

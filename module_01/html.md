@@ -4,13 +4,13 @@ HTML stands for `HyperText Markup Language` and is used to structure and format 
 ## Structure of an HTML Document
 An HTML document consists of a series of elements, each of which is enclosed in a pair of tags. The opening tag contains the element name, and the closing tag contains a slash followed by the element name. For example:
 
-```
+```html
 <p>This is a paragraph</p>
 ```
 The element name is the type of content being marked up, 
 in this case a paragraph. The opening tag `<p>` indicates the start of the paragraph,
 and the closing tag `</p>` indicates the end of the paragraph.
-```
+```html
 <div>
   <p>This is a paragraph inside a div element</p>
 </div>
@@ -40,7 +40,7 @@ Here is a list of some of the most relevant HTML tags:
 ## HTML Attributes
 HTML elements can have attributes, which provide additional information about the element. Attributes are specified in the opening tag of the element, and are made up of a name and a value. For example:
 
-```
+```html
 <a href="https://www.example.com">This is a link</a>
 ```
 In this example, the `a` element has an attribute called href with a value of `"https://www.example.com"`. The href attribute specifies the destination of the link.
