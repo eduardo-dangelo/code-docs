@@ -1,5 +1,9 @@
-# CODE DOCS | FRONTEND
-> Welcome to code-doc, the ultimate guide to make anyone into a professional software engineer
+# The Complete Front-End Web Development Crash Course 
+### Build Your CV and Find Your Dream Job
+
+> Welcome to the Complete Front-End Web Development Crash Course! In this course, you will learn the essential skills needed to build and design stunning websites. We will cover technologies such as HTML, CSS, and JavaScript, as well as frameworks such as React and TypeScript. By the end of this course, you will have the knowledge and skills to create dynamic, interactive websites that stand out in today's crowded online marketplace.
+> 
+> We will also delve into the job search process and help you build a professional CV that showcases your new web development skills. So let's get started and take the first step towards achieving your dream career as a front-end web developer!
 
 ## Table of content
 - ### Module 1 | Basic Concepts
