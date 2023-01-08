@@ -5,6 +5,10 @@
 > 
 > We will also delve into the job search process and help you build a professional CV that showcases your new web development skills. So let's get started and take the first step towards achieving your dream career as a front-end web developer!
 
+
+> OBS: In this course, we'll cover the content at a fast pace. We'll focus on the technologies and skills that are most useful in office jobs.
+> If you're interested to learn more, check out our other courses for a deeper dive into web development.
+
 ## Table of content
 - ### Module 1 | Basic Concepts
   - [HTML](./module_01/html.md)
