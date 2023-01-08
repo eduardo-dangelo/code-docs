@@ -1,5 +1,6 @@
 # The Complete Front-End Web Development Crash Course 
 ### Build Your CV and Find Your Dream Job
+<img src="./imgs/hero.png" />
 
 > Welcome to the Complete Front-End Web Development Crash Course! In this course, you will learn the essential skills needed to build and design stunning websites. We will cover technologies such as HTML, CSS, and JavaScript, as well as frameworks such as React and TypeScript. By the end of this course, you will have the knowledge and skills to create dynamic, interactive websites that stand out in today's crowded online marketplace.
 > 
