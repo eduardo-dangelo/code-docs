@@ -6,8 +6,8 @@
 > 
 > We will also delve into the job search process and help you build a professional CV that showcases your new web development skills. So let's get started and take the first step towards achieving your dream career as a front-end web developer!
 >
-> In this course, we'll cover the content at a fast pace. We'll focus on the technologies and skills that are most useful in office jobs.
-> If you're interested to learn more, check out our other courses for a deeper dive into web development.
+> > In this course, we'll cover the content at a fast pace. We'll focus on the technologies and skills that are most useful in office jobs.
+> > If you're interested to learn more, check out our other courses for a deeper dive into web development.
 
 ## Table of content
 - ### Module 1 | Basic Concepts
@@ -60,6 +60,8 @@
   - [Developer mentality]()
   - [Next steps]()
 
+## How to use this guide
+It is important to carefully read and follow this guide, as any mistakes in the steps could result in code that does not function correctly. Do not feel pressure to memorize all of the content in this guide - simply make sure to revisit each topic as needed to refresh your memory. Take your time and enjoy each step of the way, rather than rushing through the course.
 
-# NEXT
+## NEXT
 [NEXT | Module 1 Basic Concepts](./module_01/README.md)
