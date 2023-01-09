@@ -1,4 +1,4 @@
-# The Complete Front-End Web Development Crash Course
+## The Complete Front-End Web Development Crash Course
 #### Build Your CV and Find Your Dream Job
 <img src="./imgs/hero.png" />
 
