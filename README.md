@@ -12,7 +12,7 @@
 ## Table of content
 - ### Module 1 | Basic Concepts
     > This module is designed to provide a foundational understanding of the key concepts needed to progress through the course.
-    > This will be a quick review to ensure everyone is on the same page
+    This will be a short review to ensure that you have a clear understanding of the material and that we're all on the same page.
     - [HTML](./module_01/html.md)
     - [CSS](./module_01/css.md)
     - [Javascript](./module_01/javascript.md)
@@ -61,4 +61,5 @@
   - [Next steps]()
 
 
+# NEXT
 [NEXT | Module 1 Basic Concepts](./module_01/README.md)
