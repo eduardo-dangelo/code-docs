@@ -1,5 +1,8 @@
-# Terminal Shell - Basic
-A terminal shell is a command-line interface that allows users to interact with their computer's operating system using text-based commands. It can be used for a variety of tasks and is often used by advanced users and developers.
+## The Complete Front-End Web Development Crash Course
+#### Module 1 | Basic Concepts
+
+# <img src="../imgs/terminal-icon.jpeg" width="30"/> Terminal Shell - Basic
+> A terminal shell is a command-line interface that allows users to interact with their computer's operating system using text-based commands. It can be used for a variety of tasks and is often used by advanced users and developers.
 
 ## Creating a New Folder
 

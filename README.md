@@ -63,7 +63,7 @@
   - [Next steps]()
 
 ## How to use this guide
-It is important to carefully read and follow this guide, as any mistakes in the steps could result in code that does not function correctly. Do not feel pressure to memorize all of the content in this guide - simply make sure to revisit each topic as needed to refresh your memory. Take your time and enjoy each step of the way, rather than rushing through the course.
+> It is important to carefully read and follow this guide, as any mistakes in the steps could result in code that does not function correctly. Do not feel pressure to memorize all of the content in this guide - simply make sure to revisit each topic as needed to refresh your memory. Take your time and enjoy each step of the way, rather than rushing through the course.
 
 ## NEXT
 [NEXT | Module 1 Basic Concepts](./module_01/README.md)
