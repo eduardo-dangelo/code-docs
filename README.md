@@ -13,13 +13,14 @@
 - ### Module 1 | Basic Concepts
     > This module is designed to provide a foundational understanding of the key concepts needed to progress through the course.
     This will be a short review to ensure that you have a clear understanding of the material and that we're all on the same page.
-    - [HTML](./module_01/html.md)
-    - [CSS](./module_01/css.md)
-    - [Javascript](./module_01/javascript.md)
-    - [Node.js](./module_01/node.md)
-    - [React.js](./module_01/react.md)
-    - [Terminal commands](./module_01/terminal.md)
-    - [git](./module_01/git.md)
+    - [<img src="./imgs/html5-icon.jpeg" width="20"/> HTML](./module_01/html.md)
+    - [<img src="./imgs/css3-icon.jpeg" width="20"/> CSS](./module_01/css.md)
+    - [<img src="./imgs/javascript-logo.png" width="20"/> Javascript](./module_01/javascript.md)
+    - [<img src="./imgs/terminal-icon.jpeg" width="20"/> Terminal](./module_01/terminal.md)
+    - [<img src="./imgs/node-icon.jpeg" width="20"/> Node](./module_01/node.md)
+    - [<img src="./imgs/react-icon.png" width="20"/> React](./module_01/react.md)
+    - [<img src="./imgs/typescript-icon.jpeg" width="20"/> Typescript](./module_01/react.md)
+    - [<img src="./imgs/git-icon.jpeg" width="20"/> Git](./module_01/git.md)
 
 
 - ### Module 2 | Getting Started
