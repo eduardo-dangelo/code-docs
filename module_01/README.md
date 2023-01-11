@@ -9,11 +9,12 @@
 > > There is no need to worry about memorizing all the content in this module. It is more important to simply be aware of the existence of the various tools and concepts and to understand their capabilities. We will delve more deeply into these topics in later modules of the course. For now, focus on gaining a general understanding of the material.
 
 ## Table of content
-    
-- [HTML](./html.md)
-- [CSS](./css.md)
-- [Javascript](./javascript.md)
-- [Git](./git.md)
-- [Terminal Shell](./terminal.md)
-- [Node.js](./node.md)
-- [React.js](./react.md)
+
+- [<img src="../imgs/html5-icon.jpeg" width="20"/> HTML](../module_01/html.md)
+- [<img src="../imgs/css3-icon.jpeg" width="20"/> CSS](../module_01/css.md)
+- [<img src="../imgs/javascript-logo.png" width="20"/> Javascript](../module_01/javascript.md)
+- [<img src="../imgs/terminal-icon.jpeg" width="20"/> Terminal](../module_01/terminal.md)
+- [<img src="../imgs/node-js-icon.jpeg" width="20"/> Node](../module_01/node.md)
+- [<img src="../imgs/react-icon.png" width="20"/> React](../module_01/react.md)
+- [<img src="../imgs/typescript-icon.jpeg" width="20"/> Typescript](../module_01/typescript.md)
+- [<img src="../imgs/git-icon.jpeg" width="20"/> Git](../module_01/git.md)

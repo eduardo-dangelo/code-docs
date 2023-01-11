@@ -9,6 +9,7 @@
 > > In this course, we'll cover the content at a fast pace. We'll focus on the technologies and skills that are most useful in office jobs.
 > > If you're interested to learn more, check out our other courses for a deeper dive into web development.
 
+
 ## Table of content
 - ### Module 1 | Basic Concepts
     > This module is designed to provide a foundational understanding of the key concepts needed to progress through the course.
@@ -17,9 +18,9 @@
     - [<img src="./imgs/css3-icon.jpeg" width="20"/> CSS](./module_01/css.md)
     - [<img src="./imgs/javascript-logo.png" width="20"/> Javascript](./module_01/javascript.md)
     - [<img src="./imgs/terminal-icon.jpeg" width="20"/> Terminal](./module_01/terminal.md)
-    - [<img src="./imgs/node-icon.jpeg" width="20"/> Node](./module_01/node.md)
+    - [<img src="./imgs/node-js-icon.jpeg" width="20"/> Node](./module_01/node.md)
     - [<img src="./imgs/react-icon.png" width="20"/> React](./module_01/react.md)
-    - [<img src="./imgs/typescript-icon.jpeg" width="20"/> Typescript](./module_01/react.md)
+    - [<img src="./imgs/typescript-icon.jpeg" width="20"/> Typescript](./module_01/typescript.md)
     - [<img src="./imgs/git-icon.jpeg" width="20"/> Git](./module_01/git.md)
 
 
