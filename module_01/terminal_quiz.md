@@ -43,7 +43,7 @@
 3. `touch` followed by the name of the file or folder.
 4. `rm` followed by the name of the file or folder.
 
-### 8- What command is used to delete a file in the terminal shell?
+### 8 - What command is used to delete a file in the terminal shell?
 1. `rm` followed by the name of the file.
 2. `cp` followed by the source file and the destination.
 3. `mv` followed by the source file and the destination.

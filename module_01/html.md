@@ -1,15 +1,19 @@
-# HTML - Basics
-HTML stands for `HyperText Markup Language` and is used to structure and format the content of a webpage. It uses a system of tags to denote different types of content and to apply formatting to them.
+#### The Complete Front-End Web Development Crash Course / Module 1: Basic Concepts
+
+# <img src="../imgs/html5-icon.jpeg" width="30"/> HTML
+> Now, let's delve into the core of web development by covering the basics of HTML. It's important to note that while mastering HTML isn't a requirement for being a successful programmer, it's crucial to have a solid understanding of its fundamental concepts and key elements.
+> 
+> HTML stands for `HyperText Markup Language` and is used to structure and format the content of a webpage. It uses a system of tags to denote different types of content and to apply formatting to them.
 
 ## Structure of an HTML Document
-An HTML document consists of a series of elements, each of which is enclosed in a pair of tags. The opening tag contains the element name, and the closing tag contains a slash followed by the element name. For example:
+An HTML document consists of a series of `elements`, each of which is enclosed in a pair of `tags`. The opening tag contains the element name, and the closing tag contains a slash followed by the element name. For example:
 
 ```html
 <p>This is a paragraph</p>
 ```
-The element name is the type of content being marked up, 
-in this case a paragraph. The opening tag `<p>` indicates the start of the paragraph,
-and the closing tag `</p>` indicates the end of the paragraph.
+The `element` name is the type of content being marked up, 
+in this case a paragraph. The opening tag `<p>` indicates the start of the `paragraph`,
+and the closing tag `</p>` indicates the end of the `paragraph`.
 ```html
 <div>
   <p>This is a paragraph inside a div element</p>
@@ -38,19 +42,19 @@ Here is a list of some of the most relevant HTML tags:
 
 
 ## HTML Attributes
-HTML elements can have attributes, which provide additional information about the element. Attributes are specified in the opening tag of the element, and are made up of a name and a value. For example:
+HTML elements can have `attributes`, which provide additional information about the element. Attributes are specified in the opening tag of the element, and are made up of a name and a value. For example:
 
 ```html
 <a href="https://www.example.com">This is a link</a>
 ```
-In this example, the `a` element has an attribute called href with a value of `"https://www.example.com"`. The href attribute specifies the destination of the link.
+In this example, the `a` element has an `attribute` called `href` with a value of `"https://www.example.com"`. The href attribute specifies the destination of the link.
 
 ## HTML Syntax
-HTML is case-insensitive, which means that tags and attributes can be written in uppercase or lowercase,
+`HTML` is `case-insensitive`, which means that tags and attributes can be written in uppercase or lowercase,
 and it will not affect the way the document is rendered. However,
 it is generally accepted to use lowercase for HTML tags and attributes for the sake of readability and consistency.
 
-HTML documents should also be saved with the .html file extension.
+HTML documents should also be saved with the `.html` file extension. ex: `index.html`
 
-## Validating HTML
-It is important to make sure that your HTML is well-formed and follows the rules of the language. To do this, you can use an HTML validator to check your document for errors. This can help you catch mistakes and ensure that your document will be displayed correctly in different browsers
+## NEXT
+[NEXT | Quiz: HTML](./html_quiz.md)
