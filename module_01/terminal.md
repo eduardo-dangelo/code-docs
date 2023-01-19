@@ -80,3 +80,6 @@
     ```shell
     rm -r folder
     ```
+
+## NEXT
+[NEXT | Quiz: Terminal Shell](./terminal_quiz.md)
