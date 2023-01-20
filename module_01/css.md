@@ -1,4 +1,10 @@
-# Basic CSS
+#### The Complete Front-End Web Development Crash Course / Module 1: Basic Concepts
+
+# <img src="../imgs/css3-icon.jpeg" width="30"/> CSS
+> As we move forward in our web development journey,
+> we will delve into the world of CSS - the tool that allows us to bring life and style to our web pages.
+> Understanding and being proficient in CSS is crucial for any front-end developer as it is the key to creating visually appealing designs.
+> This guide will give you a foundational understanding, but I encourage you to further explore and master it to elevate your development skills.
 
 CSS (Cascading Style Sheets) is a stylesheet language used to describe the look and formatting of a document written in HTML.
 
@@ -83,6 +89,33 @@ CSS properties are used to style elements in an HTML document. There are many di
 - `visibility`: This property sets whether or not an element is visible.
 - `cursor`: This property sets the cursor style when hovering over an element.
 - `transition`: This property specifies the transition effect when changing the value of a property.
+
+## The :hover Selector
+The `:hover` selector is a CSS pseudo-class that is used to target an element when the user's cursor hovers over it. This allows you to change the appearance of an element when the user interacts with it.
+
+For example, you can use the `:hover` selector to change the background color of a button when the user hovers over it:
+
+```css
+button {
+  background-color: blue;
+}
+
+button:hover {
+  background-color: red;
+}
+```
+
+The `:hover` selector can be used on any HTML element, not just buttons. For example, you can use it to change the color of text when the user hovers over it:
+
+```css
+a {
+ color: black;
+}
+
+a:hover {
+  color: red;
+}
+```
 
 ## Media Queries
 

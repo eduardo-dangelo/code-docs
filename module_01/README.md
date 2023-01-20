@@ -11,7 +11,7 @@
 ## Table of content
 
 - [<img src="../imgs/terminal-icon.jpeg" width="20"/> Terminal Shell](../module_01/terminal.md) / [Quiz](../module_01/terminal_quiz.md)
-- [<img src="../imgs/html5-icon.jpeg" width="20"/> HTML](../module_01/html.md)
+- [<img src="../imgs/html5-icon.jpeg" width="20"/> HTML](../module_01/html.md) / [Quiz](../module_01/html_quiz.md)
 - [<img src="../imgs/css3-icon.jpeg" width="20"/> CSS](../module_01/css.md)
 - [<img src="../imgs/javascript-logo.png" width="20"/> Javascript](../module_01/javascript.md)
 - [<img src="../imgs/node-js-icon.jpeg" width="20"/> Node](../module_01/node.md)
