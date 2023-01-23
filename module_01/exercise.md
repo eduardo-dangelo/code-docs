@@ -1,0 +1,2 @@
+#### The Complete Front-End Web Development Crash Course / Module 1: Basic Concepts
+# <img src="../imgs/terminal-icon.jpeg" width="30"/><img src="../imgs/html5-icon.jpeg" width="30"/><img src="../imgs/css3-icon.jpeg" width="30"/><img src="../imgs/javascript-logo.png" width="30"/> Exercise

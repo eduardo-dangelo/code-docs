@@ -1,5 +1,10 @@
-# Javascript - Basic Concepts
-Javascript is a popular programming language that is widely used for building web applications and adding interactivity to websites. It is a client-side scripting language, which means that it is executed by the user's web browser rather than on the server.
+#### The Complete Front-End Web Development Crash Course / Module 1: Basic Concepts
+# <img src="../imgs/javascript-logo.png" width="30"/> Javascript
+
+> JavaScript is a crucial component of this course. It will be used for creating logic and adding dynamic functionality to your websites.
+> As a frontend developer, you will use it on a daily basis in your career.
+> Even though JavaScript has evolved, it is essential to learn the basic concepts, which will make a big difference in the next steps of the course.
+> Make sure to take your time but don't worry too much if you don't memorize everything, we will come back to many of these concepts later on in the course. Let's dive in.
 
 ## Variables
 In Javascript, variables are used to store values such as numbers, strings, and objects. Variables are declared using the var keyword, and can be assigned a value using the = operator.
@@ -13,9 +18,10 @@ var person = {firstName: "John", lastName: "Doe"};
 Javascript has several data types, including numbers, strings, booleans, and objects.
 
 - **Numbers**: Javascript has a single type for numbers, which includes both integers and floating point values. Numbers can be written with or without a decimal point.
-
+    ```javascript
+    var int = 3;
+    ```
 - **Strings**: Strings are sequences of characters enclosed in single or double quotes.
-
     ```javascript
     var str = "Hello, World!";
     ```
@@ -153,3 +159,6 @@ class Person {
 var person = new Person("John", "Doe");
 person.greet(); // "Hello, my name is John Doe"
 ```
+
+## NEXT
+[NEXT | Quiz: Javascript](./html_quiz.md)
