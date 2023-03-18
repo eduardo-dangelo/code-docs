@@ -47,4 +47,4 @@
 1-1 | 2-3 | 3-2 | 4-1 | 5-2 | 6-4 | 7-1 
 
 ## NEXT
-[NEXT | Exercise](./Exercise.md)
+[NEXT | Exercise](./exercise.md)
