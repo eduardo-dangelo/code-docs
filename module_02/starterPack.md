@@ -24,6 +24,9 @@ Find out other ways to install git [here](https://nodejs.org/en/about/).
     brew install git
     ```
 
+## Create a Github account
+>GitHub is a web-based hosting service for version control using Git. It is mostly used for computer code. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features.
+- [Create a Github account](https://github.com)
 
 ## Install Oh my zsh
 >Oh My Zsh is an open source framework for improve your ZSH shell.

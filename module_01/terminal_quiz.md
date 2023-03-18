@@ -2,7 +2,7 @@
 #  <img src="../imgs/terminal-icon.jpeg" width="30"/> Quiz: Terminal Shell
 
 ### 1 - What command is used to create a new folder in the terminal shell?
-1. `mkdir`.
+1.  `mkdir`.
 2. `cd`.
 3. `touch`.
 4. `ls`.
@@ -59,4 +59,4 @@
 1-1 | 2-2 | 3-3 | 4-2 | 5-1 | 6-1 | 7-2 | 8-1 | 9-1
 
 ## NEXT
-[NEXT | HTML](./html.md)
+[NEXT | HTML](html.md)

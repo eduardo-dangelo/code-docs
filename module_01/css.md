@@ -123,6 +123,54 @@ Media queries allow you to create responsive layouts that adjust to the size of 
 
 ```css
 @media screen and (max-width: 800px) {
-    ...
+    button {
+        width: 100%;
+    }
 }
 ```
+> This media query will apply the styles inside the curly braces to all `<button>` elements when the viewport is less than 800 pixels wide to make the buttons take up the full width of the screen.
+
+### CSS Example: `style.css`
+```css
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+      width: 100%;
+  }
+}
+```
+> Css files should be saved with the `.css` extension.
+
+## CSS Frameworks
+There are many CSS frameworks available that provide pre-built styles for common elements, such as buttons, forms, and tables. These frameworks can save you a lot of time and effort when creating a website. Here are some of the most popular CSS frameworks:
+- [Bootstrap](https://getbootstrap.com/)
+- [Materialize](https://materializecss.com/)
+- [Semantic UI](https://semantic-ui.com/)
+
+### Conclusion
+> CSS is a powerful language that allows you to style HTML elements and create responsive layouts. In this lesson, you learned about the syntax of CSS, how to use selectors to target elements, and how to use media queries to create responsive layouts.
+> In the next lesson, we'll test your knowledge of CSS with a quiz.
+
+## NEXT
+[NEXT | CSS Quiz](css_quiz.md)

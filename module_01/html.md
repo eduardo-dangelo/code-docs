@@ -11,16 +11,18 @@ An HTML document consists of a series of `elements`, each of which is enclosed i
 ```html
 <p>This is a paragraph</p>
 ```
-The `element` name is the type of content being marked up, 
+>The `element` name is the type of content being marked up, 
 in this case a paragraph. The opening tag `<p>` indicates the start of the `paragraph`,
 and the closing tag `</p>` indicates the end of the `paragraph`.
+
+### Nesting Elements
 ```html
 <div>
   <p>This is a paragraph inside a div element</p>
 </div>
 ```
-In this example, the `<div>` element is the parent element,
-and the `<p>` element is the child element.
+>In this example, the `<div>` element is the parent element,
+and the `<p>` element is the child element. You can nest as many elements as you want inside each other.
 
 # HTML Tags
 
@@ -47,14 +49,34 @@ HTML elements can have `attributes`, which provide additional information about 
 ```html
 <a href="https://www.example.com">This is a link</a>
 ```
-In this example, the `a` element has an `attribute` called `href` with a value of `"https://www.example.com"`. The href attribute specifies the destination of the link.
+> sIn this example, the `a` element has an `attribute` called `href` with a value of `"https://www.example.com"`. The href attribute specifies the destination of the link.
 
 ## HTML Syntax
 `HTML` is `case-insensitive`, which means that tags and attributes can be written in uppercase or lowercase,
 and it will not affect the way the document is rendered. However,
 it is generally accepted to use lowercase for HTML tags and attributes for the sake of readability and consistency.
 
-HTML documents should also be saved with the `.html` file extension. ex: `index.html`
+### HTML Example: `index.html`
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First Webpage</title>
+  </head>
+  <body>
+    <h1>My First Webpage</h1>
+    <p>This is my first webpage.</p>
+    <div>
+      <p>This is a paragraph inside a div element</p>
+    </div>
+    <a href="https://www.example.com">This is a Link</a>
+  </body>
+</html>
+```
+>HTML documents should also be saved with the `.html` file extension. ex: `index.html`
+
+### Conclusion
+> In this lesson, we covered the basics of HTML, including the structure of an HTML document, the most common HTML tags, and how to use attributes to provide additional information about elements. In the next lesson, we'll test your knowledge of HTML by completing a quiz.
 
 ## NEXT
-[NEXT | Quiz: HTML](./html_quiz.md)
+[NEXT | HTML Quiz](html_quiz.md)

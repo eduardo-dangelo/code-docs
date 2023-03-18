@@ -7,6 +7,9 @@
 >A terminal shell is a command-line interface that enables users to interact with their computer's operating system using text-based commands. This powerful tool can be used for a wide range of tasks, from managing files and directories, to installing and managing software packages, and more.
 >> To run a command you will type the command in the terminal and press Enter 
 
+- ### Open the Terminal
+  > To open the terminal, press `Command + space` and type `Terminal` in the search bar.
+
 - ### See a List of the Files and Folders in a Directory
   To see a list of the files and folders in your current directory, use the `ls` command. run:
    ```shell
@@ -17,7 +20,7 @@
   >
 
 - ### Navigate
-  To navigate to a different folder, use the `cd` command followed by the path to the folder you want to go to. For example, to navigate to the `newfolder` folder, you would tun:
+  To navigate to a different folder, use the `cd` command followed by the path to the folder you want to go to. For example, to navigate to the `Desktop` folder, you would tun:
     ```shell
     cd Desktop
     ```
@@ -74,6 +77,11 @@
     ```shell
     rm -r newFolder
     ```
+  > Note: The `rm` command is very dangerous. If you accidentally delete a file or folder, it will be permanently deleted and cannot be recovered. Be very careful when using this command.
+
+### Conclusion   
+> You have now learned the basics commands for working with the terminal shell.
+> In the next section, we will test your knowledge of these commands by completing a quiz.
 
 ## NEXT
-[NEXT | Quiz: Terminal Shell](./terminal_quiz.md)
+[NEXT | Terminal Shell Quiz](./terminal_quiz.md)

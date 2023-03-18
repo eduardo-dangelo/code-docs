@@ -2,12 +2,12 @@
 #### Build Your CV and Find Your Dream Job
 <img src="./imgs/hero.png" />
 
-> Welcome to the Complete Front-End Web Development Crash Course! In this course, you will learn the essential skills needed to build and design stunning websites. We will cover technologies such as HTML, CSS, and JavaScript, as well as frameworks such as React and TypeScript. By the end of this course, you will have the knowledge and skills to create dynamic, interactive websites that stand out in today's crowded online marketplace.
-> 
-> We will also delve into the job search process and help you build a professional CV that showcases your new web development skills. So let's get started and take the first step towards achieving your dream career as a front-end web developer!
+> Welcome to the Complete Front-End Web Development Crash Course! In this course, you will learn the essential skills needed to build websites and become a front-end developer.
+> We will cover technologies such as HTML, CSS, and JavaScript, as well as frameworks such as React and TypeScript.
+> By the end of this course, you will have the knowledge and skills to create dynamic, interactive websites.
 >
-> > In this course, we'll cover the content at a fast pace. We'll focus on the technologies and skills that are most useful in office jobs.
-> > If you're interested to learn more, check out our other courses for a deeper dive into web development.
+> > In this course, we'll cover the content at a fast pace. We'll focus on the technologies and skills that are most useful for modern front-end jobs.
+> > I encourage you to take your time and revisit each topic as needed to refresh your memory.
 
 
 ## Table of content
@@ -15,17 +15,10 @@
     > This module is designed to provide a foundational understanding of the key concepts needed to progress through the course.
     This will be a short review to ensure that you have a clear understanding of the material and that we're all on the same page.
     - [<img src="./imgs/terminal-icon.jpeg" width="20"/> Terminal](./module_01/terminal.md) / [Quiz](./module_01/terminal_quiz.md)
-    - [<img src="./imgs/html5-icon.jpeg" width="20"/> HTML](./module_01/html.md) / [Quiz](./module_01/html_quiz.md)
+    - [<img src="./imgs/html5-icon.jpeg" width="20"/> HTML](module_01/html.md) / [Quiz](./module_01/html_quiz.md)
     - [<img src="./imgs/css3-icon.jpeg" width="20"/> CSS](./module_01/css.md) / [Quiz](./module_01/css_quiz.md)
     - [<img src="./imgs/javascript-logo.png" width="20"/> Javascript](./module_01/javascript.md) / [Quiz](./module_01/javascript_quiz.md)
     - [📝 Exercise](./module_01/exercise.md)
-  
-  part 2
-
-    - [<img src="./imgs/node-js-icon.jpeg" width="20"/> Node](./module_01/node.md)
-    - [<img src="./imgs/react-icon.png" width="20"/> React](./module_01/react.md)
-    - [<img src="./imgs/typescript-icon.jpeg" width="20"/> Typescript](./module_01/typescript.md)
-    - [<img src="./imgs/git-icon.jpeg" width="20"/> Git](./module_01/git.md)
 
 
 - ### Module 2 | Getting Started
