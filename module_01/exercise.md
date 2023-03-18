@@ -3,6 +3,7 @@
 
 > Let's put all our learning into practice and create our first website. Follow these steps closely to ensure success.
 
+# Folder structure
 ### <img src="../imgs/terminal-icon.jpeg" width="20"/> Terminal: Create a folder structure and files
 - Open a terminal window and create a `projects` folder:
     ```shell
@@ -39,7 +40,7 @@
   > We are also linking to an external JavaScript file called `script.js`
   
 
-## Adding a dynamic Topbar
+# Adding a dynamic Topbar
 ### <img src="../imgs/html5-icon.jpeg" width="20"/> Adding the HTML elements
 - Paste the following code inside the `<body>` element:
   ```html
