@@ -174,6 +174,9 @@
 
 # Testing the website
 - Open `index.html` in your browser and you should see the following:
+  
   <img src="../imgs/website-1.png" width="500"/>
+
 - Click on the burger menu and you should see the following:
+  
   <img src="../imgs/website-2.png" width="500"/>
