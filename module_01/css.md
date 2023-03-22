@@ -14,8 +14,8 @@ CSS has a simple syntax made up of selectors and declarations. A declaration is 
 
 ```css
 selector {
-    property: value;
-    property: value;
+  property: value;
+  property: value;
 }
 ```
 
@@ -23,8 +23,8 @@ The selector determines which element or elements in the HTML document the decla
 
 ```css
 p {
-    color: red;
-    font-size: 16px;
+  color: red;
+  font-size: 16px;
 }
 ```
 
@@ -51,7 +51,7 @@ Nested selectors allow you to target elements that are nested within other eleme
 
 ```css
 div p {
-    color: red;
+  color: red;
 }
 ```
 
@@ -59,7 +59,7 @@ This CSS rule will apply the color red to all `<p>` elements that are inside a `
 
 ```css
 div.warning p {
-    color: red;
+  color: red;
 }
 ```
 
@@ -123,9 +123,9 @@ Media queries allow you to create responsive layouts that adjust to the size of 
 
 ```css
 @media screen and (max-width: 800px) {
-    button {
-        width: 100%;
-    }
+  button {
+    width: 100%;
+  }
 }
 ```
 > This media query will apply the styles inside the curly braces to all `<button>` elements when the viewport is less than 800 pixels wide to make the buttons take up the full width of the screen.

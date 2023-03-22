@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+/* CSS styles for the top bar */
+#topbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+}
+
+#topbar h2 {
+    margin: 0;
+}
+/* CSS styles for the dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.burger-menu {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 5px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+ul {
+    list-style: none; /* remove the bullet points */
+    padding: 0; /* remove the default padding */
+    margin: 0; /* remove the default margin */
+    color: black;
+}
+
+li {
+    padding: 10px; /* add padding to the list items */
+    background-color: transparent; /* set the default background color */
+    transition: background-color 0.3s ease; /* add a transition for the hover effect */
+}
+
+li:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* change the background color on hover */
+    cursor: pointer;
+}
+
+.hello-world {
+    text-align: center; /* center align the text */
+    margin: auto; /* center the element horizontally */
+    width: 100%; /* make the element the full width of its parent container */
+    height: 400px;
+    display: grid; /* enable grid layout */
+    place-items: center center; /* center align the element both horizontally and vertically */
+    background-image: url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.hello-world > h1 {
+    margin: 0;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 0 2px 16px rgba(0,0,0,0.8), 0 2px 16px rgba(255,255,255,0.5);
+}
+
+/* CSS for thumbnail container */
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 600px;
+    margin: 60px auto;
+}
+
+/* CSS for thumbnail columns */
+.thumbnail-column {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /*border: 1px solid;*/
+    align-items: center;
+}
+
+.thumbnail-column > p {
+    flex: 1;
+}
+
+/* CSS for vertical divider */
+.thumbnail-column + .thumbnail-column::before {
+    content: "";
+    border-left: 1px solid rgb(0, 0, 0);
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* CSS for button */
+.learn-more-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    /*margin: 10px;*/
+    align-self: flex-end;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.subscribe-form {
+    margin-top: 20px;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 12px 20px;
+    margin: 8px 0 8px 8px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.subscribe-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.subscribe-form input[type="submit"]:hover {
+    background-color: #45a049;
+}

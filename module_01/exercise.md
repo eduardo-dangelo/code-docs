@@ -1,13 +1,25 @@
 #### The Complete Front-End Web Development Crash Course / Module 1: Basic Concepts
-# <img src="../imgs/terminal-icon.jpeg" width="30"/><img src="../imgs/html5-icon.jpeg" width="30"/><img src="../imgs/css3-icon.jpeg" width="30"/><img src="../imgs/javascript-logo.png" width="30"/> Exercise
+# <img src="../imgs/terminal-icon.jpeg" width="30"/><img src="../imgs/html5-icon.jpeg" width="30"/><img src="../imgs/css3-icon.jpeg" width="30"/><img src="../imgs/javascript-logo.png" width="30"/> Exercise 1 - My First Website
 
-> Let's put all our learning into practice and create our first website. Follow these steps closely to ensure success.
+> Let's put all our learning into practice and create our first website.
+> We will be using the following technologies we learned in the previous lessons: HTML, CSS and JavaScript.
+> Follow these steps closely to ensure success.
+> Below we have a preview of the final result. You can also check the final result files [here](../solution/index.html).
 
-# Folder structure
-### <img src="../imgs/terminal-icon.jpeg" width="20"/> Terminal: Create a folder structure and files
+<img src="../imgs/exercise-01-preview.png" width="100%"/>
+
+# <img src="../imgs/terminal-icon.jpeg" width="25"/>  Create folder structure & files
+> Let's use the terminal to create a folder structure and files.
+> We'll create a folder called `first-website` and inside it create 3 files: `index.html`, `style.css` and `script.js`.
+> If you're not familiar with the terminal, you can check the [terminal lesson](../module_01/terminal.md) for more details.
+
 - Open a terminal window and create a `projects` folder:
     ```shell
     mkdir projects
+    ```
+  > We will be creating this and all our future websites inside this `projects` folder. This will help us keep our projects organized.
+  > You can skip this step if you already have a `projects` folder in your root directory.
+  
 - Navigate to `projects` directory and create another folder called `first-website`:
     ```shell
     cd projects
@@ -21,7 +33,7 @@
     touch script.js
     ```
   
-### <img src="../imgs/html5-icon.jpeg" width="20"/> HTML: Create the basic structure of the website
+# <img src="../imgs/html5-icon.jpeg" width="25"/> Add the HTML elements
 - Open `index.html` and paste the following code:
   ```html
   <!DOCTYPE html>
@@ -38,10 +50,7 @@
   ```
   > Notice we are linking to an external stylesheet called `style.css` and a Google Font called `Open Sans`.
   > We are also linking to an external JavaScript file called `script.js`
-  
 
-# Adding a dynamic Topbar
-### <img src="../imgs/html5-icon.jpeg" width="20"/> Adding the HTML elements
 - Paste the following code inside the `<body>` element:
   ```html
   <div id="topbar">
@@ -65,6 +74,49 @@
   > The topbar contains the title of the website and a dropdown menu. The dropdown menu is hidden by default and will be displayed when the user clicks on the burger menu. 
   > Notice we are defining `classes` and `ids` like `class="burger-menu"` and `id="myDropdown"`. These will be used to style the elements. 
   > The `dropdownFunction()` function will be defined in `script.js` and will be explained later.
+- The hero component:
+  ```html
+  <div class="hero-container">
+    <h1>
+      Learn to code
+    </h1>
+  </div>
+  ```
+  > The hero component contains a title and a subtitle. The subtitle will be displayed below the title on larger screens and will be displayed below the title on smaller screens.
+  > Notice we are defining a `class` called `hero-container`. This will be used to style the elements.
+  > The `hero-container` class will be defined in `style.css` and will be explained later.
+  > 
+- The main content:
+  ```html
+  <div class="main-content">
+    <div class="main-content-column">
+      <h2>What is HTML?</h2>
+      <p>HTML stands for Hyper Text Markup Language. It is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.</p>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="learn-more-button">Learn More</a>
+    </div>
+    <div class="main-content-column">
+      <h2>What is CSS?</h2>
+      <p>CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once. External stylesheets are stored in CSS files.</p>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="learn-more-button">Learn More</a>
+    </div>
+    <div class="main-content-column">
+      <h2>What is JavaScript?</h2>
+      <p>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user.</p>  
+    </div>
+  </div>
+  ```
+  > The main content contains 2 columns. The left column contains a title and a paragraph. The right column contains a title and a paragraph.
+  > Notice we are defining a `class` called `main-content`. This will be used to style the elements.
+  > The `main-content` class will be defined in `style.css` and will be explained later.
+- Footer:
+  ```html
+  <footer>
+    <p>Created by <a href="https://www.linkedin.com/in/alexandru-georgescu-0b5b3b1b3/" target="_blank">Alexandru Georgescu</a></p>
+  </footer>
+  ```
+  > The footer contains a paragraph with a link to my LinkedIn profile.
+  > Notice we are defining a `class` called `footer`. This will be used to style the elements.
+  > The `footer` class will be defined in `style.css` and will be explained later.
 
 ### <img src="../imgs/css3-icon.jpeg" width="20"/> Adding the CSS styles
 
@@ -171,12 +223,3 @@
   > We are also using `event.target.matches()` to check if the user clicked on the burger menu.
   
   > The `dropdown.style.display` property will be set to `block` when the user clicks on the burger menu and to `none` when the user clicks away from the burger menu.
-
-# Testing the website
-- Open `index.html` in your browser and you should see the following:
-  
-  <img src="../imgs/website-1.png" width="500"/>
-
-- Click on the burger menu and you should see the following:
-  
-  <img src="../imgs/website-2.png" width="500"/>
