@@ -25,7 +25,7 @@
     cd projects
     mkdir first-website
     ```
-- Navigate to `first-website` directory and create a file called `index.html`:
+- Navigate to `first-website` directory and create the 3 files called `index.html`, `style.css` and `script.js`:
     ```shell
     cd first-website
     touch index.html
@@ -34,7 +34,13 @@
     ```
   
 # <img src="../imgs/html5-icon.jpeg" width="25"/> Add the HTML elements
-- Open `index.html` and paste the following code:
+> Let's add the HTML elements to our `index.html` file.
+> We'll start by adding the basic HTML structure and then we'll add the elements we need for our website.
+> If you're not familiar with HTML, you can check the [HTML lesson](../module_01/html.md) for more details.
+
+### Basic HTML structure
+> Let's start by adding the basic HTML structure to our `index.html` file.
+- Open `index.html` and add the following code:
   ```html
   <!DOCTYPE html>
   <html>
@@ -50,6 +56,9 @@
   ```
   > Notice we are linking to an external stylesheet called `style.css` and a Google Font called `Open Sans`.
   > We are also linking to an external JavaScript file called `script.js`
+
+### The topbar component:
+> The topbar contains the title of the website and a dropdown menu.
 
 - Paste the following code inside the `<body>` element:
   ```html
@@ -71,10 +80,13 @@
     </div>
   </div>
   ```
-  > The topbar contains the title of the website and a dropdown menu. The dropdown menu is hidden by default and will be displayed when the user clicks on the burger menu. 
+  > The dropdown menu is hidden by default and will be displayed when the user clicks on the burger menu.
   > Notice we are defining `classes` and `ids` like `class="burger-menu"` and `id="myDropdown"`. These will be used to style the elements. 
   > The `dropdownFunction()` function will be defined in `script.js` and will be explained later.
-- The hero component:
+
+### The hero component:
+  > The hero component contains a title and a subtitle. It will be displayed at the top of the page, below the topbar.
+- Add the following code inside the `<body>` element, below the topbar component:
   ```html
   <div class="hero-container">
     <h1>
@@ -82,11 +94,12 @@
     </h1>
   </div>
   ```
-  > The hero component contains a title and a subtitle. The subtitle will be displayed below the title on larger screens and will be displayed below the title on smaller screens.
   > Notice we are defining a `class` called `hero-container`. This will be used to style the elements.
   > The `hero-container` class will be defined in `style.css` and will be explained later.
   > 
-- The main content:
+### The main content:
+  > The main content contains 3 columns. The left column contains a title and a paragraph. The right column contains a title and a paragraph.
+- Add the following code inside the `<body>` element, below the hero component:
   ```html
   <div class="main-content">
     <div class="main-content-column">
@@ -105,28 +118,37 @@
     </div>
   </div>
   ```
-  > The main content contains 2 columns. The left column contains a title and a paragraph. The right column contains a title and a paragraph.
   > Notice we are defining a `class` called `main-content`. This will be used to style the elements.
   > The `main-content` class will be defined in `style.css` and will be explained later.
-- Footer:
+### The footer:
+  > The footer contains a paragraph with a link to my LinkedIn profile.
+- Add the following code inside the `<body>` element, below the main content:
   ```html
   <footer>
     <p>Created by <a href="https://www.linkedin.com/in/alexandru-georgescu-0b5b3b1b3/" target="_blank">Alexandru Georgescu</a></p>
   </footer>
   ```
-  > The footer contains a paragraph with a link to my LinkedIn profile.
   > Notice we are defining a `class` called `footer`. This will be used to style the elements.
   > The `footer` class will be defined in `style.css` and will be explained later.
 
-### <img src="../imgs/css3-icon.jpeg" width="20"/> Adding the CSS styles
+# <img src="../imgs/css3-icon.jpeg" width="30"/> Adding the CSS styles
+> Let's add the CSS styles to our `style.css` file.
+> If you are not familiar with CSS syntax we're using here, you can check the [CSS lesson](./css.md).
 
-- Open `style.css` file and paste the following:
+### The body:
+> The body selector contains the default styles for the page.
+> We are setting the default font family to `Open Sans` and removing the default margin of the page.
+- Open `style.css` file and add the following:
   ```css
   body {
     margin: 0; /* remove the default margin of the page */
     font-family: 'Open Sans', sans-serif; /* set the font family to Open Sans */
   }
-  
+  ```
+### The topbar:
+> The topbar selector contains the styles for the topbar component.
+- Add the following code inside the `style.css` file, below the body selector:
+  ```css
   /* CSS styles for the top bar */
   #topbar {
     background-color: #333; /* set the background color using a hex code */
@@ -141,7 +163,12 @@
   #topbar h2 {
     margin: 0; /* remove the default margin of the h2 element */
   }
-  
+  ```
+  > Notice we are using `id` selector for the `#topbar` instead of `class` selector. This is because we want to style only one element with the `id` `topbar`.
+### The Topbar dropdown menu: 
+> The dropdown menu will be displayed when the user clicks on the burger menu icon.
+- Add the following code inside the `style.css` file, below the topbar selector:
+  ```css
   /* CSS styles for the dropdown menu */
   .dropdown {
     position: relative; /* set the position to relative. This is needed for the dropdown menu */
@@ -192,8 +219,141 @@
     cursor: pointer; /* change the cursor to a pointer when the user hovers over the element */
   }
   ```
+  > Notice we are using `class` selector for the `.dropdown`, `.burger-menu`, `.bar1`, `.bar2`, `.bar3`, `.dropdown-content`, `ul` and `li` elements.
+  > This is because we want to style multiple elements with the same class.
   
-### <img src="../imgs/javascript-logo.png" width="20"/> Adding the JavaScript code
+### The Hero component:
+> The hero-content selector contains the styles for the main content component.
+- Add the following code inside the `style.css` file, below the dropdown menu selector:
+  ```css
+  .hello-world {
+    text-align: center; /* center align the text */
+    margin: auto; /* center the element horizontally */
+    width: 100%; /* make the element the full width of its parent container */
+    height: 400px;
+    display: grid; /* enable grid layout */
+    place-items: center center; /* center align the element both horizontally and vertically */
+    background-image: url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+  }
+
+  .hello-world > h1 {
+    margin: 0; /* remove the default margin of the h1 element */
+    font-size: 60px; /* set the font size */
+    font-weight: bold; /* set the font weight */
+    text-shadow: 0 2px 16px rgba(0,0,0,0.8), 0 2px 16px rgba(255,255,255,0.5);
+    /* add a text shadow */
+  }
+  ```
+  > Notice we are using `>` selector to select the `h1` element inside the `hello-world` class. This is because we want to style only the `h1` element inside the `hello-world` class.
+  > Also notice we are using `background-image` property to set the background image of the element. We are using the `url()` function to set the image url. The image url is set to the image we downloaded earlier.
+  > We are also using `background-size` property to set the size of the background image. We are using the `cover` value to make sure the image covers the full width of the element.
+  > We are also using `background-attachment` property to set the background image to be fixed. This means the image will not move when the user scrolls the page.
+
+### The thumbnail container:
+> The thumbnail-container selector contains the styles for the thumbnail container.
+- Add the following code inside the `style.css` file, below the hero component selector:
+  ```css
+  /* CSS for thumbnail container */
+  .thumbnail-container {
+    display: flex; /* display the elements in a row */
+    justify-content: center; /* center align the elements */
+    align-items: stretch; /* stretch the elements to the full height of the container */
+    max-width: 600px; /* set the maximum width */
+    margin: 60px auto; /* center the element horizontally */
+  }
+  
+  /* CSS for thumbnail columns */
+  .thumbnail-column {
+    flex: 1; /* set the flex property to 1. This will make the columns equal width */
+    text-align: center; /* center align the text */
+    padding: 20px; /* add padding to the elements */
+    display: flex; /* display the elements in a row */
+    flex-direction: column; /* display the elements in a column */
+    justify-content: flex-start; /* align the elements to the top */
+    align-items: center; /* center align the elements */
+  }
+  
+  .thumbnail-column > p {
+    flex: 1; /* set the flex property to 1. This will make the columns equal height */
+  }
+  
+  /* CSS for button */
+  .learn-more-button {
+    background-color: #4CAF50;  
+    color: white;   
+    padding: 12px 0;
+    border: none;
+    cursor: pointer; 
+    width: 100%;
+    text-align: center;
+    align-self: flex-end;
+  }
+  ```
+  > Notice we are using `class` selector for the `.thumbnail-container`, `.thumbnail-column`, `.learn-more-button` elements.
+  > This is because we want to style multiple elements with the same class.
+  > Also notice we are using `flex` property to make the columns equal width. We are also using `flex-direction` property to display the elements in a column.
+  > We are also using `justify-content` property to align the elements to the top. We are also using `align-items` property to center align the elements.
+  > We are also using `align-self` property to align the button to the bottom of the column.
+  > We are also using `flex` property to make the columns equal height.
+   
+### The footer:
+> The footer selector contains the styles for the footer.
+- Add the following code inside the `style.css` file, below the thumbnail container selector:
+  ```css
+  footer {
+    background-color: #333; /* set the background color */
+    color: #fff; /* set the text color */
+    padding: 20px; /* add padding to the element */
+    text-align: center; /* center align the text */
+    height: 200px; /* set the height of the element */
+    display: flex; /* display the elements in a row */
+    align-items: center; /* center align the elements vertically */
+    justify-content: space-around; /* add space between the elements */
+  }
+  
+  .subscribe-form {
+    margin-top: 20px; /* add margin to the top of the element */
+  }
+  
+  .subscribe-form input[type="email"] {
+    padding: 12px 20px; /* add padding to the element */
+    margin: 8px 0 8px 8px; /* add margin to the element */
+    box-sizing: border-box; /* set the box-sizing property to border-box */
+    border: 2px solid #ccc; /* add a border */
+    border-radius: 4px; /* add border radius */
+  }
+  
+  .subscribe-form input[type="submit"] {
+    background-color: #4CAF50; /* set the background color */
+    color: white; /* set the text color */
+    padding: 14px 20px; /* add padding to the element */
+    margin: 8px 0; /* add margin to the element */
+    border: none; /* remove the border */
+    border-radius: 4px; /* add border radius */
+    cursor: pointer; /* change the cursor to a pointer when the user hovers over the element */
+  }
+  
+  .subscribe-form input[type="submit"]:hover {
+    background-color: #45a049; /* change the background color on hover */
+  }
+  ```
+  > Notice we are using `footer` selector to select the `footer` element.
+  > Also notice we are using `flex` property to display the elements in a row.
+  > We are also using `align-items` property to center align the elements vertically.
+  > We are also using `justify-content` property to add space between the elements.
+  > We are also using `margin-top` property to add margin to the top of the element.
+  > We are also using `input[type="email"]` selector to select the `input` element with the `type` attribute set to `email`.
+  > We are also using `input[type="submit"]` selector to select the `input` element with the `type` attribute set to `submit`.
+  > We are also using `box-sizing` property to set the box-sizing property to border-box.
+  
+  
+# <img src="../imgs/javascript-logo.png" width="20"/> Adding the JavaScript code
+> Let's add the JavaScript code to toggle the dropdown menu when the user clicks on the burger menu.
+> The `script.js` file contains the JavaScript code for the project.
+> The JavaScript code will be used to toggle the dropdown menu when the user clicks on the burger menu.
 - Open `script.js` and add the following code:
   ```javascript
   var dropdown = document.getElementById("myDropdown");
@@ -215,11 +375,18 @@
   });
   ```
   > The `dropdownFunction()` function will be called when the user clicks on the burger menu. It will toggle the dropdown menu between `display: none` and `display: block`.
-
   > The `document.addEventListener()` function will be called when the user clicks anywhere on the page. It will close the dropdown menu if the user clicks away from the burger menu.
-  
   > Notice we are using `document.getElementById()` to get the element with the id `myDropdown` and `document.addEventListener()` to add an event listener to the document.
-  
   > We are also using `event.target.matches()` to check if the user clicked on the burger menu.
-  
   > The `dropdown.style.display` property will be set to `block` when the user clicks on the burger menu and to `none` when the user clicks away from the burger menu.
+
+# Testing the project
+> Now, let's test the project to see if it works as expected.
+> if done correctly, the project should look like the image on the top of this page.
+> If your solution is not working, or does not look like the image on the top of this page, you probaly missed something. go back and check your code for any typo or missing code.
+> If you get stuck, you can check the `index.html` and `style.css` files in the `solution` folder.
+- Open the `index.html` file in your browser and test the project. 
+
+
+## NEXT
+[NEXT | Conclusion & Next steps](./conclusion.md)
