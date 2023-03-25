@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <title>My First Website</title>
+</head>
+<body>
   <div id="topbar">
     <h2>My First Website</h2>
     <div class="dropdown">
@@ -22,39 +23,70 @@
       </div>
     </div>
   </div>
-  <div class="hello-world">
+
+  <div class="hero-container">
     <h1>
       Learn to code
     </h1>
   </div>
-  <div class="thumbnail-container">
-    <div class="thumbnail-column">
-      <img src="https://picsum.photos/id/1/600/400" alt="Random Image" style="width:100%;">
-      <h3>HTML</h3>
-      <p>HTML is a computer language used to create and structure content for web pages, including text, images, and other media, using a series of tags and attributes.</p>
-      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="learn-more-button">Learn More</a>
+
+  <div class="main-content">
+    <div class="main-content-column">
+      <h2>What is HTML?</h2>
+      <p>
+        HTML stands for Hyper Text Markup Language.
+        It is the standard markup language for creating
+        web pages and web applications. CSS and JavaScript,
+        it forms a triad of cornerstone technologies
+        for the World Wide Web.
+      </p>
+      <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+          target="_blank"
+          class="learn-more-button"
+      >
+        Learn More
+      </a>
     </div>
-    <div class="thumbnail-column">
-      <img src="https://picsum.photos/id/2/600/400" alt="Random Image" style="width:100%;">
-      <h3>CSS</h3>
-      <p>CSS is a computer language used to style and format HTML content, including layout, colors, fonts, and other visual elements, using a series of selectors and declarations.</p>
-      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="learn-more-button">Learn More</a>
+    <div class="main-content-column">
+      <h2>What is CSS?</h2>
+      <p>
+        CSS stands for Cascading Style Sheets. CSS describes
+        how HTML elements are to be displayed on screen,
+        paper, or in other media. It can control the layout
+        of multiple web pages all at once.
+      </p>
+      <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+          target="_blank"
+          class="learn-more-button"
+      >
+        Learn More
+      </a>
     </div>
-    <div class="thumbnail-column">
-      <img src="https://picsum.photos/id/3/600/400" alt="Random Image" style="width:100%;">
-      <h3>JAVASCRIPT</h3>
-      <p>JavaScript is a programming language used to create dynamic web content and user experiences. It manipulates HTML and CSS, handles user interactions, and processes data on the client-side</p>
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="learn-more-button">Learn More</a>
+    <div class="main-content-column">
+      <h2>What is JavaScript?</h2>
+      <p>
+        JavaScript is a text-based programming language that
+        allows you to make web pages interactive. Where HTML and CSS
+        are languages that give structure and style to web pages,
+        JavaScript gives web pages interactive elements that
+        engage a user.
+      </p>
+      <a
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          target="_blank"
+          class="learn-more-button"
+      >
+        Learn More
+      </a>
     </div>
   </div>
+
   <footer>
-    <div class="subscribe-form">
-      <form>
-        <label for="email">Subscribe to our newsletter:</label>
-        <input type="email" id="email" name="email" placeholder="Enter email">
-        <input type="submit" value="Subscribe">
-      </form>
-    </div>
+    <p>Created by <a href="https://www.linkedin.com/in/alexandru-georgescu-0b5b3b1b3/" target="_blank">Alexandru Georgescu</a></p>
   </footer>
-  </body>
+
+  <script src="script.js"></script>
+</body>
 </html>

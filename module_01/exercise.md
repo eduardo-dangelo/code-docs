@@ -1,23 +1,23 @@
 #### The Complete Front-End Web Development Crash Course / Module 1: Basic Concepts
 # <img src="../imgs/terminal-icon.jpeg" width="30"/><img src="../imgs/html5-icon.jpeg" width="30"/><img src="../imgs/css3-icon.jpeg" width="30"/><img src="../imgs/javascript-logo.png" width="30"/> Exercise 1 - My First Website
 
-> Let's put all our learning into practice and create our first website.
-> We will be using the following technologies we learned in the previous lessons: HTML, CSS and JavaScript.
-> Follow these steps closely to ensure success.
+> Let's put all the learning into practice and create our first website.
+> We will be using the technologies we learned in the previous lessons: HTML, CSS and JavaScript.
 > Below we have a preview of the final result. You can also check the final result files [here](../solution/index.html).
+> Follow these steps closely to ensure success.
 
 <img src="../imgs/exercise-01-preview.png" width="100%"/>
 
 # <img src="../imgs/terminal-icon.jpeg" width="25"/>  Create folder structure & files
-> Let's use the terminal to create a folder structure and files.
+> Let's use the terminal to create the folder structure and files.
 > We'll create a folder called `first-website` and inside it create 3 files: `index.html`, `style.css` and `script.js`.
-> If you're not familiar with the terminal, you can check the [terminal lesson](../module_01/terminal.md) for more details.
+> > If you're not familiar with the terminal, you can check the terminal lesson [here](../module_01/terminal.md).
 
 - Open a terminal window and create a `projects` folder:
     ```shell
     mkdir projects
     ```
-  > We will be creating this and all our future websites inside this `projects` folder. This will help us keep our projects organized.
+  > We will be creating this and all future websites inside this `projects` folder.
   > You can skip this step if you already have a `projects` folder in your root directory.
   
 - Navigate to `projects` directory and create another folder called `first-website`:
@@ -45,8 +45,9 @@
   <!DOCTYPE html>
   <html>
   <head>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>My First Website</title>
   </head>
   <body>
     // add your code here
@@ -54,13 +55,18 @@
   </body>
   </html>
   ```
-  > Notice we are linking to an external stylesheet called `style.css` and a Google Font called `Open Sans`.
-  > We are also linking to an external JavaScript file called `script.js`
-
+  > Notice we are linking to an external stylesheet called `style.css`
+  > and a Google Font called `Open Sans` using the  tag `<link>`.
+  > We are also linking to an external JavaScript file called `script.js` using the tag `<script>`.
+  > 
+  > We are also defining the title of the website using the `<title>` tag. This title will be displayed in the browser tab.
+  
 ### The topbar component:
-> The topbar contains the title of the website and a dropdown menu.
+> The topbar contains the title of the website and a dropdown menu. 
+> The dropdown menu is hidden by default and displayed when the user clicks on the burger menu.
+> This behavior will be implemented using CSS and JavaScript.
 
-- Paste the following code inside the `<body>` element:
+- Add the following code inside the `<body>` element:
   ```html
   <div id="topbar">
     <h2>My First Website</h2>
@@ -80,12 +86,12 @@
     </div>
   </div>
   ```
-  > The dropdown menu is hidden by default and will be displayed when the user clicks on the burger menu.
-  > Notice we are defining `classes` and `ids` like `class="burger-menu"` and `id="myDropdown"`. These will be used to style the elements. 
-  > The `dropdownFunction()` function will be defined in `script.js` and will be explained later.
+  > Notice that `dropdownFunction()` is fired every time the user clicks on the `burger-menu` using the `onclick` attribute.
+  > This function will be defined in `script.js` later.
+  > We are also defining `classes` and `ids` that will be used to style those elements. 
 
 ### The hero component:
-  > The hero component contains a title and a subtitle. It will be displayed at the top of the page, below the topbar.
+  > The hero component will be a wide image with a text inside center aligned. The image will be displayed using CSS with the `background-image` property.
 - Add the following code inside the `<body>` element, below the topbar component:
   ```html
   <div class="hero-container">
@@ -94,42 +100,83 @@
     </h1>
   </div>
   ```
-  > Notice we are defining a `class` called `hero-container`. This will be used to style the elements.
-  > The `hero-container` class will be defined in `style.css` and will be explained later.
-  > 
+  > We are defining `hero-container` class and using a `h1` tag for the center aligned text.
+  
 ### The main content:
-  > The main content contains 3 columns. The left column contains a title and a paragraph. The right column contains a title and a paragraph.
+  > The main content contains 3 columns that contain a title, a paragraph and a link.
+  > The columns are center aligned and its content is stretched to the full height of the column.
+  > We will be using CSS to style the columns and the link.
 - Add the following code inside the `<body>` element, below the hero component:
   ```html
   <div class="main-content">
     <div class="main-content-column">
       <h2>What is HTML?</h2>
-      <p>HTML stands for Hyper Text Markup Language. It is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.</p>
-      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="learn-more-button">Learn More</a>
+      <p>
+        HTML stands for Hyper Text Markup Language.
+        It is the standard markup language for creating
+        web pages and web applications. CSS and JavaScript,
+        it forms a triad of cornerstone technologies
+        for the World Wide Web.
+      </p>
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+        target="_blank"
+        class="learn-more-button"
+      >
+        Learn More
+      </a>
     </div>
     <div class="main-content-column">
       <h2>What is CSS?</h2>
-      <p>CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once. External stylesheets are stored in CSS files.</p>
-      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="learn-more-button">Learn More</a>
+      <p>
+        CSS stands for Cascading Style Sheets. CSS describes
+        how HTML elements are to be displayed on screen,
+        paper, or in other media. It can control the layout
+        of multiple web pages all at once.
+      </p>
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+        target="_blank"
+        class="learn-more-button"
+      >
+        Learn More
+      </a>
     </div>
     <div class="main-content-column">
       <h2>What is JavaScript?</h2>
-      <p>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user.</p>  
+      <p>
+        JavaScript is a text-based programming language that
+        allows you to make web pages interactive. Where HTML and CSS
+        are languages that give structure and style to web pages,
+        JavaScript gives web pages interactive elements that
+        engage a user.
+      </p>  
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        target="_blank"
+        class="learn-more-button"
+      >
+        Learn More
+      </a>
     </div>
   </div>
   ```
-  > Notice we are defining a `class` called `main-content`. This will be used to style the elements.
-  > The `main-content` class will be defined in `style.css` and will be explained later.
+  > Notice how we are breaking the text into multiple lines using the `<p>` tag. This is called `line wrapping`. It's a common practice to make the code more readable.
+  > 
+  > We are also breaking the `<a>` tag into multiple lines. It's also a common practice to make the code more readable.
+  > The `target="_blank"` attribute will open the link in a new tab.
+
 ### The footer:
-  > The footer contains a paragraph with a link to my LinkedIn profile.
+  > The footer is attached to the bottom of the page and contains a text center aligned.
 - Add the following code inside the `<body>` element, below the main content:
   ```html
   <footer>
     <p>Created by <a href="https://www.linkedin.com/in/alexandru-georgescu-0b5b3b1b3/" target="_blank">Alexandru Georgescu</a></p>
   </footer>
   ```
-  > Notice we are defining a `class` called `footer`. This will be used to style the elements.
-  > The `footer` class will be defined in `style.css` and will be explained later.
+### Result:
+> By this point, your `index.html` file should match the [result file `index.html`](./my-first-website/index.html)
+
 
 # <img src="../imgs/css3-icon.jpeg" width="30"/> Adding the CSS styles
 > Let's add the CSS styles to our `style.css` file.
@@ -389,4 +436,4 @@
 
 
 ## NEXT
-[NEXT | Conclusion & Next steps](./conclusion.md)
+[NEXT | Conclusion](./conclusion.md)
