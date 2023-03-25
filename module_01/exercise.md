@@ -174,12 +174,13 @@
     <p>Created by <a href="https://www.linkedin.com/in/alexandru-georgescu-0b5b3b1b3/" target="_blank">Alexandru Georgescu</a></p>
   </footer>
   ```
-### Result:
+## 🏁 Checkpoint:
+> We have finished adding the HTML code to our `index.html` file.
 > By this point, your `index.html` file should match the [result file `index.html`](./my-first-website/index.html)
 
 
 # <img src="../imgs/css3-icon.jpeg" width="30"/> Adding the CSS styles
-> Let's add the CSS styles to our `style.css` file.
+> Now let's add the CSS styles to our `style.css` file.
 > If you are not familiar with CSS syntax we're using here, you can check the [CSS lesson](./css.md).
 
 ### The body:
@@ -199,11 +200,11 @@
   /* CSS styles for the top bar */
   #topbar {
     background-color: #333; /* set the background color using a hex code */
-    color: #fff; /* set the text color */
+    color: #fff; /* set the text color to white using hex code */
     display: flex; /* display the elements in a row */
-    align-items: center; /* align the elements vertically */
+    align-items: center; /* align the elements vertically to the center */
     justify-content: space-between;  /* add space between the elements */
-    padding: 10px;  /* add padding to the elements */
+    padding: 10px;  /* add padding to the elements in pixels */
     position: relative;  /* set the position to relative. This is needed for the dropdown menu */
   }
   
@@ -212,6 +213,10 @@
   }
   ```
   > Notice we are using `id` selector for the `#topbar` instead of `class` selector. This is because we want to style only one element with the `id` `topbar`.
+  > 
+  > We're also using hex codes for the colors.
+  > You can find more about hex codes and how it works [here](https://www.w3schools.com/colors/colors_hexadecimal.asp).
+
 ### The Topbar dropdown menu: 
 > The dropdown menu will be displayed when the user clicks on the burger menu icon.
 - Add the following code inside the `style.css` file, below the topbar selector:
@@ -223,8 +228,8 @@
   }
   
   .burger-menu {
-    width: 40px; /* set the width of the element */
-    height: 40px; /* set the height of the element */
+    width: 40px; /* set the width of the burger-menu element */
+    height: 40px; /* set the height of the burger-menu element */
     display: flex; /* display the elements in a row */
     flex-direction: column; /* display the elements in a column */
     justify-content: space-around; /* add space between the elements */
@@ -232,48 +237,50 @@
     cursor: pointer; /* change the cursor to a pointer when the user hovers over the element */
   }
   
-  .bar1, .bar2, .bar3 {
-    width: 30px; /* set the width of the 3 elements bar1, bar2 and bar3 */
-    height: 3px; /* set the height of the 3 elements */
-    background-color: rgb(255, 255, 255); /* set the background color using rgb */
+  .burger-menu-bar {
+    width: 30px; /* set the width of the menu bar to 30 pixels */
+    height: 3px; /* set the height of the menu bar to 3 pixels */
+    background-color: rgb(255, 255, 255); /* set the background color to white using rgb */
   }
   
   .dropdown-content {
     display: none; /* hide the dropdown menu by default */
-    position: absolute; /* set the position to absolute. This is needed for the dropdown menu */
-    right: 5px; /* set the right position */
-    background-color: #f9f9f9; /* set the background color */
-    min-width: 160px; /* set the minimum width */
+    position: absolute; /* set the position to absolute. This makes the dropdown menu appear on top of the other elements */
+    right: 5px; /* set the element to be 5 pixels from the right of the topbar */
+    background-color: #f9f9f9; /* set the background color using a hex code */
+    min-width: 160px; /* set the minimum width of the dropdown menu to 160 pixels */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* add a shadow to the dropdown menu */
-    z-index: 1; /* set the z-index to 1. This is needed for the dropdown menu */
+    z-index: 1; /* set the z-index to 1. The z-index is used to position the element on top of the other elements */
   }
   
   ul {
     list-style: none; /* remove the bullet points */
     padding: 0; /* remove the default padding */
     margin: 0; /* remove the default margin */
-    color: black; /* set the text color */
+    color: black; /* set the text color to black using a keyword */
   }
   
   li {
-    padding: 10px; /* add padding to the list items */
-    background-color: transparent; /* set the default background color */
+    padding: 10px; /* add padding to the list items to 10 pixels */
+    background-color: transparent; /* set the default background color to transparent using a keyword */
     transition: background-color 0.3s ease; /* add a transition for the hover effect */
   }
   
   li:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* change the background color on hover */
+    background-color: rgba(0, 0, 0, 0.1); /* change the background color on hover to be a bit darker than the default background color using rgba */
     cursor: pointer; /* change the cursor to a pointer when the user hovers over the element */
   }
   ```
-  > Notice we are using `class` selector for the `.dropdown`, `.burger-menu`, `.bar1`, `.bar2`, `.bar3`, `.dropdown-content`, `ul` and `li` elements.
-  > This is because we want to style multiple elements with the same class.
+  > Notice how we are using `hex`, `rgb`, `keywords` and `rgba` for the colors.
+  > You can find more about the different ways to define colors [here](https://www.w3schools.com/css/css_colors.asp).
+  > 
+  > We're also using the `position` property to position the dropdown menu on top of the other elements. You can find more about the `position` property [here](https://www.w3schools.com/css/css_positioning.asp).
   
-### The Hero component:
-> The hero-content selector contains the styles for the main content component.
+### The Hero container:
+> The hero-container selector contains the styles for the hero component.
 - Add the following code inside the `style.css` file, below the dropdown menu selector:
   ```css
-  .hello-world {
+  .hero-container {
     text-align: center; /* center align the text */
     margin: auto; /* center the element horizontally */
     width: 100%; /* make the element the full width of its parent container */
@@ -286,125 +293,125 @@
     color: white;
   }
 
-  .hello-world > h1 {
+  .hero-container > h1 {
     margin: 0; /* remove the default margin of the h1 element */
     font-size: 60px; /* set the font size */
     font-weight: bold; /* set the font weight */
     text-shadow: 0 2px 16px rgba(0,0,0,0.8), 0 2px 16px rgba(255,255,255,0.5);
-    /* add a text shadow */
+    /* add 2 text shadows separated by a comma */
   }
   ```
-  > Notice we are using `>` selector to select the `h1` element inside the `hello-world` class. This is because we want to style only the `h1` element inside the `hello-world` class.
-  > Also notice we are using `background-image` property to set the background image of the element. We are using the `url()` function to set the image url. The image url is set to the image we downloaded earlier.
-  > We are also using `background-size` property to set the size of the background image. We are using the `cover` value to make sure the image covers the full width of the element.
-  > We are also using `background-attachment` property to set the background image to be fixed. This means the image will not move when the user scrolls the page.
+  > Notice we are using `>` selector to select the `h1` element inside the `hero-container` class.
+  > This is to style only the `h1` element inside the `hero-container` class.
+  > 
+  > We're also setting the `background-image`, `background-size`, `background-attachment` to position the background image.
+  > You can find more about the background property [here](https://www.w3schools.com/css/css_background.asp).
 
-### The thumbnail container:
-> The thumbnail-container selector contains the styles for the thumbnail container.
+### The main content:
+> The main-content selector contains the styles for the main content of the page
 - Add the following code inside the `style.css` file, below the hero component selector:
   ```css
   /* CSS for thumbnail container */
-  .thumbnail-container {
+  .main-content {
     display: flex; /* display the elements in a row */
     justify-content: center; /* center align the elements */
     align-items: stretch; /* stretch the elements to the full height of the container */
-    max-width: 600px; /* set the maximum width */
-    margin: 60px auto; /* center the element horizontally */
+    max-width: 600px; /* set the maximum width of the container to 600 pixels */
+    margin: 60px auto; /* center the element horizontally and add 60 pixels of margin on top and bottom */
   }
   
   /* CSS for thumbnail columns */
-  .thumbnail-column {
+  .main-content-column {
     flex: 1; /* set the flex property to 1. This will make the columns equal width */
     text-align: center; /* center align the text */
-    padding: 20px; /* add padding to the elements */
+    padding: 20px; /* add padding of 20 pixels */
     display: flex; /* display the elements in a row */
     flex-direction: column; /* display the elements in a column */
     justify-content: flex-start; /* align the elements to the top */
     align-items: center; /* center align the elements */
   }
   
-  .thumbnail-column > p {
+  .main-content-column > p {
     flex: 1; /* set the flex property to 1. This will make the columns equal height */
   }
   
   /* CSS for button */
   .learn-more-button {
-    background-color: #4CAF50;  
-    color: white;   
-    padding: 12px 0;
-    border: none;
-    cursor: pointer; 
-    width: 100%;
-    text-align: center;
-    align-self: flex-end;
+    background-color: #4CAF50; /* set the background color using a hex code */
+    color: white; /* set the text color to white using a keyword */
+    padding: 12px 0; /* add padding of 12 pixels on top and bottom and 0 pixels on left and right */
+    border: none; /* remove the border */
+    cursor: pointer; /* change the cursor to a pointer when the user hovers over the element */
+    width: 100%; /* make the element the full width of its parent container */
+    text-align: center; /* center align the text */
+    align-self: flex-end; /* align the button to the bottom of the column */
   }
   ```
-  > Notice we are using `class` selector for the `.thumbnail-container`, `.thumbnail-column`, `.learn-more-button` elements.
-  > This is because we want to style multiple elements with the same class.
-  > Also notice we are using `flex` property to make the columns equal width. We are also using `flex-direction` property to display the elements in a column.
-  > We are also using `justify-content` property to align the elements to the top. We are also using `align-items` property to center align the elements.
-  > We are also using `align-self` property to align the button to the bottom of the column.
-  > We are also using `flex` property to make the columns equal height.
+  > Notice how we are setting spacing values using 2 values separated by a space like `padding: 20px 10px;`.
+  > The first value is for the top and bottom and the second value is for the left and right.
+  > You can also set the spacing values using 4 values separated by a space like `padding: 20px 10px 30px 40px;`.
+  > The first value is for the top, the second value is for the right, the third value is for the bottom and the fourth value is for the left.
    
 ### The footer:
 > The footer selector contains the styles for the footer.
 - Add the following code inside the `style.css` file, below the thumbnail container selector:
   ```css
   footer {
-    background-color: #333; /* set the background color */
-    color: #fff; /* set the text color */
-    padding: 20px; /* add padding to the element */
+    background-color: #333; /* set the background color using a hex code */
+    color: #fff; /* set the text color to white using a hex code */
+    padding: 20px; /* add padding of 20 pixels */
     text-align: center; /* center align the text */
-    height: 200px; /* set the height of the element */
+    height: 200px; /* set the height of the element to 200 pixels */
     display: flex; /* display the elements in a row */
     align-items: center; /* center align the elements vertically */
     justify-content: space-around; /* add space between the elements */
   }
+  ```
+
+### The media queries:
+> The media queries contain the styles for the page when the screen size is less than 600 pixels.
+> The media queries will override the styles defined in the `style.css` file when the screen size is less than 600 pixels.
+- Add the following code inside the `style.css` file, below the footer selector:
+  ```css
+  @media screen and (max-width: 600px) {
+    .hero-container {
+      height: 200px; /* set the height of the element to 200 pixels */
+    }
   
-  .subscribe-form {
-    margin-top: 20px; /* add margin to the top of the element */
-  }
+    .hero-container > h1 {
+      font-size: 30px; /* set the font size to 30 pixels */
+    }
   
-  .subscribe-form input[type="email"] {
-    padding: 12px 20px; /* add padding to the element */
-    margin: 8px 0 8px 8px; /* add margin to the element */
-    box-sizing: border-box; /* set the box-sizing property to border-box */
-    border: 2px solid #ccc; /* add a border */
-    border-radius: 4px; /* add border radius */
-  }
+    .main-content {
+      max-width: 400px; /* set the maximum width of the container to 400 pixels */
+      flex-wrap: wrap; /* wrap the elements to the next line if they don't fit in the same line */
+    }
   
-  .subscribe-form input[type="submit"] {
-    background-color: #4CAF50; /* set the background color */
-    color: white; /* set the text color */
-    padding: 14px 20px; /* add padding to the element */
-    margin: 8px 0; /* add margin to the element */
-    border: none; /* remove the border */
-    border-radius: 4px; /* add border radius */
-    cursor: pointer; /* change the cursor to a pointer when the user hovers over the element */
-  }
-  
-  .subscribe-form input[type="submit"]:hover {
-    background-color: #45a049; /* change the background color on hover */
+    .main-content-column {
+      padding: 10px; /* add padding of 10 pixels */
+      flex: 1; /* set the flex property to 1. This will make the columns equal width */
+    }
   }
   ```
-  > Notice we are using `footer` selector to select the `footer` element.
-  > Also notice we are using `flex` property to display the elements in a row.
-  > We are also using `align-items` property to center align the elements vertically.
-  > We are also using `justify-content` property to add space between the elements.
-  > We are also using `margin-top` property to add margin to the top of the element.
-  > We are also using `input[type="email"]` selector to select the `input` element with the `type` attribute set to `email`.
-  > We are also using `input[type="submit"]` selector to select the `input` element with the `type` attribute set to `submit`.
-  > We are also using `box-sizing` property to set the box-sizing property to border-box.
+  > Notice how we are using `@media` to define the styles for the media queries.
+  > The `@media` rule is followed by a media type and at least one media feature.
   
-  
+## 🏁 Checkpoint:
+> We completed the CSS part of the project.
+> At this point, your `style.css` file should match the [result file `style.css`](./my-first-website/style.css).
+
 # <img src="../imgs/javascript-logo.png" width="20"/> Adding the JavaScript code
-> Let's add the JavaScript code to toggle the dropdown menu when the user clicks on the burger menu.
+> Finally, let's add the JavaScript code to toggle the dropdown menu when the user clicks on the burger menu.
 > The `script.js` file contains the JavaScript code for the project.
 > The JavaScript code will be used to toggle the dropdown menu when the user clicks on the burger menu.
-- Open `script.js` and add the following code:
+- Open `script.js` and define a variable `dropdown`
   ```javascript
   var dropdown = document.getElementById("myDropdown");
-  
+  ```
+  > The `document.getElementById()` method returns the element that has the ID attribute with the specified value.
+
+- Define the function `dropdownFunction()`  
+  ```javascript
   /* JavaScript function to toggle the dropdown menu */
   function dropdownFunction() {
     if (dropdown.style.display === "block") {
@@ -413,7 +420,11 @@
       dropdown.style.display = "block";
     }
   }
-  
+  ```
+  > The `dropdownFunction()` function will be called when the user clicks on the burger menu.
+  > It will set a style property `display` to `block` or `none` depending on the current value of the property.
+- Add an event listener to the `document` object for closing the dropdown menu.
+  ```javascript
   /* Close dropdown menu when clicking away */
   document.addEventListener('click', (event) => {
     if (!event.target.matches('.burger-menu')) {
@@ -421,19 +432,26 @@
     }
   });
   ```
-  > The `dropdownFunction()` function will be called when the user clicks on the burger menu. It will toggle the dropdown menu between `display: none` and `display: block`.
-  > The `document.addEventListener()` function will be called when the user clicks anywhere on the page. It will close the dropdown menu if the user clicks away from the burger menu.
-  > Notice we are using `document.getElementById()` to get the element with the id `myDropdown` and `document.addEventListener()` to add an event listener to the document.
-  > We are also using `event.target.matches()` to check if the user clicked on the burger menu.
-  > The `dropdown.style.display` property will be set to `block` when the user clicks on the burger menu and to `none` when the user clicks away from the burger menu.
+  > The `document.addEventListener()` method attaches an event handler to the document.
+  > It will set the style property `display` to `none` when the user clicks away from the burger menu.
 
-# Testing the project
-> Now, let's test the project to see if it works as expected.
-> if done correctly, the project should look like the image on the top of this page.
-> If your solution is not working, or does not look like the image on the top of this page, you probaly missed something. go back and check your code for any typo or missing code.
-> If you get stuck, you can check the `index.html` and `style.css` files in the `solution` folder.
-- Open the `index.html` file in your browser and test the project. 
+## 🏁 Checkpoint:
+> Congratulations! You've completed all the steps of the exercise.
+> At this point, you should have the following files in your project:
+> - `index.html`
+> - `style.css`
+> - `script.js`
+>
+> The `index.html` file contains the HTML code for the project.
+> The `style.css` file contains the CSS code for the project.
+> The `script.js` file contains the JavaScript code for the project.
+>
+> Your `script.js` file should match the [result file `script.js`](./my-first-website/script.js).
+> 
+>> You can check the result files in the [solution folder](./my-first-website).
 
+## Preview the project
+> You can check the result of the project by opening the `index.html` file in your browser.
 
 ## NEXT
 [NEXT | Conclusion](./conclusion.md)
