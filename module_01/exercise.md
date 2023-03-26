@@ -19,6 +19,8 @@
     ```
   > We will be creating this and all future websites inside this `projects` folder.
   > You can skip this step if you already have a `projects` folder in your root directory.
+  > 
+  > > For Windows users, you can use the `md` command instead of `mkdir`, for example: `md projects`. 
   
 - Navigate to `projects` directory and create another folder called `first-website`:
     ```shell
@@ -32,6 +34,9 @@
     touch style.css
     touch script.js
     ```
+    > We are using the `touch` command to create the files. You can also use the `nano` command to create and edit the files.
+    >
+    > >For Windows users, you can use the `type nul > index.html` command instead of `touch index.html`.   
   
 # <img src="../imgs/html5-icon.jpeg" width="25"/> Add the HTML elements
 > Let's add the HTML elements to our `index.html` file.
