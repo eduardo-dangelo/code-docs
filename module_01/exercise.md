@@ -249,7 +249,7 @@
     right: 5px; /* set the element to be 5 pixels from the right of the topbar */
     background-color: #f9f9f9; /* set the background color using a hex code */
     min-width: 160px; /* set the minimum width of the dropdown menu to 160 pixels */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* add a shadow to the dropdown menu */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* add a shadow to the dropdown menu */
     z-index: 1; /* set the z-index to 1. The z-index is used to position the element on top of the other elements */
   }
   
@@ -275,6 +275,8 @@
   > You can find more about the different ways to define colors [here](https://www.w3schools.com/css/css_colors.asp).
   > 
   > We're also using the `position` property to position the dropdown menu on top of the other elements. You can find more about the `position` property [here](https://www.w3schools.com/css/css_positioning.asp).
+  > 
+  > Also, we're using the keyword `0` instead of `0px`. You can find more about the different ways to define 0 values [here](https://www.w3schools.com/cssref/pr_dim_zero.asp). 
   
 ### The Hero container:
 > The hero-container selector contains the styles for the hero component.
@@ -316,7 +318,7 @@
     display: flex; /* display the elements in a row */
     justify-content: center; /* center align the elements */
     align-items: stretch; /* stretch the elements to the full height of the container */
-    max-width: 600px; /* set the maximum width of the container to 600 pixels */
+    max-width: 800px; /* set the maximum width of the container to 800 pixels */
     margin: 60px auto; /* center the element horizontally and add 60 pixels of margin on top and bottom */
   }
   
@@ -345,6 +347,7 @@
     width: 100%; /* make the element the full width of its parent container */
     text-align: center; /* center align the text */
     align-self: flex-end; /* align the button to the bottom of the column */
+    text-decoration: none; /* remove the underline from the text */
   }
   ```
   > Notice how we are setting spacing values using 2 values separated by a space like `padding: 20px 10px;`.
@@ -384,12 +387,7 @@
   
     .main-content {
       max-width: 400px; /* set the maximum width of the container to 400 pixels */
-      flex-wrap: wrap; /* wrap the elements to the next line if they don't fit in the same line */
-    }
-  
-    .main-content-column {
-      padding: 10px; /* add padding of 10 pixels */
-      flex: 1; /* set the flex property to 1. This will make the columns equal width */
+      flex-direction: column; /* display the elements in a column */
     }
   }
   ```
@@ -448,7 +446,7 @@
 >
 > Your `script.js` file should match the [result file `script.js`](./my-first-website/script.js).
 > 
->> You can check the result files in the [solution folder](./my-first-website).
+>> You can check the result files in the [solution folder](./my-first-website/README.md).
 
 ## Preview the project
 > You can check the result of the project by opening the `index.html` file in your browser.

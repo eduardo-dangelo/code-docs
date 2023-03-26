@@ -1,172 +1,152 @@
 body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
+  margin: 0; /* remove the default margin of the page */
+  font-family: 'Open Sans', sans-serif; /* set the font family to Open Sans */
 }
+
 /* CSS styles for the top bar */
 #topbar {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    position: relative;
+  background-color: #333; /* set the background color using a hex code */
+  color: #fff; /* set the text color to white using hex code */
+  display: flex; /* display the elements in a row */
+  align-items: center; /* align the elements vertically to the center */
+  justify-content: space-between;  /* add space between the elements */
+  padding: 10px;  /* add padding to the elements in pixels */
+  position: relative;  /* set the position to relative. This is needed for the dropdown menu */
 }
 
 #topbar h2 {
-    margin: 0;
+  margin: 0; /* remove the default margin of the h2 element */
 }
+
 /* CSS styles for the dropdown menu */
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative; /* set the position to relative. This is needed for the dropdown menu */
+  display: inline-block; /* display the elements in a row */
 }
 
 .burger-menu {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    cursor: pointer;
+  width: 40px; /* set the width of the burger-menu element */
+  height: 40px; /* set the height of the burger-menu element */
+  display: flex; /* display the elements in a row */
+  flex-direction: column; /* display the elements in a column */
+  justify-content: space-around; /* add space between the elements */
+  align-items: center; /* align the elements vertically */
+  cursor: pointer; /* change the cursor to a pointer when the user hovers over the element */
 }
 
-.bar1, .bar2, .bar3 {
-    width: 30px;
-    height: 3px;
-    background-color: rgb(255, 255, 255);
+.burger-menu-bar {
+  width: 30px; /* set the width of the menu bar to 30 pixels */
+  height: 3px; /* set the height of the menu bar to 3 pixels */
+  background-color: rgb(255, 255, 255); /* set the background color to white using rgb */
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    right: 5px;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  display: none; /* hide the dropdown menu by default */
+  position: absolute; /* set the position to absolute. This makes the dropdown menu appear on top of the other elements */
+  right: 5px; /* set the element to be 5 pixels from the right of the topbar */
+  background-color: #f9f9f9; /* set the background color using a hex code */
+  min-width: 160px; /* set the minimum width of the dropdown menu to 160 pixels */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* add a shadow to the dropdown menu */
+  z-index: 1; /* set the z-index to 1. The z-index is used to position the element on top of the other elements */
 }
 
 ul {
-    list-style: none; /* remove the bullet points */
-    padding: 0; /* remove the default padding */
-    margin: 0; /* remove the default margin */
-    color: black;
+  list-style: none; /* remove the bullet points */
+  padding: 0; /* remove the default padding */
+  margin: 0; /* remove the default margin */
+  color: black; /* set the text color to black using a keyword */
 }
 
 li {
-    padding: 10px; /* add padding to the list items */
-    background-color: transparent; /* set the default background color */
-    transition: background-color 0.3s ease; /* add a transition for the hover effect */
+  padding: 10px; /* add padding to the list items to 10 pixels */
+  background-color: transparent; /* set the default background color to transparent using a keyword */
+  transition: background-color 0.3s ease; /* add a transition for the hover effect */
 }
 
 li:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* change the background color on hover */
-    cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1); /* change the background color on hover to be a bit darker than the default background color using rgba */
+  cursor: pointer; /* change the cursor to a pointer when the user hovers over the element */
 }
 
-.hello-world {
-    text-align: center; /* center align the text */
-    margin: auto; /* center the element horizontally */
-    width: 100%; /* make the element the full width of its parent container */
-    height: 400px;
-    display: grid; /* enable grid layout */
-    place-items: center center; /* center align the element both horizontally and vertically */
-    background-image: url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
+.hero-container {
+  text-align: center; /* center align the text */
+  margin: auto; /* center the element horizontally */
+  width: 100%; /* make the element the full width of its parent container */
+  height: 400px;
+  display: grid; /* enable grid layout */
+  place-items: center center; /* center align the element both horizontally and vertically */
+  background-image: url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
 }
 
-.hello-world > h1 {
-    margin: 0;
-    font-size: 60px;
-    font-weight: bold;
-    text-shadow: 0 2px 16px rgba(0,0,0,0.8), 0 2px 16px rgba(255,255,255,0.5);
+.hero-container > h1 {
+  margin: 0; /* remove the default margin of the h1 element */
+  font-size: 60px; /* set the font size */
+  font-weight: bold; /* set the font weight */
+  text-shadow: 0 2px 16px rgba(0,0,0,0.8), 0 2px 16px rgba(255,255,255,0.5);
+  /* add 2 text shadows separated by a comma */
 }
 
-/* CSS for thumbnail container */
-.thumbnail-container {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    max-width: 600px;
-    margin: 60px auto;
+.main-content {
+  display: flex; /* display the elements in a row */
+  justify-content: center; /* center align the elements */
+  align-items: stretch; /* stretch the elements to the full height of the container */
+  max-width: 800px; /* set the maximum width of the container to 600 pixels */
+  margin: 60px auto; /* center the element horizontally and add 60 pixels of margin on top and bottom */
 }
 
 /* CSS for thumbnail columns */
-.thumbnail-column {
-    flex: 1;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    /*border: 1px solid;*/
-    align-items: center;
+.main-content-column {
+  flex: 1; /* set the flex property to 1. This will make the columns equal width */
+  text-align: center; /* center align the text */
+  padding: 20px; /* add padding of 20 pixels */
+  display: flex; /* display the elements in a row */
+  flex-direction: column; /* display the elements in a column */
+  justify-content: flex-start; /* align the elements to the top */
+  align-items: center; /* center align the elements */
 }
 
-.thumbnail-column > p {
-    flex: 1;
-}
-
-/* CSS for vertical divider */
-.thumbnail-column + .thumbnail-column::before {
-    content: "";
-    border-left: 1px solid rgb(0, 0, 0);
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
+.main-content-column > p {
+  flex: 1; /* set the flex property to 1. This will make the columns equal height */
 }
 
 /* CSS for button */
 .learn-more-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    text-align: center;
-    /*margin: 10px;*/
-    align-self: flex-end;
+  background-color: #4CAF50; /* set the background color using a hex code */
+  color: white; /* set the text color to white using a keyword */
+  padding: 12px 0; /* add padding of 12 pixels on top and bottom and 0 pixels on left and right */
+  border: none; /* remove the border */
+  cursor: pointer; /* change the cursor to a pointer when the user hovers over the element */
+  width: 100%; /* make the element the full width of its parent container */
+  text-align: center; /* center align the text */
+  align-self: flex-end; /* align the button to the bottom of the column */
+  text-decoration: none; /* remove the underline from the text */
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  background-color: #333; /* set the background color using a hex code */
+  color: #fff; /* set the text color to white using a hex code */
+  padding: 20px; /* add padding of 20 pixels */
+  text-align: center; /* center align the text */
+  height: 200px; /* set the height of the element to 200 pixels */
+  display: flex; /* display the elements in a row */
+  align-items: center; /* center align the elements vertically */
+  justify-content: space-around; /* add space between the elements */
 }
 
-.subscribe-form {
-    margin-top: 20px;
-}
+@media screen and (max-width: 700px) {
+  .hero-container {
+    height: 200px; /* set the height of the element to 200 pixels */
+  }
 
-.subscribe-form input[type="email"] {
-    padding: 12px 20px;
-    margin: 8px 0 8px 8px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-}
+  .hero-container > h1 {
+    font-size: 30px; /* set the font size to 30 pixels */
+  }
 
-.subscribe-form input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.subscribe-form input[type="submit"]:hover {
-    background-color: #45a049;
+  .main-content {
+    max-width: 400px; /* set the maximum width of the container to 400 pixels */
+    flex-direction: column; /* display the elements in a column */
+  }
 }
