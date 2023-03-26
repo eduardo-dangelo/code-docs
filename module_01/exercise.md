@@ -6,7 +6,7 @@
 > Below we have a preview of the final result. You can also check the final result files [here](../solution/index.html).
 > Follow these steps closely to ensure success.
 
-<img src="../imgs/exercise-01-preview.png" width="100%"/>
+<img src="../imgs/mod-1-exercise-preview-01.png" width="100%"/>
 
 # <img src="../imgs/terminal-icon.jpeg" width="25"/>  Create folder structure & files
 > Let's use the terminal to create the folder structure and files.
@@ -175,12 +175,20 @@
 - Add the following code inside the `<body>` element, below the main content:
   ```html
   <footer>
-    <p>Created by <a href="https://www.linkedin.com/in/alexandru-georgescu-0b5b3b1b3/" target="_blank">Alexandru Georgescu</a></p>
+    <p>My First Website &copy; 2023</p>
   </footer>
   ```
   
 ### 💾 Save and exit:
 > Press `Esc` to exit insert mode and `:wq` save the file and exit the editor.
+
+### 👀 Preview the project
+> Open the `index.html` file in the browser. You should see something like this: 
+>
+> <img src="../imgs/mod-1-exercise-preview-02.png" width="100%"/>
+> 
+>> The reason why the page is not styled is because we haven't added the CSS styles yet.
+
 
 ## 🏁 Checkpoint:
 > We have finished adding the HTML code to our `index.html` file.
@@ -407,8 +415,11 @@
 
 ### 👀 Preview the project
   > Open the `index.html` file in the browser and test the `media queries` by resizing the browser window to less than 700px.
+  > You should see the following result:
   > 
-  >> If you make any changes to the code, you will need to refresh the browser to see the changes. 
+  > <img src="../imgs/mod-1-exercise-preview-03.png" width="300px"/> 
+  >
+  >> Notice, if you make any changes to the code, you will need to refresh the browser to see the changes. 
   
 ## 🏁 Checkpoint:
 > We completed the CSS part of the project.
@@ -456,6 +467,10 @@
   > Open or refresh the `index.html` file in the browser.
   > Test the `JavaScript` code by clicking on the burger menu.
   > The dropdown menu should show when you click on the burger menu and hide when click away.
+  >
+  > You should see the following result:
+  >   
+  > <img src="../imgs/mod-1-exercise-preview-04.gif" width="300px"/>   
 
 
 ## 🏁 Checkpoint:
