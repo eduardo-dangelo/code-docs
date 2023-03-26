@@ -19,8 +19,8 @@
     ```
   > We will be creating this and all future websites inside this `projects` folder.
   > You can skip this step if you already have a `projects` folder in your root directory.
-  > 
-  > > For Windows users, you can use the `md` command instead of `mkdir`, for example: `md projects`. 
+   
+  > For Windows users, you can use the `md` command instead of `mkdir`, for example: `md projects`. 
   
 - Navigate to `projects` directory and create another folder called `first-website`:
     ```shell
@@ -35,8 +35,8 @@
     touch script.js
     ```
     > We are using the `touch` command to create the files. You can also use the `nano` command to create and edit the files.
-    >
-    > >For Windows users, you can use the `type nul > index.html` command instead of `touch index.html`.   
+    
+    > For Windows users, you can use the `type nul > index.html` command instead of `touch index.html`.   
   
 # <img src="../imgs/html5-icon.jpeg" width="25"/> Add the HTML elements
 > Let's add the HTML elements to our `index.html` file.
@@ -45,7 +45,7 @@
 
 ### Basic HTML structure
 > Let's start by adding the basic HTML structure to our `index.html` file.
-- Open `index.html` and add the following code:
+- Open `index.html` file using `vi index.html`, press `i` to enter `insert` mode and add the following code:
   ```html
   <!DOCTYPE html>
   <html>
@@ -179,9 +179,13 @@
     <p>Created by <a href="https://www.linkedin.com/in/alexandru-georgescu-0b5b3b1b3/" target="_blank">Alexandru Georgescu</a></p>
   </footer>
   ```
+  
+### 💾 Save and exit:
+> Press `Esc` to exit insert mode and `:wq` save the file and exit the editor.
+
 ## 🏁 Checkpoint:
 > We have finished adding the HTML code to our `index.html` file.
-> By this point, your `index.html` file should match the [result file `index.html`](./my-first-website/index.html)
+> By this point, your `index.html` file should match the [result file](./my-first-website/index.html).
 
 
 # <img src="../imgs/css3-icon.jpeg" width="30"/> Adding the CSS styles
@@ -191,7 +195,7 @@
 ### The body:
 > The body selector contains the default styles for the page.
 > We are setting the default font family to `Open Sans` and removing the default margin of the page.
-- Open `style.css` file and add the following:
+- Open `style.css` file using `vi style.css`, press `i` to enter insert mode and add the following code:
   ```css
   body {
     margin: 0; /* remove the default margin of the page */
@@ -398,8 +402,11 @@
   ```
   > Notice how we are using `@media` to define the styles for the media queries.
   > The `@media` rule is followed by a media type and at least one media feature.
+  
+### 💾 Save and exit:
+> Press `Esc` to exit insert mode and `:wq` save the file and exit the editor.
 
-- ### 👀 Preview the project
+### 👀 Preview the project
   > Open the `index.html` file in the browser and test the `media queries` by resizing the browser window to less than 700px.
   > 
   >> If you make any changes to the code, you will need to refresh the browser to see the changes. 
@@ -412,7 +419,7 @@
 > Finally, let's add the JavaScript code to toggle the dropdown menu when the user clicks on the burger menu.
 > The `script.js` file contains the JavaScript code for the project.
 > The JavaScript code will be used to toggle the dropdown menu when the user clicks on the burger menu.
-- Open `script.js` and define a variable `dropdown`
+- Open `script.js` using `vi script.js` command, press `i` to enter insert mode and  define a variable `dropdown`:
   ```javascript
   var dropdown = document.getElementById("myDropdown");
   ```
@@ -442,8 +449,11 @@
   ```
   > The `document.addEventListener()` method attaches an event handler to the document.
   > It will set the style property `display` to `none` when the user clicks away from the burger menu.
-  
-- ### 👀 Preview the project:
+
+### 💾 Save and exit:
+> Press `Esc` to exit insert mode and `:wq` save the file and exit the editor.
+
+### 👀 Preview the project:
   > Open or refresh the `index.html` file in the browser.
   > Test the `JavaScript` code by clicking on the burger menu.
   > The dropdown menu should show when you click on the burger menu and hide when click away.
