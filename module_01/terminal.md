@@ -8,9 +8,11 @@
 >A terminal shell is a command-line interface that enables users to interact with their computer's operating system using text-based commands. This powerful tool can be used for a wide range of tasks, from managing files and directories, to installing and managing software packages, and more.
 >> To run a command you will type the command in the terminal and press Enter 
 
+> If you are a Windows user, you can use the `Command Prompt` instead of the terminal shell.
 - ### Open the Terminal
   > To open the terminal, press `Command + space` and type `Terminal` in the search bar.
-  - For Windows users, press `Windows + R` and type `cmd` in the search bar.
+  
+  > For Windows users, press `Windows + R` and type `cmd` or in the search bar.
 
 - ### See a List of the Files and Folders in a Directory
   To see a list of the files and folders in your current directory, use the `ls` command. run:
@@ -38,7 +40,6 @@
     ```shell
     mkdir newFolder
     ```
-    > For Windows users, use the `md` command instead of `mkdir`
   
 - ### Create a New File
     To create a new file, use the touch command followed by the name of the file you want to create. For example, to create a file called `newfile.txt`, you would type:
@@ -75,7 +76,7 @@
     ```shell
     cp newfile.txt Documents
     ```
-    > For Windows users, use the `copy` command instead of `cp`.
+    > For Windows users, use the `copy` command instead of `cp` for copying files and `xcopy` for folders.
   
 - ### Delete a File
     To delete a file, use the `rm` command followed by the name of the file you want to delete. For example, to delete a file called `newFile.txt`, you would run:
