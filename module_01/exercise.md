@@ -376,7 +376,7 @@
 > The media queries will override the styles defined in the `style.css` file when the screen size is less than 600 pixels.
 - Add the following code inside the `style.css` file, below the footer selector:
   ```css
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     .hero-container {
       height: 200px; /* set the height of the element to 200 pixels */
     }
@@ -393,6 +393,11 @@
   ```
   > Notice how we are using `@media` to define the styles for the media queries.
   > The `@media` rule is followed by a media type and at least one media feature.
+
+- ### 👀 Preview the project
+  > Open the `index.html` file in the browser and test the `media queries` by resizing the browser window to less than 700px.
+  > 
+  >> If you make any changes to the code, you will need to refresh the browser to see the changes. 
   
 ## 🏁 Checkpoint:
 > We completed the CSS part of the project.
@@ -432,6 +437,12 @@
   ```
   > The `document.addEventListener()` method attaches an event handler to the document.
   > It will set the style property `display` to `none` when the user clicks away from the burger menu.
+  
+- ### 👀 Preview the project:
+  > Open or refresh the `index.html` file in the browser.
+  > Test the `JavaScript` code by clicking on the burger menu.
+  > The dropdown menu should show when you click on the burger menu and hide when click away.
+
 
 ## 🏁 Checkpoint:
 > Congratulations! You've completed all the steps of the exercise.
@@ -448,8 +459,6 @@
 > 
 >> You can check the result files in the [solution folder](./my-first-website/README.md).
 
-## Preview the project
-> You can check the result of the project by opening the `index.html` file in your browser.
 
 ## NEXT
 [NEXT | Conclusion](./conclusion.md)
