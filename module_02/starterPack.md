@@ -50,4 +50,4 @@ Check the full documentation [here](https://ohmyz.sh/)
     ```
 
 ## NEXT
-[NEXT /// Configure a new SSH key](./ssh.md)
+[NEXT | 🛠Configure a new SSH key](./ssh.md)
