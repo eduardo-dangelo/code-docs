@@ -4,12 +4,12 @@
 This folder contains the solution files for the first exercise of the first module of the course.
 
 - 📂 `my-first-website`
-  - [`index.html`](./index.html)
-  - [`style.css`](./style.css)
-  - [`script.js`](./script.js)
+  - [`index.html`](index.html)
+  - [`style.css`](style.css)
+  - [`script.js`](script.js)
 
 ## Preview the project
  You can check the result of the project by opening the `index.html` file in your browser.
 
 
-[BACK | Back to exercise](../exercise.md)
+[BACK | Back to exercise](../../module_01/exercise.md)

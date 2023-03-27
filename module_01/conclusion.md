@@ -7,12 +7,16 @@
 >
 
 In this module, you learned:
+
 ###`The basic concepts of the Terminal shell`
 - Including how to navigate the file system, how to create, copy, move, and delete files and directories, and how to use the Terminal to run programs.
+
 ###`The basic concepts of HTML`
 - Including the structure of an HTML document, the different types of HTML elements, and how to use attributes to modify the behavior of elements.
+
 ###`The basic concepts of CSS`
 - Including the structure of a CSS document, the different types of CSS selectors, and how to use CSS properties to modify the appearance of HTML elements.
+
 ###`The basic concepts of Javascript`
 - Including variables, data types, operators, functions, control structures, arrays, and objects.
 
@@ -28,4 +32,4 @@ In this module, you learned:
 - [FreeCodeCamp](https://www.freecodecamp.org/)
 
 ## NEXT
-[NEXT | Module 02](./javascript_quiz.md)
+[NEXT | Module 02](../module_02/README.md)

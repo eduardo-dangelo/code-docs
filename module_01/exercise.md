@@ -192,7 +192,7 @@
 
 ## 🏁 Checkpoint:
 > We have finished adding the HTML code to our `index.html` file.
-> By this point, your `index.html` file should match the [result file](./my-first-website/index.html).
+> By this point, your `index.html` file should match the [result file](../results/my-first-website/index.html).
 
 
 # <img src="../imgs/css3-icon.jpeg" width="30"/> Adding the CSS styles
@@ -423,7 +423,7 @@
   
 ## 🏁 Checkpoint:
 > We completed the CSS part of the project.
-> At this point, your `style.css` file should match the [result file `style.css`](./my-first-website/style.css).
+> At this point, your `style.css` file should match the [result file `style.css`](../results/my-first-website/style.css).
 
 # <img src="../imgs/javascript-logo.png" width="20"/> Adding the JavaScript code
 > Finally, let's add the JavaScript code to toggle the dropdown menu when the user clicks on the burger menu.
@@ -484,9 +484,9 @@
 > The `style.css` file contains the CSS code for the project.
 > The `script.js` file contains the JavaScript code for the project.
 >
-> Your `script.js` file should match the [result file `script.js`](./my-first-website/script.js).
+> Your `script.js` file should match the [result file `script.js`](../results/my-first-website/script.js).
 > 
->> You can check the result files in the [solution folder](./my-first-website/README.md).
+>> You can check the result files in the [solution folder](../results/my-first-website/README.md).
 
 
 ## NEXT

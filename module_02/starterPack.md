@@ -1,11 +1,16 @@
 # 🎒 STARTER PACK
 
-## Choose your IDE
->IDE (Integrated Development Environment) is the software that will help you code efficiently.
-These are the best IDEs (in my opinion).
-Choose yours from list below.
-- [Download Visual Studio Code](https://code.visualstudio.com/)
-- [Download Web Storm](https://www.jetbrains.com/webstorm/)
+## IDE
+IDE (Integrated Development Environment) is the software where you write your code and run it.
+It will also help you code efficiently.
+It's important to choose a good IDE that will help you write code faster and with less errors.
+
+> If you're just starting I recommend using VS-Code. It's easy to use and it's free.
+> I recommend switching Web Storm when you get a bit more experience.
+> It's a paid IDE but it's worth it.
+- Choose your IDE:
+  - [<img src="../imgs/vscode_logo.png" width="15"/> Download VS-Code](https://code.visualstudio.com/)
+  - [<img src="../imgs/webstorm_logo.svg" width="15"/> Download Web Storm](https://www.jetbrains.com/webstorm/)
 
 
 ## Install Node.js
