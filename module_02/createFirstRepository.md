@@ -1,28 +1,6 @@
+[The Complete Front-End Web Development Crash Course](../README.md) / [Module 2: Getting Started](../module_02/README.md)
+
 # 👨‍🎨 CREATE YOUR FIRST REPOSITORY
-
-## Create React App
->We will be using the `create-react-app` command to generate our first app.
-> Check out the full documentation on how to create a react app [here](https://reactjs.org/docs/create-a-new-react-app.html).
-1. Open a terminal
-2. Create a `projects` directory by running: 
-    ```
-    mkdir projects
-    ```
-3. Navigate to `projects` directory: 
-    ```
-    cd projects
-    ```
-4. Create a react app called `code-playground`:
-    ```
-    npx create-react-app code-playground
-    ```
-5. Navigate to `code-playground` and start the project:
-    ```
-    cd code-playground
-    npm start
-    ```
-#### Congratulations! you have your first app up and running 🎉
-
 
 ## Create a github repository
 1. [Create a new repository on Github](https://github.com/new)
@@ -48,4 +26,5 @@
    ```
 #### Congratulations! Now you have your first repository in github 🎉
 
+## NEXT
 [NEXT | Code format with ESLint & Prettier](./CODE_FORMAT_WITH_ESLINT_&_PRETTIER.md)
