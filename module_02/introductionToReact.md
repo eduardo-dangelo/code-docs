@@ -82,4 +82,4 @@ ReactDOM.render(<App />, document.querySelector('#root'));
     ```
  
 ## NEXT
-[NEXT | 👨‍🎨 Create First Github Repository](./createFirstRepository.md)
+[👨‍🎨 Create First Github Repository](./createFirstRepository.md)

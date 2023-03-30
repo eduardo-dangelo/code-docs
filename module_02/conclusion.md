@@ -23,4 +23,4 @@ we will start working on code-playground, our first project. We will start by cr
 - [Preview.js](https://plugins.jetbrains.com/plugin/18384-preview-js)
 
 ## NEXT
-[NEXT | Module 3](../module_03/README.md)
+[Module 3](../module_03/README.md)

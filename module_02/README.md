@@ -26,4 +26,4 @@
 - [🛠 How to work with React, Git, and GitHub](./howToWorkWithReactGitAndGitHub.md)
 
 ## NEXT
-[NEXT /// 🎒Starter Pack](./starterPack.md)
+[🎒Starter Pack](./starterPack.md)

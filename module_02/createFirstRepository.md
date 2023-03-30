@@ -27,4 +27,4 @@
 #### Congratulations! Now you have your first repository in github 🎉
 
 ## NEXT
-[NEXT | Code format with ESLint & Prettier](./CODE_FORMAT_WITH_ESLINT_&_PRETTIER.md)
+[🛠 Code format with ESLint & Prettier](./CODE_FORMAT_WITH_ESLINT_&_PRETTIER.md)

@@ -52,4 +52,4 @@ You need to have a [Github](https://github.com/) account at this point.
 > Check how to add a new SSH key to your github account [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
 ## NEXT
-[NEXT | <img src="../imgs/react-icon.png" width="15"/> Intruduction to React](./introductionToReact.md)
+[<img src="../imgs/react-icon.png" width="15"/> Intruduction to React](./introductionToReact.md)

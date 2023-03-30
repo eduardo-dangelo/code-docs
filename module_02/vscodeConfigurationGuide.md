@@ -113,3 +113,6 @@
 > git commit -M "configure ESLint"
 > git push
 > ```
+
+## NEXT
+[Conclusion](../module_02/conclusion.md)

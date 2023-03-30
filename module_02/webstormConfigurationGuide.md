@@ -122,3 +122,6 @@ and check the option to enable `Semantic Highlighting`
 > git commit -M "configure ESLint & Prettier"
 > git push
 > ```
+
+## NEXT
+[Conclusion](../module_02/conclusion.md)
