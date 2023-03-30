@@ -1,6 +1,6 @@
 [The Complete Front-End Web Development Crash Course](../README.md) / [Module 2: Getting Started](../module_02/README.md)
 
-# CONCLUSION
+# ☑️ CONCLUSION
 
 ## What did we learn?
 - We learned how to install and configure WebStorm

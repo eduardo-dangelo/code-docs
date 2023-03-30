@@ -1,4 +1,4 @@
-#### The Complete Front-End Web Development Crash Course / Module 2: Getting Started
+[The Complete Front-End Web Development Crash Course](../README.md) / [Module 2: Getting Started](../module_02/README.md)
 
 # 🎒 STARTER PACK
 
@@ -50,4 +50,4 @@ Check the full documentation [here](https://ohmyz.sh/)
     ```
 
 ## NEXT
-[🛠Configure a new SSH key](./ssh.md)
+[🛠 Configure a new SSH key](./ssh.md)

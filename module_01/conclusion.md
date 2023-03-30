@@ -1,4 +1,6 @@
-# Well Done! You've completed the first module of the course 🎉
+#### [The Complete Front-End Web Development Crash Course](../README.md) / [Module 1: Basic Concepts](./README.md)
+
+# ☑️ Well Done! You've completed the first module of the course 🎉
 > If you completed the exercises, you should have a basic understanding of the concepts covered in this module.
 > If you come so far, you're probably wondering what's next.
 > In this module, we covered the basic concepts of the Terminal shell, HTML, CSS, and Javascript.
@@ -32,4 +34,4 @@ In this module, you learned:
 - [FreeCodeCamp](https://www.freecodecamp.org/)
 
 ## NEXT
-[NEXT | Module 02](../module_02/README.md)
+[Module 2 | Getting Started](../module_02/README.md)

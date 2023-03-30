@@ -1,4 +1,5 @@
-#### The Complete Front-End Web Development Crash Course / Module 1: Basic Concepts
+#### [The Complete Front-End Web Development Crash Course](../README.md) / [Module 1: Basic Concepts](./README.md)
+
 # <img src="../imgs/javascript-logo.png" width="30"/> Javascript
 
 > JavaScript is a crucial component of this course. It will be used for creating all logic and adding dynamic functionality to your websites.
@@ -178,4 +179,4 @@ greet("John"); // prints "Hello, John"
 > Next we'll be testing your knowledge of these concepts by completing a Javascript quiz.
 
 ## NEXT
-[NEXT | Javascript Quiz](./javascript_quiz.md)
+[<img src="../imgs/javascript-logo.png" width="15"/> Javascript Quiz](./javascript_quiz.md)

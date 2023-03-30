@@ -1,4 +1,4 @@
-#### The Complete Front-End Web Development Crash Course / Module 1: Basic Concepts
+#### [The Complete Front-End Web Development Crash Course](../README.md) / [Module 1: Basic Concepts](./README.md)
 
 # <img src="../imgs/terminal-icon.jpeg" width="30"/> Terminal Shell
 >Before we begin writing code, it's important to familiarize with the terminal shell.
@@ -99,4 +99,4 @@
 > In the next section, we will test your knowledge of these commands by completing a quiz.
 
 ## NEXT
-[NEXT | Terminal Shell Quiz](./terminal_quiz.md)
+[<img src="../imgs/terminal-icon.jpeg" width="15"/> Terminal Shell Quiz](./terminal_quiz.md)

@@ -124,4 +124,4 @@ and check the option to enable `Semantic Highlighting`
 > ```
 
 ## NEXT
-[Conclusion](../module_02/conclusion.md)
+[☑️ Conclusion](../module_02/conclusion.md)

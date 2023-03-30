@@ -1,4 +1,5 @@
-#### The Complete Front-End Web Development Crash Course / Module 1: Basic Concepts
+#### [The Complete Front-End Web Development Crash Course](../README.md) / [Module 1: Basic Concepts](./README.md)
+
 # <img src="../imgs/javascript-logo.png" width="30"/> Quiz: Javascript
 
 ### 1 - What is the main use of JavaScript?
@@ -47,4 +48,4 @@
 1-1 | 2-3 | 3-2 | 4-1 | 5-2 | 6-4 | 7-1 
 
 ## NEXT
-[NEXT | Exercise](./exercise.md)
+[📝 Exercise](./exercise.md)

@@ -1,4 +1,4 @@
-## The Complete Front-End Web Development Crash Course
+## [The Complete Front-End Web Development Crash Course](../README.md)
 #### Build Your CV and Find Your Dream Job
 # MODULE 1 - BASIC CONCEPTS
 
@@ -10,11 +10,12 @@
 
 ## Table of content
 
-- [<img src="../imgs/terminal-icon.jpeg" width="20"/> Terminal Shell](../module_01/terminal.md) / [Quiz](../module_01/terminal_quiz.md)
-- [<img src="../imgs/html5-icon.jpeg" width="20"/> HTML](html.md) / [Quiz](../module_01/html_quiz.md)
-- [<img src="../imgs/css3-icon.jpeg" width="20"/> CSS](../module_01/css.md) / [Quiz](../module_01/css_quiz.md)
-- [<img src="../imgs/javascript-logo.png" width="20"/> Javascript](../module_01/javascript.md) / [Quiz](../module_01/javascript_quiz.md)
-- [📝 Exercise](../module_01/exercise.md)
+- [<img src="../imgs/terminal-icon.jpeg" width="15"/> Terminal Shell](./terminal.md) / [Quiz](./terminal_quiz.md)
+- [<img src="../imgs/html5-icon.jpeg" width="15"/> HTML](html.md) / [Quiz](./html_quiz.md)
+- [<img src="../imgs/css3-icon.jpeg" width="15"/> CSS](./css.md) / [Quiz](./css_quiz.md)
+- [<img src="../imgs/javascript-logo.png" width="15"/> Javascript](./javascript.md) / [Quiz](./javascript_quiz.md)
+- [📝 Exercise](./exercise.md)
+- [☑️ Conclusion](./conclusion.md)
 
 ## NEXT
-[NEXT | Terminal Shell](../module_01/terminal.md)
+[<img src="../imgs/terminal-icon.jpeg" width="15"/> Terminal Shell](./terminal.md)

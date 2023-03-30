@@ -1,4 +1,4 @@
-#### The Complete Front-End Web Development Crash Course / Module 1: Basic Concepts
+#### [The Complete Front-End Web Development Crash Course](../README.md) / [Module 1: Basic Concepts](./README.md)
 
 # <img src="../imgs/html5-icon.jpeg" width="30"/> Quiz: HTML
 
@@ -64,4 +64,4 @@
 1-1 | 2-1 | 3-2 | 4-1 | 5-1 | 6-1 | 7-2 | 8-1 | 9-1 | 10-3
 
 ## NEXT
-[NEXT | CSS](./css.md)
+[<img src="../imgs/css3-icon.jpeg" width="15"/> CSS](./css.md)

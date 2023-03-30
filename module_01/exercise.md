@@ -1,4 +1,5 @@
-#### The Complete Front-End Web Development Crash Course / Module 1: Basic Concepts
+#### [The Complete Front-End Web Development Crash Course](../README.md) / [Module 1: Basic Concepts](./README.md)
+
 # <img src="../imgs/terminal-icon.jpeg" width="30"/><img src="../imgs/html5-icon.jpeg" width="30"/><img src="../imgs/css3-icon.jpeg" width="30"/><img src="../imgs/javascript-logo.png" width="30"/> Exercise 1 - My First Website
 
 > Let's put all the learning into practice and create our first website.
@@ -490,4 +491,4 @@
 
 
 ## NEXT
-[NEXT | Conclusion](./conclusion.md)
+[☑️ Conclusion](./conclusion.md)

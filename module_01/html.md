@@ -1,4 +1,4 @@
-#### The Complete Front-End Web Development Crash Course / Module 1: Basic Concepts
+#### [The Complete Front-End Web Development Crash Course](../README.md) / [Module 1: Basic Concepts](./README.md)
 
 # <img src="../imgs/html5-icon.jpeg" width="30"/> HTML
 > Now, let's delve into the core of web development by covering the basics of HTML. It's important to note that while mastering HTML isn't a requirement for being a successful programmer, it's crucial to have a solid understanding of its fundamental concepts and key elements.
@@ -79,4 +79,4 @@ it is generally accepted to use lowercase for HTML tags and attributes for the s
 > In this lesson, we covered the basics of HTML, including the structure of an HTML document, the most common HTML tags, and how to use attributes to provide additional information about elements. In the next lesson, we'll test your knowledge of HTML by completing a quiz.
 
 ## NEXT
-[NEXT | HTML Quiz](html_quiz.md)
+[ <img src="../imgs/html5-icon.jpeg" width="15"/> HTML Quiz](html_quiz.md)

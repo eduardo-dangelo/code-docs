@@ -1,4 +1,5 @@
-#### The Complete Front-End Web Development Crash Course / Module 1: Basic Concepts
+#### [The Complete Front-End Web Development Crash Course](../README.md) / [Module 1: Basic Concepts](./README.md)
+
 # <img src="../imgs/css3-icon.jpeg" width="30"/> Quiz: CSS
 
 ### 1 - What does CSS stand for?
@@ -41,4 +42,4 @@
 1-1 | 2-4 | 3-1 | 4-3 | 5-2 | 6-1 
 
 ## NEXT
-[NEXT | Javascript](./javascript.md)
+[<img src="../imgs/javascript-logo.png" width="15"/> Javascript](./javascript.md)

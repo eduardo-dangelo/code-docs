@@ -1,4 +1,4 @@
-## The Complete Front-End Web Development Crash Course
+## [The Complete Front-End Web Development Crash Course](../README.md)
 #### Build Your CV and Find Your Dream Job
   
 # MODULE 2 - GETTING STARTED
@@ -24,6 +24,7 @@
   - [<img src="../imgs/vscode_logo.png" width="15"/> VS-Code | Configuration Guide](./vscodeConfigurationGuide.md)
   - [<img src="../imgs/webstorm_logo.svg" width="15"/> Web Storm | Configuration Guide](./webstormConfigurationGuide.md)
 - [🛠 How to work with React, Git, and GitHub](./howToWorkWithReactGitAndGitHub.md)
+- [☑️ Conclusion](./conclusion.md)
 
 ## NEXT
 [🎒Starter Pack](./starterPack.md)

@@ -1,4 +1,4 @@
-#### The Complete Front-End Web Development Crash Course / Module 1: Basic Concepts
+#### [The Complete Front-End Web Development Crash Course](../README.md) / [Module 1: Basic Concepts](./README.md)
 
 # <img src="../imgs/css3-icon.jpeg" width="30"/> CSS
 > As we move forward in our web development journey,
@@ -173,4 +173,4 @@ There are many CSS frameworks available that provide pre-built styles for common
 > In the next lesson, we'll test your knowledge of CSS with a quiz.
 
 ## NEXT
-[NEXT | CSS Quiz](css_quiz.md)
+[<img src="../imgs/css3-icon.jpeg" width="15"/> CSS Quiz](css_quiz.md)

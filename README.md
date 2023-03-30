@@ -11,17 +11,18 @@
 
 
 ## Table of content
-- ### Module 1 | Basic Concepts
+- ### [Module 1 | Basic Concepts](./module_01/README.md)
     > This module is designed to provide a foundational understanding of the key concepts needed to progress through the course.
     This will be a short review to ensure that you have a clear understanding of the material and that we're all on the same page.
-    - [<img src="./imgs/terminal-icon.jpeg" width="20"/> Terminal](./module_01/terminal.md) / [Quiz](./module_01/terminal_quiz.md)
-    - [<img src="./imgs/html5-icon.jpeg" width="20"/> HTML](module_01/html.md) / [Quiz](./module_01/html_quiz.md)
-    - [<img src="./imgs/css3-icon.jpeg" width="20"/> CSS](./module_01/css.md) / [Quiz](./module_01/css_quiz.md)
-    - [<img src="./imgs/javascript-logo.png" width="20"/> Javascript](./module_01/javascript.md) / [Quiz](./module_01/javascript_quiz.md)
+    - [<img src="./imgs/terminal-icon.jpeg" width="15"/> Terminal](./module_01/terminal.md) / [Quiz](./module_01/terminal_quiz.md)
+    - [<img src="./imgs/html5-icon.jpeg" width="15"/> HTML](module_01/html.md) / [Quiz](./module_01/html_quiz.md)
+    - [<img src="./imgs/css3-icon.jpeg" width="15"/> CSS](./module_01/css.md) / [Quiz](./module_01/css_quiz.md)
+    - [<img src="./imgs/javascript-logo.png" width="15"/> Javascript](./module_01/javascript.md) / [Quiz](./module_01/javascript_quiz.md)
     - [📝 Exercise](./module_01/exercise.md)
+    - [☑️ Conclusion](./module_01/conclusion.md)
 
 
-- ### Module 2 | Getting Started
+- ### [Module 2 | Getting Started](./module_02/README.md)
     > This module will guide you through the process of setting up your machine and installing all the necessary software, so you can start coding efficiently.
   - [🎒 Starter Pack](module_02/starterPack.md)
   - [🛠 SSH](module_02/ssh.md)

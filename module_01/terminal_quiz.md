@@ -1,4 +1,5 @@
-#### The Complete Front-End Web Development Crash Course / Module 1: Basic Concepts
+#### [The Complete Front-End Web Development Crash Course](../README.md) / [Module 1: Basic Concepts](./README.md)
+
 #  <img src="../imgs/terminal-icon.jpeg" width="30"/> Quiz: Terminal Shell
 
 ### 1 - What command is used to create a new folder in the terminal shell?
@@ -59,4 +60,4 @@
 1-1 | 2-2 | 3-3 | 4-2 | 5-1 | 6-1 | 7-2 | 8-1 | 9-1
 
 ## NEXT
-[NEXT | HTML](html.md)
+[<img src="../imgs/html5-icon.jpeg" width="15"/> HTML](html.md)
