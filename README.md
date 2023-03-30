@@ -11,27 +11,28 @@
 
 
 ## Table of content
-- ### [Module 1 | Basic Concepts](./module_01/README.md)
+- ### [Module 1 | Basic Concepts](module1/README.md)
     > This module is designed to provide a foundational understanding of the key concepts needed to progress through the course.
     This will be a short review to ensure that you have a clear understanding of the material and that we're all on the same page.
-    - [<img src="./imgs/terminal-icon.jpeg" width="15"/> Terminal](./module_01/terminal.md) / [Quiz](./module_01/terminal_quiz.md)
-    - [<img src="./imgs/html5-icon.jpeg" width="15"/> HTML](module_01/html.md) / [Quiz](./module_01/html_quiz.md)
-    - [<img src="./imgs/css3-icon.jpeg" width="15"/> CSS](./module_01/css.md) / [Quiz](./module_01/css_quiz.md)
-    - [<img src="./imgs/javascript-logo.png" width="15"/> Javascript](./module_01/javascript.md) / [Quiz](./module_01/javascript_quiz.md)
-    - [📝 Exercise](./module_01/exercise.md)
-    - [☑️ Conclusion](./module_01/conclusion.md)
+    - [<img src="./imgs/terminal-icon.jpeg" width="15"/> Terminal](module1/terminal.md) / [Quiz](module1/terminal_quiz.md)
+    - [<img src="./imgs/html5-icon.jpeg" width="15"/> HTML](module1/html.md) / [Quiz](module1/html_quiz.md)
+    - [<img src="./imgs/css3-icon.jpeg" width="15"/> CSS](module1/css.md) / [Quiz](module1/css_quiz.md)
+    - [<img src="./imgs/javascript-logo.png" width="15"/> Javascript](module1/javascript.md) / [Quiz](module1/javascript_quiz.md)
+    - [📝 Exercise](module1/exercise.md)
+    - [☑️ Conclusion](module1/conclusion.md)
 
 
-- ### [Module 2 | Getting Started](./module_02/README.md)
+- ### [Module 2 | Getting Started](module2/README.md)
     > This module will guide you through the process of setting up your machine and installing all the necessary software, so you can start coding efficiently.
-  - [🎒 Starter Pack](module_02/starterPack.md)
-  - [🛠 SSH](module_02/ssh.md)
-  - [👨‍🎨 Create First Repository](module_02/createFirstRepository.md)
-  - [🛠 Code Format (Eslint & Prettier)](module_02/CODE_FORMAT_WITH_ESLINT_&_PRETTIER.md)
-    - [<img src="./imgs/vscode_logo.png" width="15"/> VS-Code | Configuration Guide](module_02/vscodeConfigurationGuide.md)
-    - [<img src="./imgs/webstorm_logo.svg" width="15"/> Web Storm | Configuration Guide](module_02/webstormConfigurationGuide.md)
+  - [🎒 Starter Pack](module2/starterPack.md)
+  - [🛠 SSH](module2/ssh.md)
+  - [👨‍🎨 Create First Repository](module2/createFirstRepository.md)
+  - [🛠 Code Format (Eslint & Prettier)](module2/CODE_FORMAT_WITH_ESLINT_&_PRETTIER.md)
+    - [<img src="./imgs/vscode_logo.png" width="15"/> VS-Code | Configuration Guide](module2/vscodeConfigurationGuide.md)
+    - [<img src="./imgs/webstorm_logo.svg" width="15"/> Web Storm | Configuration Guide](module2/webstormConfigurationGuide.md)
+  - [☑️ Conclusion](module2/conclusion.md)
 
-- ### Module 3 | Code Playground
+- ### [Module 3 | Code Playground](module3/README.md)
   > Module 3 we will start developing our first project using react and typescript.
   > We and go in more depth of some of the most important concepts required to be an efficient developer.
   > By the end of this module you will have a portfolio on the web that you can use it when applying for a job
@@ -64,4 +65,4 @@
 > It is important to carefully read and follow this guide, as any mistakes in the steps could result in code that does not function correctly. Do not feel pressure to memorize all of the content in this guide - simply make sure to revisit each topic as needed to refresh your memory. Take your time and enjoy each step of the way, rather than rushing through the course.
 
 ## NEXT
-[NEXT | Module 1 Basic Concepts](./module_01/README.md)
+[NEXT | Module 1 Basic Concepts](module1/README.md)

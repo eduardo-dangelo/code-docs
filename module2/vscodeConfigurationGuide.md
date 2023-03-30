@@ -1,4 +1,4 @@
-[The Complete Front-End Web Development Crash Course](../README.md) / [Module 2: Getting Started](../module_02/README.md)
+[The Complete Front-End Web Development Crash Course](../README.md) / [Module 2: Getting Started](/README.md)
 
 # <img src="../imgs/vscode_logo.png" alt="drawing" width="25"/> VS-CODE | CONFIGURATION
 
@@ -115,4 +115,4 @@
 > ```
 
 ## NEXT
-[Conclusion](../module_02/conclusion.md)
+[Conclusion](/conclusion.md)

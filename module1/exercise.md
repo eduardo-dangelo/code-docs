@@ -12,7 +12,7 @@
 # <img src="../imgs/terminal-icon.jpeg" width="25"/>  Create folder structure & files
 > Let's use the terminal to create the folder structure and files.
 > We'll create a folder called `first-website` and inside it create 3 files: `index.html`, `style.css` and `script.js`.
-> > If you're not familiar with the terminal, you can check the terminal lesson [here](../module_01/terminal.md).
+> > If you're not familiar with the terminal, you can check the terminal lesson [here](/terminal.md).
 
 - Open a terminal window and create a `projects` folder:
     ```shell
@@ -42,7 +42,7 @@
 # <img src="../imgs/html5-icon.jpeg" width="25"/> Add the HTML elements
 > Let's add the HTML elements to our `index.html` file.
 > We'll start by adding the basic HTML structure and then we'll add the elements we need for our website.
-> If you're not familiar with HTML, you can check the [HTML lesson](../module_01/html.md) for more details.
+> If you're not familiar with HTML, you can check the [HTML lesson](/html.md) for more details.
 
 ### Basic HTML structure
 > Let's start by adding the basic HTML structure to our `index.html` file.

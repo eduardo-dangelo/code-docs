@@ -1,4 +1,4 @@
-[The Complete Front-End Web Development Crash Course](../README.md) / [Module 2: Getting Started](../module_02/README.md)
+[The Complete Front-End Web Development Crash Course](../README.md) / [Module 2: Getting Started](/README.md)
 
 # <img src="../imgs/webstorm_logo.svg" width="25"/> WEB-STORM | CONFIGURATION GUIDE
 
@@ -124,4 +124,4 @@ and check the option to enable `Semantic Highlighting`
 > ```
 
 ## NEXT
-[☑️ Conclusion](../module_02/conclusion.md)
+[☑️ Conclusion](/conclusion.md)

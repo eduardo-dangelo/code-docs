@@ -12,4 +12,4 @@ This folder contains the solution files for the first exercise of the first modu
  You can check the result of the project by opening the `index.html` file in your browser.
 
 
-[BACK | Back to exercise](../../module_01/exercise.md)
+[BACK | Back to exercise](../../module1/exercise.md)

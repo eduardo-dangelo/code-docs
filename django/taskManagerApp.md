@@ -423,7 +423,7 @@
   ```
   npm install @mui/icons-material @mui/material @emotion/react @emotion/styled @next/font axios
   ```
-- Install [prettier & config eslint rules](../module_02/webstormConfigurationGuide.md):
+- Install [prettier & config eslint rules](../module2/webstormConfigurationGuide.md):
 
 ##Add Theme
 

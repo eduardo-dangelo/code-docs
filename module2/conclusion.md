@@ -1,4 +1,4 @@
-[The Complete Front-End Web Development Crash Course](../README.md) / [Module 2: Getting Started](../module_02/README.md)
+[The Complete Front-End Web Development Crash Course](../README.md) / [Module 2: Getting Started](/README.md)
 
 # ☑️ CONCLUSION
 

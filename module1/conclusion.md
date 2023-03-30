@@ -34,4 +34,4 @@ In this module, you learned:
 - [FreeCodeCamp](https://www.freecodecamp.org/)
 
 ## NEXT
-[Module 2 | Getting Started](../module_02/README.md)
+[Module 2 | Getting Started](../module2/README.md)
