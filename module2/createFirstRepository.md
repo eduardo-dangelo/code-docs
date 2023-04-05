@@ -1,8 +1,11 @@
 [The Complete Front-End Web Development Crash Course](../README.md) / [Module 2: Getting Started](/README.md)
 
-# 👨‍🎨 CREATE YOUR FIRST REPOSITORY
+# 👨‍🎨 Create First GitHub Repository
 
-## Create a github repository
+> We will be using GitHub to store our code. GitHub is a website that allows us to store our code in the cloud. It also allows us to collaborate with other developers.
+
+
+### Create a github repository
 1. [Create a new repository on Github](https://github.com/new)
 2. Name it `code-playground`:
    
@@ -12,7 +15,7 @@
 
    <img src="../imgs/create_repository.png" alt="repository_name" width="200"/>
 
-## Push an existing app to Github
+### Push an existing app to Github
 1. Open a terminal
 2. Navigate to `code-playground` directory:
    ```
@@ -24,7 +27,8 @@
    git branch -M master
    git push -u origin master
    ```
-#### Congratulations! Now you have your first repository in github 🎉
+> **Congratulations! Now you have your first repository in gitHub 🎉**. 
+> If you refresh your github page, you should see your repository there.
 
 ## NEXT
-[🛠 Code format with ESLint & Prettier](./CODE_FORMAT_WITH_ESLINT_&_PRETTIER.md)
+[🛠 Code Format (ESLint & Prettier)](./CODE_FORMAT_WITH_ESLINT_&_PRETTIER.md)

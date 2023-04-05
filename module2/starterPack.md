@@ -1,6 +1,6 @@
 [The Complete Front-End Web Development Crash Course](../README.md) / [Module 2: Getting Started](/README.md)
 
-# 🎒 STARTER PACK
+# 🎒 Starter Pack
 
 > Before we start, we need to make sure we have all the tools we need to start coding.
 > Please, make sure you follow the instructions carefully.

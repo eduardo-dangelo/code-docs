@@ -19,11 +19,10 @@
 - [🎒 Starter Pack](./starterPack.md)
 - [🛠 Configure a new SSH key](./ssh.md)
 - [<img src="../imgs/react-icon.png" width="15"/> Intruduction to React](./introductionToReact.md)
-- [👨‍🎨 Create First Github Repository](./createFirstRepository.md)
+- [👨‍🎨 Create First GitHub Repository](./createFirstRepository.md)
 - [🛠 Code Format (Eslint & Prettier)](./CODE_FORMAT_WITH_ESLINT_&_PRETTIER.md)
   - [<img src="../imgs/vscode_logo.png" width="15"/> VS-Code | Configuration Guide](./vscodeConfigurationGuide.md)
   - [<img src="../imgs/webstorm_logo.svg" width="15"/> Web Storm | Configuration Guide](./webstormConfigurationGuide.md)
-- [🛠 How to work with React, Git, and GitHub](./howToWorkWithReactGitAndGitHub.md)
 - [☑️ Conclusion](./conclusion.md)
 
 ## NEXT
