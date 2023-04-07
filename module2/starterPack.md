@@ -1,4 +1,4 @@
-[The Complete Front-End Web Development Crash Course](../README.md) / [Module 2: Getting Started](/README.md)
+[The Complete Front-End Web Development Crash Course](../README.md) / [Module 2: Getting Started](./README.md)
 
 # 🎒 Starter Pack
 
@@ -32,7 +32,7 @@ Find out other ways to install git [here](https://nodejs.org/en/about/).
     brew install git
     ```
 
-##<img src="../imgs/github-mark.png" width="22"/> Github
+### Github
 GitHub is a web-based hosting service for version control using Git.
 It offers all of the functionality of Git as well as adding its own features.
 > Github is used to store our code and collaborate with other developers.
@@ -50,4 +50,6 @@ Check the full documentation [here](https://ohmyz.sh/)
     ```
 
 ## NEXT
+> Next, let's jump tp SSH configuration. SSH is needed to push our code to gitHub.
+
 [🛠 Configure a new SSH key](./ssh.md)

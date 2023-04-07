@@ -1,4 +1,4 @@
-[The Complete Front-End Web Development Crash Course](../README.md) / [Module 2: Getting Started](/README.md)
+[The Complete Front-End Web Development Crash Course](../README.md) / [Module 2: Getting Started](./README.md)
 
 # <img src="../imgs/vscode_logo.png" alt="drawing" width="25"/> VS-Code | Configuration Guide
 > Lets configure VS-Code to use ESLint, Prettier and some other useful plugins.
@@ -120,7 +120,8 @@
 > git push
 > ```
 
-## ⏭️ NEXT
-> Now that we have configured VS-Code, let's start coding our first React App.
+## NEXT
+> Now that we have configured VS-Code, let's review what we have learned so far, so we can
+> start coding our first React App.
 > 
 [☑️ Conclusion](./conclusion.md)

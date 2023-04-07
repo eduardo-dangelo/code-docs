@@ -1,20 +1,23 @@
-[The Complete Front-End Web Development Crash Course](../README.md) / [Module 2: Getting Started](/README.md)
+[The Complete Front-End Web Development Crash Course](../README.md) / [Module 2: Getting Started](./README.md)
 
-# <img src="../imgs/webstorm_logo.svg" width="25"/> WEB-STORM | CONFIGURATION GUIDE
+# <img src="../imgs/webstorm_logo.svg" width="25"/> Web Storm | Configuration Guide
+> Learn how to configure WebStorm to work with ESLint and Prettier.
 
 ## Install Plugins
-- Install the following plugins:
+> Let's start by installing some plugins that will help us to work with our code.
+- Install all the following plugins:
   - [Prettier](https://plugins.jetbrains.com/plugin/10456-prettier)
   - [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080-rainbow-brackets)
 
-## Semantic Highlighting
+### Semantic Highlighting
+> Semantic Highlighting is a feature that highlights the code based on its meaning. It helps us to identify the different parts of our code.
 - In the `Settings/Preferences` dialog (⌘ ,), go to `Editor > Color Scheme > Language Defaults > Semantic Highlighting`
 and check the option to enable `Semantic Highlighting`
 
     <img src="../imgs/semantic_highlighting.png" alt="Open Terminal" width="300"/>
 
 
-## Install ESlint
+## EsLint Configuration
 1. Open the embedded Terminal using the shortcut `(⌥ F12)` or by clicking `Terminal` button on the bottom-left corner:
 
    <img src="../imgs/open_terminal_webstorm.png" alt="Open Terminal" width="300"/>
@@ -64,7 +67,7 @@ and check the option to enable `Semantic Highlighting`
    ```
    > Find out about ESLint rules [here](https://eslint.org/docs/latest/rules/).
 
-## Run ESLint on save
+### Run ESLint on save
 - On Web-Storm, open `Preferences > Languages & Frameworks > Javascript > Code quality tools > ESLint` and tick `run eslint on save`
   
     <img src="../imgs/run_eslint_onsave.png" alt="drawing" width="350"/>
@@ -123,4 +126,6 @@ and check the option to enable `Semantic Highlighting`
 > ```
 
 ## NEXT
-[☑️ Conclusion](/conclusion.md)
+> Now we have our code editor configured, let's review what we have learned so far so we can move on to the next module.
+
+[☑️ Conclusion](./conclusion.md)

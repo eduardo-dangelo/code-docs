@@ -1,4 +1,4 @@
-[The Complete Front-End Web Development Crash Course](../README.md) / [Module 2: Getting Started](/README.md)
+[The Complete Front-End Web Development Crash Course](../README.md) / [Module 2: Getting Started](./README.md)
 
 # <img src="../imgs/react-icon.png" width="30"/> Introduction to React
 > React is a JavaScript library, created by Facebook, for building user interfaces.

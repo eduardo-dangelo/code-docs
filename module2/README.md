@@ -26,4 +26,6 @@
 - [☑️ Conclusion](./conclusion.md)
 
 ## NEXT
+> Let's start by opening the `🎒Starter Pack` and follow the instructions to set up your development environment.
+
 [🎒Starter Pack](./starterPack.md)

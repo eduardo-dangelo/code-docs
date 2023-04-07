@@ -1,4 +1,4 @@
-[The Complete Front-End Web Development Crash Course](../README.md) / [Module 2: Getting Started](/README.md)
+[The Complete Front-End Web Development Crash Course](../README.md) / [Module 2: Getting Started](./README.md)
 
 # 🛠 Code Format (ESLint & Prettier)
 > In this section we will be configuring `ESLint` and `Prettier` to format our code.
@@ -15,7 +15,7 @@
 > It will make sure that our code is formatted consistently.
 > Check out Prettier Official website [here](https://prettier.io/).
 
-## Configuration Guides
+## NEXT | Configuration Guides
 > Each IDE has a different way to configure ESLint and Prettier. Follow the guide that matches your IDE.
 - [<img src="../imgs/vscode_logo.png" width="15"/> VS-Code | Configuration Guide](./vscodeConfigurationGuide.md)
 - [<img src="../imgs/webstorm_logo.svg" width="15"/> Web Storm | Configuration Guide](./webstormConfigurationGuide.md)
