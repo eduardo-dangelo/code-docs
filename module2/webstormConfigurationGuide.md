@@ -5,7 +5,6 @@
 ## Install Plugins
 - Install the following plugins:
   - [Prettier](https://plugins.jetbrains.com/plugin/10456-prettier)
-  - [Preview.js](https://plugins.jetbrains.com/plugin/18384-preview-js)
   - [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080-rainbow-brackets)
 
 ## Semantic Highlighting

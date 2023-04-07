@@ -1,17 +1,21 @@
 [The Complete Front-End Web Development Crash Course](../README.md) / [Module 2: Getting Started](/README.md)
 
-# <img src="../imgs/vscode_logo.png" alt="drawing" width="25"/> VS-CODE | CONFIGURATION
+# <img src="../imgs/vscode_logo.png" alt="drawing" width="25"/> VS-Code | Configuration Guide
+> Lets configure VS-Code to use ESLint, Prettier and some other useful plugins.
 
 ## Install Plugins
-- Install the following pluggins
+> Let's start by installing some useful plugins.
+> Click on the links below to install each plugin,
+
+- Install all the following pluggins:
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
   - [Prettier](https://marketplace.visualstudio.com/items?itemName=SimonSiefke.prettier-vscode)
   - [Semantic Highlighting](https://marketplace.visualstudio.com/items?itemName=malcolmmielle.semantic-highlighting)
   - [Rainbow Brackets](https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets)
   - [Open Terminal](https://marketplace.visualstudio.com/items?itemName=whatwewant.open-terminal)
-  - [PreviewJs](https://marketplace.visualstudio.com/items?itemName=zenclabs.previewjs)
 
-## Install ESLint
+## ESLint configuration
+> Now let's initialize ESLint and configure it to use React and JavaScript modules.
 
 1. Open the embedded Terminal using the shortcut `(shift ⌥ C)` or using the toggle button on the bottom-right: 
 
@@ -63,7 +67,9 @@
     ```
 
 
-## Run ESLint on save
+### Run ESLint on save
+> Now let's configure VS-Code to run ESLint on save.
+> That means that every time you save a file, ESLint will run and fix any errors it finds.
 - Open `Settings.json` and add the following settings:
   ```
   "editor.codeActionsOnSave": {
@@ -72,7 +78,7 @@
   "eslint.validate": ["javascript"],
   ```
 
-## Configure Prettier
+## Prettier Configuration
 - Open `Settings.json` and add the following settings:
   ```
   "editor.tabSize": 2,
@@ -84,14 +90,14 @@
    },
   ```
 
-## Run ESLint & Prettier on save
+### Run ESLint & Prettier on save
 - Open `Settings.json` and add the following settings:
   ```
   "editor.formatOnSave": true,
   ```
   > Now every time you save a js or jsx file your code will be formatted
 
-## Commit and push changes
+### Commit and push changes
 1. Open the embedded Terminal `(shift ⌥ C)` and add new files to git:
    ```
    git add .eslintrc.js
@@ -114,5 +120,7 @@
 > git push
 > ```
 
-## NEXT
-[Conclusion](/conclusion.md)
+## ⏭️ NEXT
+> Now that we have configured VS-Code, let's start coding our first React App.
+> 
+[☑️ Conclusion](./conclusion.md)
