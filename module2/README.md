@@ -1,7 +1,7 @@
 ## [The Complete Front-End Web Development Crash Course](../README.md)
 #### Build Your CV and Find Your Dream Job
   
-# MODULE 2 - GETTING STARTED
+# Module 2 | Getting Started
 
 > Welcome to module 2 of The Complete Front-End Web Development Crash Course! In this module,
 > we'll be covering the tools and concepts you'll need to get started with web development.
@@ -15,7 +15,7 @@
 >
 >> Configuration guides are easy to forget since we don't use them often. Keep this module as a reference when configuring your environment.
 
-## Table of content
+### Table of content
 - [🎒 Starter Pack](./starterPack.md)
 - [🛠 Configure a new SSH key](./ssh.md)
 - [<img src="../imgs/react-icon.png" width="15"/> Intruduction to React](./introductionToReact.md)

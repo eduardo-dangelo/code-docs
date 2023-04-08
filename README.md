@@ -9,7 +9,7 @@
 > > I encourage you to take your time and revisit each topic as needed to refresh your memory.
 
 
-## Table of content
+## Part One
 - ### [Module 1 | Basic Concepts](module1/README.md)
     > This module is designed to provide a foundational understanding of the key concepts needed to progress through the course.
     This will be a short review to ensure that you have a clear understanding of the material and that we're all on the same page.
@@ -35,16 +35,33 @@
   > Module 3 we will start developing our first project using react and typescript.
   > We and go in more depth of some of the most important concepts required to be an efficient developer.
   > By the end of this module you will have a portfolio on the web that you can use it when applying for a job
-  - [Todo List]()
-  - [Router]()
-  - [Basic Form]()
-  - [Dynamic Form]()
-  - [MUI]()
-  - [Code Enhancements]()
-  - [Redux]()
-  - [Hanlde api requests]()
-  - [Github pages]()
+  - [Todo List](./module3/todoList.md)
+  - [SideBar](./module3/sideBar.md)
+  - [PageLayout](./module3/pageLayout.md)
+  - [Router](./module3/router.md)
+  - [SignUp form](./module3/signUpForm.md)
+  - [NewUserForm](./module3/newUserForm.md)
+  - [tableWithEntry](./module3/tableWithEntry.md)
+  - [Fetching data](./module3/fetchingData.md)
 
+
+## Part Two
+- ### Module 4 | React
+  - [React]()
+  - [React Hooks]()
+  - [React Router]()
+  - [React Context]()
+  - [React Redux]()
+  - [React Testing Library]()
+  - [React Native]()
+
+- ### Module 5 | TypeScript
+    - [TypeScript]()
+    - [TypeScript + React]()
+    - [TypeScript + React Native]()
+    - [TypeScript + Node]()
+
+## Part Three
 - ### Module 4 | Job Search
     > In Module 4, you will learn how to create a standout CV, apply for jobs, and excel in the interview process. By the end of this module, you will have the skills and confidence to effectively present your qualifications, apply for relevant positions, and secure your dream job.
   - [CV]()
