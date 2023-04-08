@@ -31,4 +31,6 @@
 > If you refresh your github page, you should see your repository there.
 
 ## NEXT
+> Next, we will be learning how to format our code with ESLint and Prettier.
+
 [🛠 Code Format (ESLint & Prettier)](./CODE_FORMAT_WITH_ESLINT_&_PRETTIER.md)

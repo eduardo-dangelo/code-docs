@@ -70,9 +70,9 @@ ReactDOM.render(<App />, document.querySelector('#root'));
 > </div>
 >```
 
-# <img src="../imgs/react-icon.png" width="30"/> Getting Started with React
+## <img src="../imgs/react-icon.png" width="30"/> Getting Started with React
 
-## Create React App
+### Create React App
 > Create React App is a tool to help you build React applications.
 > It saves you from time-consuming setup and configuration.
 > Check out the full documentation on how to create a react app [here](https://reactjs.org/docs/create-a-new-react-app.html).
@@ -95,4 +95,6 @@ ReactDOM.render(<App />, document.querySelector('#root'));
 > You should see the initial React app page! We will be adding more code to this app in the next modules.
 > > To stop a project from running, press `Ctrl + C` in the terminal.
 ## NEXT
+> Next, we will be creating our first GitHub repository and pushing our code to it.
+
 [👨‍🎨 Create First GitHub Repository](./createFirstRepository.md)
