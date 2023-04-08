@@ -45,7 +45,7 @@ To use a class or ID selector in an HTML element, you can use the `class` or `id
 
 <div id="main">This is the main content</div>
 ```
-## Nested Selectors
+### Nested Selectors
 
 Nested selectors allow you to target elements that are nested within other elements. For example, you can use a nested selector to apply styles to a `<p>` element that is inside a `<div>` element. For example:
 
@@ -65,32 +65,7 @@ div.warning p {
 
 This CSS rule will apply the color red to all `<p>` elements that are inside a `<div>` element with a class of `warning`.
 
-
-
-## CSS Properties
-
-CSS properties are used to style elements in an HTML document. There are many different CSS properties available, including:
-
-- `color`: This property sets the color of text.
-- `font-size`: This property sets the size of the text.
-- `font-family`: This property sets the font of the text.
-- `text-align`: This property sets the alignment of the text.
-- `display`: This property sets the display type of an element.
-- `float`: This property sets the position of an element in relation to other elements.
-- `width` and `height`: These properties set the width and height of an element.
-- `margin` and `padding`: These properties add space around or inside an element.
-- `border`: This property adds a border around an element.
-- `background-color`: This property sets the background color of an element.
-- `opacity`: This property sets the transparency of an element.
-- `position`: This property sets the position of an element in relation to its parent element.
-- `top`, `right`, `bottom`, and `left`: These properties set the distance of an element from its parent element.
-- `z-index`: This property sets the stacking order of an element.
-- `overflow`: This property sets how to handle content that overflows the element's box.
-- `visibility`: This property sets whether or not an element is visible.
-- `cursor`: This property sets the cursor style when hovering over an element.
-- `transition`: This property specifies the transition effect when changing the value of a property.
-
-## The :hover Selector
+### The `:hover` Selector
 The `:hover` selector is a CSS pseudo-class that is used to target an element when the user's cursor hovers over it. This allows you to change the appearance of an element when the user interacts with it.
 
 For example, you can use the `:hover` selector to change the background color of a button when the user hovers over it:
@@ -116,6 +91,29 @@ a:hover {
   color: red;
 }
 ```
+
+## CSS Properties
+
+CSS properties are used to style elements in an HTML document. There are many different CSS properties available, including:
+
+- `color`: This property sets the color of text.
+- `font-size`: This property sets the size of the text.
+- `font-family`: This property sets the font of the text.
+- `text-align`: This property sets the alignment of the text.
+- `display`: This property sets the display type of an element.
+- `float`: This property sets the position of an element in relation to other elements.
+- `width` and `height`: These properties set the width and height of an element.
+- `margin` and `padding`: These properties add space around or inside an element.
+- `border`: This property adds a border around an element.
+- `background-color`: This property sets the background color of an element.
+- `opacity`: This property sets the transparency of an element.
+- `position`: This property sets the position of an element in relation to its parent element.
+- `top`, `right`, `bottom`, and `left`: These properties set the distance of an element from its parent element.
+- `z-index`: This property sets the stacking order of an element.
+- `overflow`: This property sets how to handle content that overflows the element's box.
+- `visibility`: This property sets whether or not an element is visible.
+- `cursor`: This property sets the cursor style when hovering over an element.
+- `transition`: This property specifies the transition effect when changing the value of a property.
 
 ## Media Queries
 
@@ -168,9 +166,11 @@ There are many CSS frameworks available that provide pre-built styles for common
 - [Materialize](https://materializecss.com/)
 - [Semantic UI](https://semantic-ui.com/)
 
-### Conclusion
+## Conclusion
 > CSS is a powerful language that allows you to style HTML elements and create responsive layouts. In this lesson, you learned about the syntax of CSS, how to use selectors to target elements, and how to use media queries to create responsive layouts.
 > In the next lesson, we'll test your knowledge of CSS with a quiz.
 
 ## NEXT
+> Let's test your knowledge of `CSS` with a quiz.
+
 [<img src="../imgs/css3-icon.jpeg" width="15"/> CSS Quiz](css_quiz.md)

@@ -491,4 +491,6 @@
 
 
 ## NEXT
+> Congratulations! You've completed the exercise. Next, we will review what we learned so far.
+
 [☑️ Conclusion](./conclusion.md)

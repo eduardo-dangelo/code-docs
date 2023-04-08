@@ -10,16 +10,16 @@
 
 In this module, you learned:
 
-###`The basic concepts of the Terminal shell`
+### `The basic concepts of the Terminal shell`
 - Including how to navigate the file system, how to create, copy, move, and delete files and directories, and how to use the Terminal to run programs.
 
-###`The basic concepts of HTML`
+### `The basic concepts of HTML`
 - Including the structure of an HTML document, the different types of HTML elements, and how to use attributes to modify the behavior of elements.
 
-###`The basic concepts of CSS`
+### `The basic concepts of CSS`
 - Including the structure of a CSS document, the different types of CSS selectors, and how to use CSS properties to modify the appearance of HTML elements.
 
-###`The basic concepts of Javascript`
+### `The basic concepts of Javascript`
 - Including variables, data types, operators, functions, control structures, arrays, and objects.
 
 > There is much more to learn about each of these topics, but this is a good start.

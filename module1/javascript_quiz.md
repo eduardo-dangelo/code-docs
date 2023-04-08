@@ -48,4 +48,6 @@
 1-1 | 2-3 | 3-2 | 4-1 | 5-2 | 6-4 | 7-1 
 
 ## NEXT
+> Next, we will test your knowledge of everything you have learned so far in this course by completing an exercise.
+
 [📝 Exercise](./exercise.md)

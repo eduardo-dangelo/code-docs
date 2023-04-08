@@ -99,4 +99,6 @@
 > In the next section, we will test your knowledge of these commands by completing a quiz.
 
 ## NEXT
+> Next, we will test your knowledge of the `terminal shell` by completing a quiz. 
+
 [<img src="../imgs/terminal-icon.jpeg" width="15"/> Terminal Shell Quiz](./terminal_quiz.md)

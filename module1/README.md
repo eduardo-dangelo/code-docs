@@ -18,4 +18,6 @@
 - [☑️ Conclusion](./conclusion.md)
 
 ## NEXT
+> We'll start by the basics of the terminal shell. Let's get started! 
+
 [<img src="../imgs/terminal-icon.jpeg" width="15"/> Terminal Shell](./terminal.md)

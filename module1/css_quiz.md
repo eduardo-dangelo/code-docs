@@ -42,4 +42,6 @@
 1-1 | 2-4 | 3-1 | 4-3 | 5-2 | 6-1 
 
 ## NEXT
+> Let's move on to the next topic: `JavaScript`.
+
 [<img src="../imgs/javascript-logo.png" width="15"/> Javascript](./javascript.md)

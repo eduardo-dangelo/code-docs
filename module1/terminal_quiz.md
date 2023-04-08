@@ -60,4 +60,6 @@
 1-1 | 2-2 | 3-3 | 4-2 | 5-1 | 6-1 | 7-2 | 8-1 | 9-1
 
 ## NEXT
+> Next, let's learn about the basics of `HTML`.
+
 [<img src="../imgs/html5-icon.jpeg" width="15"/> HTML](html.md)
