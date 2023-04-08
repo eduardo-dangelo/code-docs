@@ -27,7 +27,7 @@
   - [🎒 Starter Pack](module2/starterPack.md)
   - [🛠 SSH](module2/ssh.md)
   - [👨‍🎨 Create First Repository](module2/createFirstRepository.md)
-  - [🛠 Code Format (Eslint & Prettier)](module2/CODE_FORMAT_WITH_ESLINT_&_PRETTIER.md)
+  - [🛠 Code Format (Eslint & Prettier)](module2/codeFormat.md)
     - [<img src="./imgs/vscode_logo.png" width="15"/> VS-Code | Configuration Guide](module2/vscodeConfigurationGuide.md)
     - [<img src="./imgs/webstorm_logo.svg" width="15"/> Web Storm | Configuration Guide](module2/webstormConfigurationGuide.md)
   - [☑️ Conclusion](module2/conclusion.md)

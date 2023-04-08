@@ -33,4 +33,4 @@
 ## NEXT
 > Next, we will be learning how to format our code with ESLint and Prettier.
 
-[🛠 Code Format (ESLint & Prettier)](./CODE_FORMAT_WITH_ESLINT_&_PRETTIER.md)
+[🛠 Code Format (ESLint & Prettier)](./codeFormat.md)
