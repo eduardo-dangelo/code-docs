@@ -176,9 +176,9 @@ greet("John"); // prints "Hello, John"
 
 ## Conclusion
 > In this module, you learned the basic concepts of Javascript, including variables, data types, operators, functions, control structures, arrays, and objects.
-> Next we'll be testing your knowledge of these concepts by completing a Javascript quiz.
+> > You can learn more about these concepts [here](https://www.w3schools.com/js/default.asp).
 
 ## NEXT
-> Let's test your knowledge of `Javascript` by completing a quiz.
+> Next we'll be testing your knowledge of these concepts by completing a Javascript quiz.
 
 [<img src="../imgs/javascript-logo.png" width="15"/> Javascript Quiz](./javascript_quiz.md)

@@ -77,6 +77,7 @@ it is generally accepted to use lowercase for HTML tags and attributes for the s
 
 ### Conclusion
 > In this lesson, we covered the basics of HTML, including the structure of an HTML document, the most common HTML tags, and how to use attributes to provide additional information about elements. In the next lesson, we'll test your knowledge of HTML by completing a quiz.
+> > You can learn more about `HTML` [here](https://www.w3schools.com/html/).
 
 ## NEXT
 > Let's test your knowledge of `HTML` by completing a quiz.

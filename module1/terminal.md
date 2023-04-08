@@ -97,6 +97,7 @@
 ### Conclusion   
 > You have now learned the basics commands for working with the terminal shell.
 > In the next section, we will test your knowledge of these commands by completing a quiz.
+> > You can learn more about the terminal shell [here](https://www.freecodecamp.org/news/command-line-for-beginners/).
 
 ## NEXT
 > Next, we will test your knowledge of the `terminal shell` by completing a quiz. 

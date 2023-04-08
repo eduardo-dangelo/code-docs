@@ -168,9 +168,9 @@ There are many CSS frameworks available that provide pre-built styles for common
 
 ## Conclusion
 > CSS is a powerful language that allows you to style HTML elements and create responsive layouts. In this lesson, you learned about the syntax of CSS, how to use selectors to target elements, and how to use media queries to create responsive layouts.
-> In the next lesson, we'll test your knowledge of CSS with a quiz.
+> > You can learn more about CSS [here](https://www.w3schools.com/css/). 
 
 ## NEXT
-> Let's test your knowledge of `CSS` with a quiz.
+> In the next lesson, we'll test your knowledge of CSS with a quiz.
 
 [<img src="../imgs/css3-icon.jpeg" width="15"/> CSS Quiz](css_quiz.md)

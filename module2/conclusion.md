@@ -9,7 +9,7 @@
 > By the end of the next module you will have much more confidence in your react skills.
 
 
-### Resources
+## Resources
 > If there was any topic you don't understand, or you want to learn more about it, here are some resources that can help you.
 - [<img src="../imgs/webstorm_logo.svg" width="15" /> WebStorm](https://www.jetbrains.com/webstorm/)
 - [<img src="../imgs/vscode_logo.png" width="15" /> VS Code](https://code.visualstudio.com/)
