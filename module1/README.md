@@ -1,6 +1,6 @@
 ## [The Complete Front-End Web Development Crash Course](../README.md)
 #### Build Your CV and Find Your Dream Job
-# Module 1 | Basic Concepts
+# Module 1 | Basic Concepts 
 
 > Welcome to module 1 of The Complete Front-End Web Development Crash Course! In this module, we'll be covering the fundamental concepts of web development.
 > It may seem overwhelming at first, but with repetition and practice, it will become clear as water.

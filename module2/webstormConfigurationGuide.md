@@ -68,7 +68,8 @@ and check the option to enable `Semantic Highlighting`
    > Find out about ESLint rules [here](https://eslint.org/docs/latest/rules/).
 
 ### Run ESLint on save
-- On Web-Storm, open `Preferences > Languages & Frameworks > Javascript > Code quality tools > ESLint` and tick `run eslint on save`
+- On Web-Storm, open `Preferences > Languages & Frameworks > Javascript > Code quality tools > ESLint`
+check `Automatic ESLint configuration` and tick `run eslint on save`
   
     <img src="../imgs/run_eslint_onsave.png" alt="drawing" width="350"/>
 

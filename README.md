@@ -32,9 +32,8 @@
   - [☑️ Conclusion](module2/conclusion.md)
 
 - ### [Module 3 | Code Playground](module3/README.md)
-  > Module 3 we will start developing our first project using react and typescript.
+  > Module 3 we will start developing our first project using react.
   > We and go in more depth of some of the most important concepts required to be an efficient developer.
-  > By the end of this module you will have a portfolio on the web that you can use it when applying for a job
   - [Todo List](./module3/todoList.md)
   - [SideBar](./module3/sideBar.md)
   - [PageLayout](./module3/pageLayout.md)
