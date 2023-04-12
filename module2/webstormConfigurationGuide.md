@@ -57,7 +57,6 @@ and check the option to enable `Semantic Highlighting`
    ```
     'rules': {
       'quotes': ['error', 'single'],
-      'semi': ['error', 'never'],
       'indent': ['error', 2],
       'react/prop-types': 0,
       'object-curly-spacing': ['error', 'always'],
@@ -89,10 +88,10 @@ check `Automatic ESLint configuration` and tick `run eslint on save`
       "bracketSpacing": true,
       "jsxBracketSameLine": false,
       "jsxSingleQuote": true,
-      "printWidth": 120,
+      "printWidth": 90,
       "proseWrap": "preserve",
       "quoteProps": "preserve",
-      "semi": false,
+      "semi": true,
       "singleQuote": true,
       "tabWidth": 2,
       "trailingComma": "all",

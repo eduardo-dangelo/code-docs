@@ -26,6 +26,7 @@
 1. Open `TodoList.jsx` file and add the following code:
     ```jsx
     import React from 'react';
+    import './style.css';
     
     const TodoList = () => {
       return (
@@ -72,6 +73,7 @@ export default App
 2. Let's start by adding a `useState` hook to our component. We will use this hook to store the list of items in our todo list.
     ```jsx
     import React, { useState } from 'react';
+    import './style.css';
 
     const initialList = ['item 1', 'item 2', 'item 3']
    
@@ -92,6 +94,7 @@ export default App
 3. Let's add a `map` function to our `list` variable. This will loop through the list and render a `TodoListItem` component for each item in the list.
     ```jsx
     import React, { useState } from 'react';
+    import './style.css';
     import TodoListItem from './TodoListItem';
    
     const initialList = ['item 1', 'item 2', 'item 3']
@@ -107,6 +110,8 @@ export default App
         </div>
       );
     };
+   
+   export default TodoList;
    ```
 ### TodoListItem.jsx
 1. Open `TodoListItem.jsx` file.
@@ -145,14 +150,16 @@ export default App
       justify-content: center;
     }
     ```
-    > We will add more styles later on. If you check the browser now, you should see a list of items.
+    > We will add more styles later on. If you check the browser on `http://localhost:3000/` now, you should see a list of items.
 
 ## Add a new item to the list
 
 1. Let's add a `CreateEditItem` component to our `TodoList` component. This component will be used to add new items to the list.
     ```jsx
     import React, { useState } from 'react';
+    import './style.css';
     import TodoListItem from './TodoListItem';
+    import CreateEditItem from './CreateEditItem';
    
     const initialList = ['item 1', 'item 2', 'item 3']
    
@@ -170,6 +177,8 @@ export default App
         </div>
       );
     };
+   
+    export default TodoList;
    ```
 
 ### CreateEditItem.jsx
@@ -206,13 +215,15 @@ export default App
         </div>
       );
     };
+   
+    export default CreateEditItem;
    ```
    
 4. Let's add a `onClick` event to our button. 
     ```jsx
     import React, { useState } from 'react';
    
-    const CreateEditItem = ({ onCreate }) => {
+    const CreateEditItem = ({ onAdd }) => {
       const [value, setValue] = useState('');
    
       const handleSubmit = () => {
@@ -230,6 +241,8 @@ export default App
         </div>
       );
     };
+   
+    export default CreateEditItem;
    ```
    
 5. Let's also add o onKeyPress event to our input field. So we can add items to the list by pressing the enter key.
@@ -259,6 +272,8 @@ export default App
         </div>
       );
     };
+   
+    export default CreateEditItem;
    ```
    
 6. Now let's organise our code a bit. Let's create a `handleInputChange` function and move the code inside the `onChange` event to this function.
@@ -277,7 +292,7 @@ export default App
         setValue('')
       }
    
-      const onKeyPress = (e) => {
+      const onKeyDown = (e) => {
         if (e.key === 'Enter') {
           handleSubmit()
         }
@@ -286,14 +301,17 @@ export default App
       return (
         <div>
           <input
-            type="text"
+            type='text'
             onChange={handleInputChange}
-            onKeyPress={onKeyPress}
+            onKeyDown={onKeyDown}
+            value={value}
           />
           <button onClick={handleSubmit}>Add</button>
         </div>
       );
     };
+   
+    export default CreateEditItem;
    ```
 ### style.css   
 1. Now open style.css file and add the following code:
@@ -346,6 +364,8 @@ export default App
         </div>
       );
     };
+   
+    export default TodoList;
    ```
    > If you check the browser now, you should be able to add new items to the list.
 
