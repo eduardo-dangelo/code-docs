@@ -38,7 +38,11 @@ const CreateEditItem = ({ onAdd }) => {
       InputProps={{
         endAdornment: (
           <InputAdornment position='end'>
-            <IconButton edge='end' color='primary' onClick={handleSubmit}>
+            <IconButton
+              edge='end'
+              color='primary'
+              onClick={handleSubmit}
+            >
               <AddCircleIcon />
             </IconButton>
           </InputAdornment>

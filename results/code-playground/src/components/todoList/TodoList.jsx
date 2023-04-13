@@ -37,7 +37,11 @@ const TodoList = () => {
           <CreateEditItem onAdd={onAdd} />
         </ListItem>
         {list.map((item, index) => (
-          <TodoListItem key={index} item={item} onDelete={() => handleDelete(index)} />
+          <TodoListItem
+            key={index}
+            item={item}
+            onDelete={() => handleDelete(index)}
+          />
         ))}
       </List>
     </>

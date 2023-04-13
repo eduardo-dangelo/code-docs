@@ -88,7 +88,7 @@ check `Automatic ESLint configuration` and tick `run eslint on save`
       "bracketSpacing": true,
       "jsxBracketSameLine": false,
       "jsxSingleQuote": true,
-      "printWidth": 90,
+      "printWidth": 70,
       "proseWrap": "preserve",
       "quoteProps": "preserve",
       "semi": true,

@@ -57,7 +57,6 @@
     ```angular2html
     'rules': {
       'quotes': ['error', 'single'],
-      'semi': ['error', 'never'],
       'indent': ['error', 2],
       'react/prop-types': 0,
       'object-curly-spacing': ['error', 'always'],
@@ -83,8 +82,8 @@
   ```
   "editor.tabSize": 2,
   "prettier.singleQuote": true,
-  "prettier.semi": false,
-  "prettier.printWidth": 140,
+  "prettier.semi": true,
+  "prettier.printWidth": 70,
     "[javascript]": {         
       "editor.defaultFormatter": "esbenp.prettier-vscode"
    },
