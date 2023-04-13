@@ -4,6 +4,18 @@
 > In this section we will build a todo list application.
 > In this application we will be able to add, remove and edit items in the list.
 
+## Install packages
+> We will start by installing the packages we will need for this application.
+> We will use the `@mui/material` package for the UI components and the `@emotion/react` and `@emotion/styled` packages for styling.
+
+### Material UI
+> Material UI is a React UI framework that provides a set of components that can be used to build a user interface.
+> It will help us to build our application faster and easier.
+
+1. Open your terminal inside `code-playground` folder and run:
+   ```shell
+   npm install @mui/material @emotion/react @emotion/styled
+   ```
 ## Create folder & files
 > We will start by creating a new folder for our project.
 > At this point you should already have a repository called `code-playground` in your `projects` folder. 
