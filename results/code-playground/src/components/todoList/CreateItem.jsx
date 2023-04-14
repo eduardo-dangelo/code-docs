@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IconButton, InputAdornment, TextField } from '@mui/material';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
-const CreateEditItem = ({ onAdd }) => {
+const CreateItem = ({ onAdd }) => {
   const [value, setValue] = useState('');
   const [error, setError] = useState('');
 
@@ -54,4 +54,4 @@ const CreateEditItem = ({ onAdd }) => {
   );
 };
 
-export default CreateEditItem;
+export default CreateItem;

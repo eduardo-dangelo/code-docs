@@ -29,7 +29,7 @@
 4. Inside the folder `todoList` create 4 new files:
     - `TodoList.jsx`
     - `TodoListItem.jsx`
-    - `CreateEditItem.jsx`
+    - `CreateItem.jsx`
     - `style.css`
 
 ## Create TodoList component
@@ -166,12 +166,12 @@ export default App
 
 ## Add a new item to the list
 
-1. Let's add a `CreateEditItem` component to our `TodoList` component. This component will be used to add new items to the list.
+1. Let's add a `CreateItem` component to our `TodoList` component. This component will be used to add new items to the list.
     ```jsx
     import React, { useState } from 'react';
     import './style.css';
     import TodoListItem from './TodoListItem';
-    import CreateEditItem from './CreateEditItem';
+    import CreateItem from './CreateItem';
    
     const initialList = ['item 1', 'item 2', 'item 3']
    
@@ -181,7 +181,7 @@ export default App
       return (
         <div className="todo-list">
           <div className="header">
-            <CreateEditItem />
+            <CreateItem />
           </div>
           {list.map((item, index) => (
             <TodoListItem key={index} item={item} />
@@ -193,13 +193,13 @@ export default App
     export default TodoList;
    ```
 
-### CreateEditItem.jsx
-1. Open `CreateEditItem.jsx` file.
+### CreateItem.jsx
+1. Open `CreateItem.jsx` file.
 2. Let's start by adding a `useState` hook to our component. We will use this hook to store the value of the input field.
     ```jsx
     import React, { useState } from 'react';
    
-    const CreateEditItem = () => {
+    const CreateItem = () => {
       const [value, setValue] = useState('');
     
       return (
@@ -209,13 +209,13 @@ export default App
       );
     };
     
-    export default CreateEditItem;
+    export default CreateItem;
     ```
 3. Let's add a `onChange` event to our input field. This event will be triggered every time the value of the input field changes.
     ```jsx
     import React, { useState } from 'react';
    
-    const CreateEditItem = () => {
+    const CreateItem = () => {
       const [value, setValue] = useState('');
     
       return (
@@ -228,14 +228,14 @@ export default App
       );
     };
    
-    export default CreateEditItem;
+    export default CreateItem;
    ```
    
 4. Let's add a `onClick` event to our button. 
     ```jsx
     import React, { useState } from 'react';
    
-    const CreateEditItem = ({ onAdd }) => {
+    const CreateItem = ({ onAdd }) => {
       const [value, setValue] = useState('');
    
       const handleSubmit = () => {
@@ -254,14 +254,14 @@ export default App
       );
     };
    
-    export default CreateEditItem;
+    export default CreateItem;
    ```
    
 5. Let's also add o onKeyPress event to our input field. So we can add items to the list by pressing the enter key.
     ```jsx
     import React, { useState } from 'react';
    
-    const CreateEditItem = ({ onCreate }) => {
+    const CreateItem = ({ onCreate }) => {
       const [value, setValue] = useState('');
    
       const handleSubmit = () => {
@@ -285,14 +285,14 @@ export default App
       );
     };
    
-    export default CreateEditItem;
+    export default CreateItem;
    ```
    
 6. Now let's organise our code a bit. Let's create a `handleInputChange` function and move the code inside the `onChange` event to this function.
     ```jsx
     import React, { useState } from 'react';
    
-    const CreateEditItem = ({ onAdd }) => {
+    const CreateItem = ({ onAdd }) => {
       const [value, setValue] = useState('');
    
       const handleInputChange = (e) => {
@@ -323,7 +323,7 @@ export default App
       );
     };
    
-    export default CreateEditItem;
+    export default CreateItem;
    ```
 ### style.css   
 1. Now open style.css file and add the following code:
@@ -354,7 +354,7 @@ export default App
     ```jsx
     import React, { useState } from 'react';
     import TodoListItem from './TodoListItem';
-    import CreateEditItem from './CreateEditItem';
+    import CreateItem from './CreateItem';
    
     const initialList = ['item 1', 'item 2', 'item 3']
    
@@ -368,7 +368,7 @@ export default App
       return (
         <div className="todo-list">
           <div className="header">
-            <CreateEditItem onAdd={onAdd} />
+            <CreateItem onAdd={onAdd} />
           </div>
           {list.map((item, index) => (
             <TodoListItem key={index} item={item} />
@@ -408,7 +408,7 @@ export default App
     ```jsx
     import React, { useState } from 'react';
     import TodoListItem from './TodoListItem';
-    import CreateEditItem from './CreateEditItem';
+    import CreateItem from './CreateItem';
    
     const initialList = ['item 1', 'item 2', 'item 3']
    
@@ -426,7 +426,7 @@ export default App
       return (
         <div className="todo-list">
           <div className="header">
-            <CreateEditItem onAdd={onAdd} />
+            <CreateItem onAdd={onAdd} />
           </div>
           {list.map((item, index) => (
             <TodoListItem
@@ -485,7 +485,7 @@ export default App
     ```jsx
     import React, { useState } from 'react';
     import TodoListItem from './TodoListItem';
-    import CreateEditItem from './CreateEditItem';
+    import CreateItem from './CreateItem';
    
     const initialList = ['item 1', 'item 2', 'item 3']
    
@@ -513,7 +513,7 @@ export default App
       return (
         <div className="todo-list">
           <div className="header">
-            <CreateEditItem onAdd={onAdd} />
+            <CreateItem onAdd={onAdd} />
           </div>
           {list.map((item, index) => (
             <TodoListItem

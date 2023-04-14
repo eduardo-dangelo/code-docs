@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import TodoListItem from './TodoListItem';
-import CreateEditItem from './CreateEditItem';
+import CreateItem from './CreateItem';
 import { Card, List, ListItem, Typography } from '@mui/material';
 
 const initialList = ['item 1', 'item 2', 'item 3'];
@@ -34,7 +34,7 @@ const TodoList = () => {
         }}
       >
         <ListItem>
-          <CreateEditItem onAdd={onAdd} />
+          <CreateItem onAdd={onAdd} />
         </ListItem>
         {list.map((item, index) => (
           <TodoListItem
