@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IconButton, InputAdornment, TextField } from '@mui/material';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
-const CreateItem = ({ onAdd }) => {
+const CreateItem = ({ onAddItem }) => {
   const [value, setValue] = useState('');
   const [error, setError] = useState('');
 
@@ -14,7 +14,7 @@ const CreateItem = ({ onAdd }) => {
 
   const handleSubmit = () => {
     if (value) {
-      onAdd(value);
+      onAddItem(value);
       setValue('');
     } else {
       setError('Field is required');

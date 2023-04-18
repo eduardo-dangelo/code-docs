@@ -35,8 +35,7 @@
   > Module 3 we will start developing our first project using react.
   > We and go in more depth of some of the most important concepts required to be an efficient developer.
   - [Todo List](./module3/todoList.md)
-  - [SideBar](./module3/sideBar.md)
-  - [PageLayout](./module3/pageLayout.md)
+  - [SideBar & PageLayout](./module3/sideBarAndPageLayout.md)
   - [Router](./module3/router.md)
   - [SignUp form](./module3/signUpForm.md)
   - [NewUserForm](./module3/newUserForm.md)

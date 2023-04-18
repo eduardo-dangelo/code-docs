@@ -20,18 +20,9 @@ const TodoListItem = ({ item, onDelete }) => {
       }
       disablePadding
     >
-      <ListItemButton
-        role={undefined}
-        onClick={() => setChecked(!checked)}
-        dense
-      >
+      <ListItemButton onClick={() => setChecked(!checked)}>
         <ListItemIcon>
-          <Checkbox
-            edge='start'
-            checked={checked}
-            tabIndex={-1}
-            disableRipple
-          />
+          <Checkbox edge='start' checked={checked} />
         </ListItemIcon>
         <ListItemText
           id={item}

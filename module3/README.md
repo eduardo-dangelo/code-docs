@@ -9,8 +9,7 @@
 
 ### Table of content
 - [Todo List](./todoList.md)
-- [SideBar](./sideBar.md)
-- [PageLayout](./pageLayout.md)
+- [SideBar & PageLayout](./sideBarAndPageLayout.md)
 - [Router](./router.md)
 - [SignUp form](./signUpForm.md)
 - [NewUserForm](./newUserForm.md)

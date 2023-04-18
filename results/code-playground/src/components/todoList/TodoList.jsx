@@ -1,21 +1,23 @@
 import React, { useState } from 'react';
 import TodoListItem from './TodoListItem';
 import CreateItem from './CreateItem';
-import { Card, List, ListItem, Typography } from '@mui/material';
-
-const initialList = ['item 1', 'item 2', 'item 3'];
+import { List, ListItem, Typography } from '@mui/material';
 
 const TodoList = () => {
-  const [list, setList] = useState(initialList);
+  const [items, setItems] = useState([
+    'Learn React',
+    'Learn Material UI',
+    'Build a todo list application',
+  ]);
 
-  const onAdd = (item) => {
-    setList([...list, item]);
+  const handleAddItem = (item) => {
+    setItems([...items, item]);
   };
 
   const handleDelete = (index) => {
-    const newList = [...list];
+    const newList = [...items];
     newList.splice(index, 1);
-    setList(newList);
+    setItems(newList);
   };
 
   return (
@@ -34,9 +36,9 @@ const TodoList = () => {
         }}
       >
         <ListItem>
-          <CreateItem onAdd={onAdd} />
+          <CreateItem onAddItem={handleAddItem} />
         </ListItem>
-        {list.map((item, index) => (
+        {items.map((item, index) => (
           <TodoListItem
             key={index}
             item={item}
