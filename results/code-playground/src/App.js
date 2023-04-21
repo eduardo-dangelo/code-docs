@@ -1,12 +1,13 @@
-import React from 'react'
-import TodoList from './components/todoList/TodoList'
+import React from 'react';
+import TodoList from './components/todoList/TodoList';
+import PageLayout from './components/pageLayout/PageLayout';
 
 function App() {
   return (
-    <div>
+    <PageLayout>
       <TodoList />
-    </div>
-  )
+    </PageLayout>
+  );
 }
 
-export default App
+export default App;
