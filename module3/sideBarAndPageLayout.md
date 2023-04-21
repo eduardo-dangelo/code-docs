@@ -121,3 +121,8 @@
 > Now, if you run the application, you should see the sidebar on the left side of the page.
 
 <img src="../imgs/mod3/sidebar-page-layout.png" >
+
+## NEXT
+> In the next section we will learn how to create a router to navigate between pages.
+
+[Router](./router.md)
