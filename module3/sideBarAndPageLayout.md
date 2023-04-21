@@ -34,6 +34,7 @@
              alignItems: 'center',
              justifyContent: 'space-around',
              flex: 1,
+             backgroundColor: '#f5f5f5',
             }}
          >
            <Box>{children}</Box>
@@ -74,58 +75,49 @@
    ```
 3. Create the `SideBar` component.
    ```js
-    const SideBar = () => {
-      return (
-        <Box
+   const SideBar = () => {
+     return (
+       <Box
           sx={{
-            width: 250,
-            height: '100vh',
-            bgcolor: 'background.paper',
-            borderRight: 1,
-            borderColor: 'divider',
-            display: { xs: 'none', sm: 'block' },
-          }}
-        >
-          <List>
-            <ListItem button>
-              <ListItemIcon>
-                <InboxIcon />
-              </ListItemIcon>
-              <ListItemText primary="Inbox" />
-            </ListItem>
-            <ListItem button>
-              <ListItemIcon>
-                <DraftsIcon />
-              </ListItemIcon>
-              <ListItemText primary="Drafts" />
-            </ListItem>
-          </List>
-          <Divider />
-          <List>
-            <ListItem button>
-              <ListItemIcon>
-                <SendIcon />
-              </ListItemIcon>
-              <ListItemText primary="Sent mail" />
-            </ListItem>
-            <ListItem button>
-              <ListItemIcon>
-                <DeleteIcon />
-              </ListItemIcon>
-              <ListItemText primary="Trash" />
-            </ListItem>
-            <ListItem button>
-              <ListItemIcon>
-                <ReportIcon />
-              </ListItemIcon>
-              <ListItemText primary="Spam" />
-            </ListItem>
-          </List>
-        </Box>
-      );
-    };
-    ```
+           height: '100vh',
+           bgcolor: 'background.paper',
+           borderRight: 1,
+           borderColor: 'divider',
+           display: { xs: 'none', sm: 'block' },
+         }}
+       >
+         <Box
+           sx={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'flex-start',
+              my: 3,
+              px: 3,
+           }}
+         >
+            <LocalFireDepartmentIcon color='secondary' sx={{ mr: 2 }} />
+            <Typography>CODE PLAYGROUND</Typography>
+         </Box>
+         <Divider />
+         <List>
+           <ListItemButton sx={{ px: 3 }} selected>
+             <FormatListBulletedIcon 
+               color='secondary'
+               fontSize='small'
+               sx={{ mr: 2 }}
+             />
+             <ListItemText primary='Todo List' />
+           </ListItemButton>
+         </List>
+       </Box>
+     );
+   };
+   ```
+   > Notice we added the Todo List item to the sidebar by default. we will add more items later as we build more projects.
 4. Export the `SideBar` component.
     ```js
     export default SideBar;
     ```
+> Now, if you run the application, you should see the sidebar on the left side of the page.
+
+<img src="../imgs/mod3/sidebar-page-layout.png" >

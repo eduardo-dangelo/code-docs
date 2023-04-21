@@ -45,22 +45,6 @@ const SideBar = () => {
           />
           <ListItemText primary='Todo List' />
         </ListItemButton>
-        <ListItemButton sx={{ px: 3 }}>
-          <DarkModeIcon
-            color='primary'
-            fontSize='small'
-            sx={{ mr: 2 }}
-          />
-          <ListItemText primary='Theme' />
-        </ListItemButton>
-        <ListItemButton sx={{ px: 3 }}>
-          <LoginIcon
-            color='primary'
-            fontSize='small'
-            sx={{ mr: 2 }}
-          />
-          <ListItemText primary='Form' />
-        </ListItemButton>
       </List>
     </Box>
   );
