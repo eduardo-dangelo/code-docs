@@ -71,7 +71,16 @@
 2. Import the `React`, `Box`, `List`, `ListItem`, `ListItemIcon`, `ListItemText` and `Divider` modules.
    ```js
    import React from 'react';
-   import { Box, List, ListItem, ListItemIcon, ListItemText, Divider } from '@mui/material';
+   import {
+    Box,
+    List,
+    ListItemText,
+    Divider,
+    Typography,
+    ListItemButton,
+   } from '@mui/material';
+   import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
+   import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
    ```
 3. Create the `SideBar` component.
    ```js

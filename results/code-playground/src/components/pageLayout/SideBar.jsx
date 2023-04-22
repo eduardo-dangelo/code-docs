@@ -8,11 +8,15 @@ import {
   ListItemButton,
 } from '@mui/material';
 import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
-import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
-import DarkModeIcon from '@mui/icons-material/DarkMode';
-import LoginIcon from '@mui/icons-material/Login';
+import { useNavigate } from 'react-router-dom';
 
-const SideBar = () => {
+const SideBar = ({ siteData }) => {
+  const navigate = useNavigate();
+
+  const handleItemClick = (route) => {
+    navigate(route);
+  };
+
   return (
     <Box
       sx={{
@@ -23,28 +27,34 @@ const SideBar = () => {
         display: { xs: 'none', sm: 'block' },
       }}
     >
-      <Box
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'flex-start',
-          my: 3,
-          px: 3,
-        }}
+      <ListItemButton
+        sx={{ p: 3 }}
+        onClick={() => handleItemClick('/')}
       >
         <LocalFireDepartmentIcon color='secondary' sx={{ mr: 2 }} />
         <Typography>CODE PLAYGROUND</Typography>
-      </Box>
+      </ListItemButton>
       <Divider />
       <List>
-        <ListItemButton sx={{ px: 3 }} selected>
-          <FormatListBulletedIcon
-            color='secondary'
-            fontSize='small'
-            sx={{ mr: 2 }}
-          />
-          <ListItemText primary='Todo List' />
-        </ListItemButton>
+        {siteData.map((item, key) => {
+          const Icon = item.icon;
+          const selected = item.route === window.location.pathname;
+          return (
+            <ListItemButton
+              key={key}
+              sx={{ px: 3 }}
+              onClick={() => handleItemClick(item.route)}
+              selected={selected}
+            >
+              <Icon
+                color={selected ? 'secondary' : 'primary'}
+                fontSize='small'
+                sx={{ mr: 2 }}
+              />
+              <ListItemText primary={item.name} />
+            </ListItemButton>
+          );
+        })}
       </List>
     </Box>
   );

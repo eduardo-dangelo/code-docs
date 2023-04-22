@@ -2,14 +2,14 @@ import React from 'react';
 import { Box } from '@mui/material';
 import SideBar from './SideBar';
 
-const PageLayout = ({ children }) => {
+const PageLayout = ({ children, siteData }) => {
   return (
     <Box
       sx={{
         display: 'flex',
       }}
     >
-      <SideBar />
+      <SideBar siteData={siteData} />
       <Box
         sx={{
           display: 'flex',
