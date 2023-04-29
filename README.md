@@ -42,6 +42,12 @@
   - [tableWithEntry](./module3/tableWithEntry.md)
   - [Fetching data](./module3/fetchingData.md)
 
+- ### Module 4 | Code Improvements
+  > In Module 4, we will improve our code and make it more efficient.
+  - Redux
+  - typescript
+  - responsiveness
+  - transitions
 
 ## Part Two
 - ### Module 4 | React

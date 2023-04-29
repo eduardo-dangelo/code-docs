@@ -27,7 +27,10 @@ const TodoListItem = ({ item, onDelete }) => {
         <ListItemText
           id={item}
           primary={item}
-          sx={{ textDecoration: checked ? 'line-through' : 'none' }}
+          sx={{
+            textDecoration: checked ? 'line-through' : 'none',
+            color: 'text.primary',
+          }}
         />
       </ListItemButton>
     </ListItem>

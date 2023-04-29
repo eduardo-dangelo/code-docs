@@ -22,7 +22,10 @@ const TodoList = () => {
 
   return (
     <>
-      <Typography variant='h4' sx={{ textAlign: 'center', my: 3 }}>
+      <Typography
+        variant='h4'
+        sx={{ textAlign: 'center', my: 3, color: 'text.primary' }}
+      >
         Todo List
       </Typography>
       <List

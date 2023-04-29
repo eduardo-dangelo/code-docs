@@ -16,7 +16,7 @@ const PageLayout = ({ children, siteData }) => {
           alignItems: 'center',
           justifyContent: 'space-around',
           flex: 1,
-          backgroundColor: '#f5f5f5',
+          bgcolor: 'background.default',
         }}
       >
         <Box>{children}</Box>

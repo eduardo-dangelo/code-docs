@@ -32,7 +32,7 @@ const SideBar = ({ siteData }) => {
         onClick={() => handleItemClick('/')}
       >
         <LocalFireDepartmentIcon color='secondary' sx={{ mr: 2 }} />
-        <Typography>CODE PLAYGROUND</Typography>
+        <Typography color='text.primary'>CODE PLAYGROUND</Typography>
       </ListItemButton>
       <Divider />
       <List>
@@ -45,13 +45,17 @@ const SideBar = ({ siteData }) => {
               sx={{ px: 3 }}
               onClick={() => handleItemClick(item.route)}
               selected={selected}
+              color='text.primary'
             >
               <Icon
                 color={selected ? 'secondary' : 'primary'}
                 fontSize='small'
                 sx={{ mr: 2 }}
               />
-              <ListItemText primary={item.name} />
+              <ListItemText
+                primary={item.name}
+                sx={{ color: 'text.primary' }}
+              />
             </ListItemButton>
           );
         })}
