@@ -1,23 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 import TodoListItem from './TodoListItem';
 import CreateItem from './CreateItem';
 import { List, ListItem, Typography } from '@mui/material';
+import { useDispatch, useSelector } from 'react-redux';
+import {
+  addItem,
+  removeItem,
+} from '../../features/todoList/todoListSlice';
 
 const TodoList = () => {
-  const [items, setItems] = useState([
-    'Learn React',
-    'Learn Material UI',
-    'Build a todo list application',
-  ]);
+  const todoList = useSelector((state) => state.todoList.value);
+  const dispatch = useDispatch();
 
   const handleAddItem = (item) => {
-    setItems([...items, item]);
+    dispatch(addItem(item));
   };
 
   const handleDelete = (index) => {
-    const newList = [...items];
-    newList.splice(index, 1);
-    setItems(newList);
+    dispatch(removeItem(index));
   };
 
   return (
@@ -41,10 +41,11 @@ const TodoList = () => {
         <ListItem>
           <CreateItem onAddItem={handleAddItem} />
         </ListItem>
-        {items.map((item, index) => (
+        {todoList.map((item, index) => (
           <TodoListItem
             key={index}
             item={item}
+            index={index}
             onDelete={() => handleDelete(index)}
           />
         ))}

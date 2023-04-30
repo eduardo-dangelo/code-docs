@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   Checkbox,
   IconButton,
@@ -8,9 +8,11 @@ import {
   ListItemText,
 } from '@mui/material';
 import DeleteForeverIcon from '@mui/icons-material/Delete';
+import { useDispatch } from 'react-redux';
+import { toggleMarkComplete } from '../../features/todoList/todoListSlice';
 
-const TodoListItem = ({ item, onDelete }) => {
-  const [checked, setChecked] = useState(false);
+const TodoListItem = ({ item, onDelete, index }) => {
+  const dispatch = useDispatch();
   return (
     <ListItem
       secondaryAction={
@@ -20,15 +22,16 @@ const TodoListItem = ({ item, onDelete }) => {
       }
       disablePadding
     >
-      <ListItemButton onClick={() => setChecked(!checked)}>
+      <ListItemButton
+        onClick={() => dispatch(toggleMarkComplete(index))}
+      >
         <ListItemIcon>
-          <Checkbox edge='start' checked={checked} />
+          <Checkbox edge='start' checked={item.completed} />
         </ListItemIcon>
         <ListItemText
-          id={item}
-          primary={item}
+          primary={item.text}
           sx={{
-            textDecoration: checked ? 'line-through' : 'none',
+            textDecoration: item.completed ? 'line-through' : 'none',
             color: 'text.primary',
           }}
         />

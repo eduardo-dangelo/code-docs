@@ -11,6 +11,8 @@
 - [Todo List](./todoList.md)
 - [SideBar & PageLayout](./sideBarAndPageLayout.md)
 - [Router](./router.md)
+- [Theme Switcher](./themeSwitcher.md)
+- [Redux](./redux.md)
 - [SignUp form](./signUpForm.md)
 - [NewUserForm](./newUserForm.md)
 - [tableWithEntry](./tableWithEntry.md)
