@@ -13,6 +13,7 @@
 - [Router](./router.md)
 - [Theme Switcher](./themeSwitcher.md)
 - [Redux](./redux.md)
+- [Typescript](./typescript.md)
 - [SignUp form](./signUpForm.md)
 - [NewUserForm](./newUserForm.md)
 - [tableWithEntry](./tableWithEntry.md)
