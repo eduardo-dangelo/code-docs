@@ -2,11 +2,16 @@ import React from 'react';
 import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 import { Box, Card, Typography, Grid } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
+import { SiteDataType } from '../../types';
 
-const HomePage = ({ siteData }) => {
+type HomePageProps = {
+  siteData: SiteDataType[];
+};
+
+const HomePage: React.FC<HomePageProps> = ({ siteData }) => {
   const navigate = useNavigate();
 
-  const handleItemClick = (route) => {
+  const handleItemClick = (route: SiteDataType['route']) => {
     navigate(route);
   };
 
@@ -30,7 +35,9 @@ const HomePage = ({ siteData }) => {
           color='secondary'
           sx={{ mr: 2 }}
         />
-        <Typography variant='h5'>CODE PLAYGROUND</Typography>
+        <Typography variant='h5' color='text.primary'>
+          CODE PLAYGROUND
+        </Typography>
       </Box>
       <Grid container columns={4} spacing={2}>
         {siteData.map((item, key) => {

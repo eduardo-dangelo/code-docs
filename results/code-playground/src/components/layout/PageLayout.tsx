@@ -1,8 +1,17 @@
 import React from 'react';
 import { Box } from '@mui/material';
 import SideBar from './SideBar';
+import { SiteDataType } from '../../types';
 
-const PageLayout = ({ children, siteData }) => {
+type PageLayoutProps = {
+  siteData: SiteDataType[];
+  children: React.ReactNode;
+};
+
+const PageLayout: React.FC<PageLayoutProps> = ({
+  children,
+  siteData,
+}) => {
   return (
     <Box
       sx={{

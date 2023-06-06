@@ -9,14 +9,25 @@ import {
 } from '@mui/material';
 import DeleteForeverIcon from '@mui/icons-material/Delete';
 import { useDispatch } from 'react-redux';
-import { toggleMarkComplete } from '../../features/todoList/todoListSlice';
+import { toggleMarkComplete } from '../../../redux/todoList/todoListSlice';
+import { TodoListItemType } from '../../../types';
 
-const TodoListItem = ({ item, onDelete, index }) => {
+type TodoListItemProps = {
+  item: TodoListItemType;
+  onDelete: (index: number) => void;
+  index: number;
+};
+
+const TodoListItem: React.FC<TodoListItemProps> = ({
+  item,
+  onDelete,
+  index,
+}) => {
   const dispatch = useDispatch();
   return (
     <ListItem
       secondaryAction={
-        <IconButton edge='end' onClick={onDelete}>
+        <IconButton edge='end' onClick={() => onDelete(index)}>
           <DeleteForeverIcon />
         </IconButton>
       }

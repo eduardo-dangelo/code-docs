@@ -15,26 +15,27 @@ npm install redux react-redux @reduxjs/toolkit
 ## 2. Configure Store
 > Now we will create a store to manage the state of our application.
 
-1. Create a new file called `store.js` in the `src` folder.
+1. Create a folder called `redux` in the `src` folder.
+2. Create a new file called `store.ts` in the `redux` folder.
 2. Add the following code to the file:
     ```js
     import { configureStore } from '@reduxjs/toolkit';
     import todoListReducer from './features/todoList/todoListSlice';
     
-    export default configureStore({
+    export const store = configureStore({
       reducer: {
         todoList: todoListReducer,
       },
     });
     ```
-3. Open the `index.js` file in the `src` folder.
+3. Open the `index.ts` file in the `src` folder.
 4. Import the `Provider` component from `react-redux`:
     ```js
     import { Provider } from 'react-redux';
     ```
-5. Import the `store` from the `store.js` file:
+5. Import the `store` from the `store.ts` file:
     ```js
-    import store from './store';
+    import { store } from './redux/store';
     ```
 4. Wrap the `App` component with the `Provider` component from `react-redux`:
     ```js
@@ -44,8 +45,8 @@ npm install redux react-redux @reduxjs/toolkit
     ```
 
 ## 3. Create a Todo List Reducer
-1. Create a new folder called `features` and inside it create a new folder called `todoList`.
-2. Create a new file called `todoListSlice.js` inside a `src/features/todoList` folder.
+1. Create a new folder called `todoList` inside the `redux` folder.
+2. Create a new file called `todoListSlice.ts` inside the `todoList` folder.
 3. Add the following code to the file:
     ```js
     import { createSlice } from '@reduxjs/toolkit';
@@ -85,12 +86,12 @@ npm install redux react-redux @reduxjs/toolkit
     ```js
     import { useSelector, useDispatch } from 'react-redux';
     ```
-3. Import the `addItem` and `removeItem` actions from the `todoListSlice.js` file:
+3. Import the `addItem` and `removeItem` actions from the `todoListSlice.ts` file:
     ```js
     import {
       addItem,
       removeItem,
-    } from '../features/todoList/todoListSlice';
+    } from '../../../redux/todoList/todoListSlice';
     ```
 4. Replace the `TodoList` component with the following code:
     ```js
@@ -141,11 +142,11 @@ npm install redux react-redux @reduxjs/toolkit
     };
     ```
 5. Remove the import of the `{ useState }` hook from `react`:
-6. Open the `TodoListItem.js` file in the `src/components` folder.
-7. Import `useDispatch` and `toggleMarkComplete` action from the `todoListSlice.js` file:
+6. Open the `TodoListItem.js` file in the `src/components/modules` folder.
+7. Import `useDispatch` and `toggleMarkComplete` action from the `todoListSlice.ts` file:
     ```js
     import { useDispatch } from 'react-redux';
-    import { toggleMarkComplete } from '../features/todoList/todoListSlice';
+    import { toggleMarkComplete } from '../redux/todoList/todoListSlice';
     ```
 8. Replace the `TodoListItem` component with the following code:
     ```js
@@ -180,7 +181,119 @@ npm install redux react-redux @reduxjs/toolkit
     ```
 > Now you can test the application and see that the state of the todo list is preserved when you switch between the pages.
 
+## 5. Configure a store for the Theme Switcher
+> Now we will create a store for the theme switcher.
+
+1. Create a new folder called `theme` inside the `redux` folder.
+2. Create a new file called `themeSlice.js` inside the `theme` folder.
+3. Open the `themeSlice.js` file and add the following code:
+    ```js
+    import { createSlice } from '@reduxjs/toolkit';
+    
+   const darkThemePallet = {
+     mode: 'dark',
+     background: {
+       default: '#121212',
+       paper: '#181818',
+     },
+   };
+   
+   const lightThemePallet = {
+     mode: 'light',
+     background: {
+       default: '#f5f5f5',
+       paper: '#ffffff',
+     },
+   };
+      
+    export const themeSlice = createSlice({
+      name: 'theme',
+      initialState: {
+        value: lightThemePallet,
+      },
+      reducers: {
+        toggleTheme: (state) => {
+          state.value =
+             state.value.mode === 'dark'
+               ? lightThemePallet
+               : darkThemePallet;
+        },
+      },
+    });
+    
+    export const { toggleTheme } = themeSlice.actions;
+    
+    export default themeSlice.reducer;
+    ```
+4. Open the `store.ts` file in the `redux` folder.
+5. Import the `themeSlice` reducer:
+    ```js
+    import themeReducer from './theme/themeSlice';
+    ```
+6. Add the `themeReducer` to the `combineReducers` function:
+    ```js
+    export const store = configureStore({
+      reducer: {
+        todoList: todoListReducer,
+        theme: themeReducer,
+      },
+    });
+    ```
+   
+## 6. Connect the Theme Switcher Component to the Store
+1. Open the `ThemeSwitcher.js` file in the `src/components/modules` folder.
+2. Import the `useSelector` and `useDispatch` hooks from `react-redux`:
+    ```js
+    import { useSelector, useDispatch } from 'react-redux';
+    ```
+3. Import the `toggleTheme` action from the `themeSlice.ts` file:
+    ```js
+    import { toggleTheme } from '../../redux/theme/themeSlice';
+    ```
+4. Remove the props from the `ThemeSwitcher` component:
+    ```js
+    const ThemeSwitcher = () => {...}
+    ```
+5. Declare `theme` and `dispatch` variables using the `useSelector` and `useDispatch` hooks:
+    ```js
+    const theme = useSelector((state) => state.theme.value);
+    const dispatch = useDispatch();
+    ```
+6. Update the `checked` useState hook to use the `theme` variable:
+    ```js
+      const checked = !!(theme.mode === 'dark');
+    ```
+   > Don't forget to remove the `useState` import from `react`.
+7. Update the `onChange` function to dispatch the `toggleTheme` action:
+    ```js
+    const onChange = () => {
+      dispatch(toggleTheme());
+    };
+    ```
+   
+## 7. Update the App Component
+1. Open the `App.js` file in the `src` folder.
+2. Import the `useSelector` hook from `react-redux`:
+    ```js
+    import { useSelector } from 'react-redux';
+    ```
+3. Declare a `theme` variable using the `useSelector` hook:
+    ```js
+    const theme = useSelector((state) => state.theme.value);
+    ```
+4. Remove the `darkTheme` and `lightTheme` variables.
+5. Create a `themeConfig` variable that will hold the theme configuration:
+    ```js
+    const themeConfig = createTheme({
+      palette: theme,
+    });
+    ```
+6. Update the `ThemeProvider` component to use the `themeConfig` variable:
+    ```js
+    <ThemeProvider theme={themeConfig}>
+    ```
+
 ## NEXT
 > Next we will be adding a typescript support to our application.
 
-[Go to module 4](../module4/README.md)
+[Typescript](./configureTypescript.md)

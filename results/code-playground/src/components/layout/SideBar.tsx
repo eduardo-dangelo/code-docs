@@ -9,11 +9,16 @@ import {
 } from '@mui/material';
 import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 import { useNavigate } from 'react-router-dom';
+import { SiteDataType } from '../../types';
 
-const SideBar = ({ siteData }) => {
+type SideBarProps = {
+  siteData: SiteDataType[];
+};
+
+const SideBar: React.FC<SideBarProps> = ({ siteData }) => {
   const navigate = useNavigate();
 
-  const handleItemClick = (route) => {
+  const handleItemClick = (route: SiteDataType['route']) => {
     navigate(route);
   };
 

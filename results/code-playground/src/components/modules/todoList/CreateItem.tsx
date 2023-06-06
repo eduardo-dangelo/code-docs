@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import { IconButton, InputAdornment, TextField } from '@mui/material';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
+import { TodoListItemType } from '../../../types';
 
-const CreateItem = ({ onAddItem }) => {
-  const [value, setValue] = useState('');
-  const [error, setError] = useState('');
+type CreateItemProps = {
+  onAddItem: (item: TodoListItemType) => void;
+};
+const CreateItem: React.FC<CreateItemProps> = ({ onAddItem }) => {
+  const [value, setValue] = useState<string>('');
+  const [error, setError] = useState<string>('');
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLTextAreaElement>,
+  ) => {
     setValue(e.target.value);
     if (error) {
       setError('');
@@ -15,14 +21,14 @@ const CreateItem = ({ onAddItem }) => {
 
   const handleSubmit = () => {
     if (value) {
-      onAddItem({ text: value, complete: false });
+      onAddItem({ text: value, completed: false });
       setValue('');
     } else {
       setError('Field is required');
     }
   };
 
-  const onKeyPress = (e) => {
+  const onKeyPress = (e: React.KeyboardEvent<HTMLDivElement>) => {
     if (e.key === 'Enter') {
       handleSubmit();
     }

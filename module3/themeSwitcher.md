@@ -215,7 +215,7 @@
      />
    ```
    
-5. Open the `TodoList.jsx` file.
+5. Open the `TodoList.tsx` file.
 6. Add property `color='text.primary'` to the `Typography` components.
    ```js
     <Typography
@@ -226,7 +226,7 @@
     </Typography>
    ````
    
-7. Open the `TodoListItem.jsx` file.
+7. Open the `TodoListItem.tsx` file.
 8. Update `ListItemText` color.
    ```js
    <ListItemText

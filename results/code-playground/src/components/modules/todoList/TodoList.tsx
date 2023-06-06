@@ -2,21 +2,24 @@ import React from 'react';
 import TodoListItem from './TodoListItem';
 import CreateItem from './CreateItem';
 import { List, ListItem, Typography } from '@mui/material';
-import { useDispatch, useSelector } from 'react-redux';
 import {
   addItem,
   removeItem,
-} from '../../features/todoList/todoListSlice';
+} from '../../../redux/todoList/todoListSlice';
+import { TodoListItemType, TodoListType } from '../../../types';
+import { useAppDispatch, useAppSelector } from '../../../redux/hooks';
 
 const TodoList = () => {
-  const todoList = useSelector((state) => state.todoList.value);
-  const dispatch = useDispatch();
+  const todoList: TodoListType = useAppSelector(
+    (state) => state.todoList.value,
+  );
+  const dispatch = useAppDispatch();
 
-  const handleAddItem = (item) => {
+  const handleAddItem = (item: TodoListItemType) => {
     dispatch(addItem(item));
   };
 
-  const handleDelete = (index) => {
+  const handleDelete = (index: number) => {
     dispatch(removeItem(index));
   };
 
@@ -46,7 +49,7 @@ const TodoList = () => {
             key={index}
             item={item}
             index={index}
-            onDelete={() => handleDelete(index)}
+            onDelete={handleDelete}
           />
         ))}
       </List>

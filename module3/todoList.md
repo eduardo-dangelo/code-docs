@@ -26,9 +26,9 @@
 2. Inside the folder `src` create a new folder called `components`.
 3. Inside the folder `components` create a folder called `todoList`.
 4. Inside the folder `todoList` create 3 new files:
-    - `TodoList.jsx`
-    - `TodoListItem.jsx`
-    - `CreateItem.jsx`
+    - `TodoList.tsx`
+    - `TodoListItem.tsx`
+    - `CreateItem.tsx`
 
 ## 3. Connect new components to main App
 > We will start by displaying the todo-list elements in the browser.
@@ -36,7 +36,7 @@
 > We will use the `TodoListItem` component to display each item in the list.
 > We will use the `CreateItem` component to create a new item in the list.
 
-1. Open `TodoList.jsx` file.
+1. Open `TodoList.tsx` file.
 2. Import the following packages:
    ```js
    import React, { useState } from 'react';
@@ -57,7 +57,7 @@
     ```js
     export default TodoList;
     ```
-5. Open `TodoListItem.jsx` file.
+5. Open `TodoListItem.tsx` file.
 6. Import the following packages:
    ```js
    import React from 'react';
@@ -76,7 +76,7 @@
     ```js
     export default TodoListItem;
     ```
-9. Open `CreateItem.jsx` file.
+9. Open `CreateItem.tsx` file.
 10. Import the following packages:
    ```js
    import React from 'react';
@@ -95,7 +95,7 @@
     ```js
     export default CreateItem;
     ```
-13. Open `TodoList.jsx` file.
+13. Open `TodoList.tsx` file.
 14. Import the following packages:
    ```js
    import TodoListItem from './TodoListItem';
@@ -129,7 +129,7 @@
 > We will start by displaying the list of items.
 > We will use the `TodoListItem` component to display each item in the list.
 
-1. Open `TodoList.jsx` file.
+1. Open `TodoList.tsx` file.
 2. Create a new state called `items`:
    ```js
     const [items, setItems] = useState([]);
@@ -174,7 +174,7 @@
       </>
     );
    ```
-7. Open `TodoListItem.jsx` file.
+7. Open `TodoListItem.tsx` file.
 8. Import the following packages:
    ```js
    import { ListItem, ListItemText } from '@mui/material';
@@ -196,7 +196,7 @@
 > We will use the `CreateItem` component to create a new item in the list.
 
 
-1. Open `CreateItem.jsx` file.
+1. Open `CreateItem.tsx` file.
 2. Import the following packages:
    ```js
    import React, { useState } from 'react';
@@ -242,7 +242,7 @@
    ```js
     const CreateItem = ({ onAddItem }) => {
    ```
-8. Open `TodoList.jsx` file.
+8. Open `TodoList.tsx` file.
 9. Add the `onAddItem` prop to `CreateItem`:
    ```js
     <CreateItem onAddItem={handleAddItem} />
@@ -259,7 +259,7 @@
 > In this section we will prevent the user from adding an empty item to the list.
 > We will use the `name` state to check if the user has typed in the input field.
 
-1. Open `CreateItem.jsx` file.
+1. Open `CreateItem.tsx` file.
 2. Create a new state called `error`:
    ```js
     const [error, setError] = useState('');
@@ -310,7 +310,7 @@
 > Now, let's add the ability to mark an item as completed.
 > We will use the `useState` hook to create a new state called `checked`.
 
-1. Open `TodoListItem.jsx` file.
+1. Open `TodoListItem.tsx` file.
 2. Import `Checkbox`, `ListItemIcon` and `ListItemButton` from `@mui/material` package:
 3. Create a new state called `checked`:
    ```js
@@ -344,7 +344,7 @@
 > Finally, let's add the ability to delete an item from the list.
 > We will use the `onDeleteItem` function to delete an item from the list.
 
-1. Open `TodoListItem.jsx` file.
+1. Open `TodoListItem.tsx` file.
 2. Import `DeleteIcon` from `@mui/icons-material` package:
    ```js
    import DeleteIcon from '@mui/icons-material/Delete';
@@ -365,7 +365,7 @@
     const TodoListItem = ({ item, onDelete }) => {
    ```
    
-5. Open `TodoList.jsx` file.
+5. Open `TodoList.tsx` file.
 6. Create a new function called `handleDeleteItem`:
    ```js
     const handleDeleteItem = (index) => {

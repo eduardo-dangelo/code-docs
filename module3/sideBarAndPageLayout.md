@@ -50,7 +50,7 @@
 5. Open the `App.jsx` file.
 6. Import the `PageLayout` component.
    ```js
-   import PageLayout from './components/pageLayout/PageLayout';
+   import PageLayout from './components/layout/PageLayout';
    ```
 7. Wrap the `TodoList` component with the `PageLayout` component.
    ```js

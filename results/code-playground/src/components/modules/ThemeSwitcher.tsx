@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
-import { Stack, Switch, Typography, useTheme } from '@mui/material';
+import React from 'react';
+import { Stack, Switch, Typography } from '@mui/material';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
+import { useAppDispatch, useAppSelector } from '../../redux/hooks';
+import { toggleTheme } from '../../redux/theme/themeSlice';
 
-const ThemeSwitcher = ({ onSwitchTheme, theme }) => {
-  const [checked, setChecked] = useState(!!(theme === 'dark'));
+const ThemeSwitcher = () => {
+  const theme = useAppSelector((state) => state.theme.value);
+  const dispatch = useAppDispatch();
+  const checked = (theme.mode === 'dark');
+
   const onChange = () => {
-    setChecked(!checked);
-    onSwitchTheme(!checked ? 'dark' : 'light');
+    dispatch(toggleTheme());
   };
 
   return (
@@ -32,7 +36,6 @@ const ThemeSwitcher = ({ onSwitchTheme, theme }) => {
           checked={checked}
           onChange={onChange}
           inputProps={{ 'aria-label': 'ant design' }}
-          size='large'
           color='secondary'
         />
         <DarkModeIcon

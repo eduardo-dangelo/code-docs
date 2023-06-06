@@ -4,13 +4,17 @@ module.exports = {
     'es2021': true,
     'node': true,
   },
-  'extends': ['eslint:recommended', 'plugin:react/recommended'],
+  'extends': [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+  ],
   'overrides': [],
   'parserOptions': {
     'ecmaVersion': 'latest',
     'sourceType': 'module',
   },
-  'plugins': ['react'],
+  'plugins': ['react', '@typescript-eslint'],
   'rules': {
     'quotes': ['warn', 'single'],
     'indent': ['warn', 2],
@@ -19,4 +23,6 @@ module.exports = {
     'no-unused-vars': 'off', // or "@typescript-eslint/no-unused-vars": "off",
     'unused-imports/no-unused-vars': 'off',
   },
-}
+  'root': true,
+  'parser': '@typescript-eslint/parser',
+};

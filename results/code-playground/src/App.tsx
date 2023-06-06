@@ -1,41 +1,23 @@
-import React from 'react';
-import TodoList from './components/todoList/TodoList';
-import PageLayout from './components/pageLayout/PageLayout';
+import * as React from 'react';
+import TodoList from './components/modules/todoList/TodoList';
+import PageLayout from './components/layout/PageLayout';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from 'react-router-dom';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
-import HomePage from './components/HomePage';
+import HomePage from './components/modules/HomePage';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import ThemeSwitcher from './components/ThemeSwitcher';
-
-const darkTheme = createTheme({
-  palette: {
-    mode: 'dark',
-    background: {
-      default: '#121212',
-      paper: '#181818',
-    },
-  },
-});
-
-const lightTheme = createTheme({
-  palette: {
-    mode: 'light',
-    background: {
-      default: '#f5f5f5',
-      paper: '#ffffff',
-    },
-  },
-});
+import ThemeSwitcher from './components/modules/ThemeSwitcher';
+import { useAppSelector } from './redux/hooks';
+import { SiteDataType } from './types';
 
 function App() {
-  const [theme, setTheme] = React.useState('light');
+  const theme = useAppSelector((state) => state.theme.value);
 
-  const siteData = [
+  const siteData: SiteDataType[] = [
     {
       name: 'Todo List',
       route: '/todo-list',
@@ -45,15 +27,17 @@ function App() {
     {
       name: 'Theme Switcher',
       route: '/theme-switcher',
-      element: (
-        <ThemeSwitcher onSwitchTheme={setTheme} theme={theme} />
-      ),
+      element: <ThemeSwitcher />,
       icon: DarkModeIcon,
     },
   ];
 
+  const themeConfig = createTheme({
+    palette: theme,
+  });
+
   return (
-    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+    <ThemeProvider theme={themeConfig}>
       <Router>
         <PageLayout siteData={siteData}>
           <Routes>

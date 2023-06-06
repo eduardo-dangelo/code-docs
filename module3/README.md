@@ -13,11 +13,9 @@
 - [Router](./router.md)
 - [Theme Switcher](./themeSwitcher.md)
 - [Redux](./redux.md)
-- [Typescript](./typescript.md)
-- [SignUp form](./signUpForm.md)
-- [NewUserForm](./newUserForm.md)
-- [tableWithEntry](./tableWithEntry.md)
-- [Fetching data](./fetchingData.md)
+- [Introduction to Typescript](./configureTypescript.md)
+- [Configure Typescript](./configureTypescript.md)
+- [Convert Project Files To Typescript](./convertProjectFilesToTypescript.md)
 
 ## NEXT
 > We'll start building a todo list application. Let's get started!
