@@ -1,6 +1,6 @@
 [The Complete Front-End Web Development Crash Course](../README.md) / [Module 3 | Code Playground](./README.md)
 
-# Introduction to Typescript
+# <img src="../imgs/typescript-icon.jpeg" width="30"/> Introduction to Typescript
 > In this section we will learn the basics of Typescript.
 
 Typescript is a superset of Javascript that adds static typing to the language.

@@ -1,6 +1,6 @@
 [The Complete Front-End Web Development Crash Course](../README.md) / [Module 3 | Code Playground](./README.md)
 
-# Redux
+# <img src="../imgs/redux-icon.jpeg" width="30"/> Redux
 > Notice when you switch between the pages, the state of the todo list is not preserved.
 > In this section we will learn how to use Redux to manage the state of our application.
 > We will use the `redux` and `react-redux` packages to create a store and connect our components to it.

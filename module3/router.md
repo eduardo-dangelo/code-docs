@@ -1,6 +1,6 @@
 [The Complete Front-End Web Development Crash Course](../README.md) / [Module 3 | Code Playground](./README.md)
 
-# Router
+# <img src="../imgs/react-icon.png" width="30"/> Router
 > In this section we will learn how to navigate between pages in our application.
 > We will use the `react-router-dom` package to create a router for our application.
 

@@ -1,6 +1,6 @@
 [The Complete Front-End Web Development Crash Course](../README.md) / [Module 3 | Code Playground](./README.md)
 
-# Convert Project Files To Typescript
+# <img src="../imgs/typescript-icon.jpeg" width="30"/> Convert Project Files To Typescript
 > In this section we will convert our project files to Typescript.
 
 ### Create a `types.ts` File

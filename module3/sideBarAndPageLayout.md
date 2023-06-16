@@ -1,6 +1,6 @@
 [The Complete Front-End Web Development Crash Course](../README.md) / [Module 3 | Code Playground](./README.md)
 
-# SideBar & PageLayout
+# <img src="../imgs/react-icon.png" width="30"/>  SideBar & PageLayout
 > In this section we will learn how to create a sidebar and a page layout.
 > The sidebar will be used to navigate between projects we will build in this module.
 > The page layout will be used to display the content of our application in a consistent way.

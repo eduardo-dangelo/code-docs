@@ -1,6 +1,6 @@
 [The Complete Front-End Web Development Crash Course](../README.md) / [Module 3 | Code Playground](./README.md)
 
-# Theme Switcher
+# <img src="../imgs/react-icon.png" width="30"/> Theme Switcher
 > In this section we will learn how to add a theme switcher to our application.
 > We will use the `ThemeProvider` component from the `@material-ui/core` package to create a theme for our application.
 

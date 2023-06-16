@@ -1,6 +1,6 @@
 [The Complete Front-End Web Development Crash Course](../README.md) / [Module 3 | Code Playground](./README.md)
 
-# Todo List
+# <img src="../imgs/react-icon.png" width="30"/> Todo List
 > In this section we will build a simple todo list application.
 > We will be able to add, mark as completed and remove items in the list.
 

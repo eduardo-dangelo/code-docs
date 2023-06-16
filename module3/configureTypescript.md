@@ -1,6 +1,6 @@
 [The Complete Front-End Web Development Crash Course](../README.md) / [Module 3 | Code Playground](./README.md)
 
-# Configure TypeScript
+# <img src="../imgs/typescript-icon.jpeg" width="30"/> Configure TypeScript
 > In this section we will learn how to use TypeScript in our React application.
 > Typescript is a superset of JavaScript that adds static type definitions.
 
