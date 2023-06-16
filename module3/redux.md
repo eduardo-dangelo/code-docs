@@ -294,6 +294,6 @@ npm install redux react-redux @reduxjs/toolkit
     ```
 
 ## NEXT
-> Next we will be adding a typescript support to our application.
+> Next we will be learning about Typescript.
 
-[Typescript](./configureTypescript.md)
+[<img src="../imgs/typescript-icon.jpeg" width="15"/> Introdution to Typescript](./introdutionToTypescript.md)

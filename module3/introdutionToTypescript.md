@@ -103,4 +103,4 @@ const person: Person = {
 ## NEXT
 > Now that we know the basics of Typescript, let's configure Typescript in our project.
 
-[Configure Typescript](./configureTypescript.md)
+[<img src="../imgs/typescript-icon.jpeg" width="15"/> Configure Typescript](./configureTypescript.md)

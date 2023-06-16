@@ -385,4 +385,4 @@
 > Congratulations! You have completed the tutorial. Check your application and try to add, mark as completed and delete an item from the list.
 
 ## NEXT
-[SideBar & PageLayout](./sideBarAndPageLayout.md)
+[<img src="../imgs/react-icon.png" width="15"/> SideBar & PageLayout](./sideBarAndPageLayout.md)

@@ -67,4 +67,4 @@
 ## NEXT:
 > Now that we have configured TypeScript, we can start refactoring our application.
 
-[Convert Project Files To Typescript](./convertProjectFilesToTypescript.md)
+[<img src="../imgs/typescript-icon.jpeg" width="15"/> Convert Project Files To Typescript](./convertProjectFilesToTypescript.md)

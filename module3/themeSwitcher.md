@@ -243,4 +243,4 @@
 ## NEXT
 > For the next section, we will be learning about redux and its implementation in react.
 
-[Redux](../redux.md)
+[<img src="../imgs/redux-icon.jpeg" width="15"/> Redux](./redux.md)

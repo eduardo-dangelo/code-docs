@@ -254,4 +254,4 @@
 > Next, we will create our next project `Theme Switcher` and add it to the navigation menu.
 
 ## Next
-[Theme Switcher](../theme-switcher/README.md)
+[<img src="../imgs/react-icon.png" width="15"/> Theme Switcher](../theme-switcher/README.md)

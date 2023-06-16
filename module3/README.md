@@ -8,16 +8,17 @@
 > In this module, we will start developing our first project using react.
 
 ### Table of content
-- [Todo List](./todoList.md)
-- [SideBar & PageLayout](./sideBarAndPageLayout.md)
-- [Router](./router.md)
-- [Theme Switcher](./themeSwitcher.md)
-- [Redux](./redux.md)
-- [Introduction to Typescript](./configureTypescript.md)
-- [Configure Typescript](./configureTypescript.md)
-- [Convert Project Files To Typescript](./convertProjectFilesToTypescript.md)
+- [<img src="../imgs/react-icon.png" width="15"/> Todo List](./todoList.md)
+- [<img src="../imgs/react-icon.png" width="15"/> SideBar & PageLayout](./sideBarAndPageLayout.md)
+- [<img src="../imgs/react-icon.png" width="15"/> Router](./router.md)
+- [<img src="../imgs/react-icon.png" width="15"/> Theme Switcher](./themeSwitcher.md)
+- [<img src="../imgs/redux-icon.jpeg" width="15"/> Redux](./redux.md)
+- [<img src="../imgs/typescript-icon.jpeg" width="15"/> Introduction to Typescript](./introdutionToTypescript.md)
+- [<img src="../imgs/typescript-icon.jpeg" width="15"/> Configure Typescript](./configureTypescript.md)
+- [<img src="../imgs/typescript-icon.jpeg" width="15"/> Convert Project Files To Typescript](./convertProjectFilesToTypescript.md)
+- [☑️ Conclusion](./conclusion.md)
 
 ## NEXT
 > We'll start building a todo list application. Let's get started!
 
-[Todo List](./todoList.md)
+[<img src="../imgs/react-icon.png" width="15"/> Todo List](./todoList.md)

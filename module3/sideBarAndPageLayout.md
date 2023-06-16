@@ -134,4 +134,4 @@
 ## NEXT
 > In the next section we will learn how to create a router to navigate between pages.
 
-[Router](./router.md)
+[<img src="../imgs/react-icon.png" width="15"/> Router](./router.md)

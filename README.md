@@ -25,6 +25,7 @@
     > This module will guide you through the process of setting up your machine and installing all the necessary software, so you can start coding efficiently.
   - [🎒 Starter Pack](module2/starterPack.md)
   - [🛠 SSH](module2/ssh.md)
+  - [<img src="./imgs/react-icon.png" width="15"/> Introduction to React](./introductionToReact.md)
   - [👨‍🎨 Create First Repository](module2/createFirstRepository.md)
   - [🛠 Code Format (Eslint & Prettier)](module2/codeFormat.md)
     - [<img src="./imgs/vscode_logo.png" width="15"/> VS-Code | Configuration Guide](module2/vscodeConfigurationGuide.md)
@@ -34,38 +35,24 @@
 - ### [Module 3 | Code Playground](module3/README.md)
   > Module 3 we will start developing our first project using react.
   > We and go in more depth of some of the most important concepts required to be an efficient developer.
-  - [Todo List](./module3/todoList.md)
-  - [SideBar & PageLayout](./module3/sideBarAndPageLayout.md)
-  - [Router](./module3/router.md)
-  - [SignUp form](./module3/signUpForm.md)
-  - [NewUserForm](./module3/newUserForm.md)
-  - [tableWithEntry](./module3/tableWithEntry.md)
-  - [Fetching data](./module3/fetchingData.md)
+  - [<img src="./imgs/react-icon.png" width="15"/> Todo List](./module3/todoList.md)
+  - [<img src="./imgs/react-icon.png" width="15"/> SideBar & PageLayout](./module3/sideBarAndPageLayout.md)
+  - [<img src="./imgs/react-icon.png" width="15"/> Router](./module3/router.md)
+  - [<img src="./imgs/react-icon.png" width="15"/> Theme Switcher](./module3/themeSwitcher.md)
+  - [<img src="./imgs/redux-icon.jpeg" width="15"/> Redux](./module3/redux.md)
+  - [<img src="./imgs/typescript-icon.jpeg" width="15"/> Introduction to Typescript](./module3/introdutionToTypescript.md)
+  - [<img src="./imgs/typescript-icon.jpeg" width="15"/> Configure Typescript](./module3/configureTypescript.md)
+  - [<img src="./imgs/typescript-icon.jpeg" width="15"/> Convert Project Files To Typescript](./module3/convertProjectFilesToTypescript.md)
+  - [☑️ Conclusion](module3/conclusion.md)
 
-- ### Module 4 | Code Improvements
-  > In Module 4, we will improve our code and make it more efficient.
-  - Redux
-  - typescript
-  - responsiveness
-  - transitions
+- ### [Module 4 | Code Playground Projects](module4/README.md)
+  > In this module, we will build a few more complex projects to practice what we have learned so far.
+  - [Project 1](./module4/project1.md)
+  - [Project 2](./module4/project2.md)
+  - [Project 3](./module4/project3.md)
+  - [Project 4](./module4/project4.md)
 
 ## Part Two
-- ### Module 4 | React
-  - [React]()
-  - [React Hooks]()
-  - [React Router]()
-  - [React Context]()
-  - [React Redux]()
-  - [React Testing Library]()
-  - [React Native]()
-
-- ### Module 5 | TypeScript
-    - [TypeScript]()
-    - [TypeScript + React]()
-    - [TypeScript + React Native]()
-    - [TypeScript + Node]()
-
-## Part Three
 - ### Module 4 | Job Search
     > In Module 4, you will learn how to create a standout CV, apply for jobs, and excel in the interview process. By the end of this module, you will have the skills and confidence to effectively present your qualifications, apply for relevant positions, and secure your dream job.
   - [CV]()
