@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
 import todoListReducer from './todoList/todoListSlice';
 import themeReducer from './theme/themeSlice';
+import useTableReducer from './userTable/userTableSlice';
 
 export const store = configureStore({
   reducer: {
     todoList: todoListReducer,
     theme: themeReducer,
+    userTable: useTableReducer,
   },
 });
 

@@ -13,6 +13,8 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import ThemeSwitcher from './components/modules/ThemeSwitcher';
 import { useAppSelector } from './redux/hooks';
 import { SiteDataType } from './types';
+import GroupAddIcon from '@mui/icons-material/GroupAdd';
+import UserTable from './components/modules/userTable/UserTable';
 
 function App() {
   const theme = useAppSelector((state) => state.theme.value);
@@ -29,6 +31,12 @@ function App() {
       route: '/theme-switcher',
       element: <ThemeSwitcher />,
       icon: DarkModeIcon,
+    },
+    {
+      name: 'User Table',
+      route: '/user-table',
+      element: <UserTable />,
+      icon: GroupAddIcon,
     },
   ];
 

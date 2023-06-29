@@ -31,7 +31,6 @@ export const todoListSlice = createSlice({
   },
 });
 
-// Action creators are generated for each case reducer function
 export const { addItem, removeItem, toggleMarkComplete } =
   todoListSlice.actions;
 

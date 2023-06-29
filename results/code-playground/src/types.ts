@@ -14,3 +14,12 @@ export type TodoListItemType = {
 };
 
 export type TodoListType = TodoListItemType[];
+
+export type UserTableType = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  age: number;
+};
+
+export type UserTableListType = UserTableType[];
