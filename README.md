@@ -47,10 +47,10 @@
 
 - ### [Module 4 | Code Playground Projects](module4/README.md)
   > In this module, we will build a few more complex projects to practice what we have learned so far.
-  - [Project 1](./module4/project1.md)
-  - [Project 2](./module4/project2.md)
-  - [Project 3](./module4/project3.md)
-  - [Project 4](./module4/project4.md)
+  - [<img src="./imgs/typescript-icon.jpeg" width="15"/> User Table](./module4/userTable.md)
+  - [<img src="./imgs/typescript-icon.jpeg" width="15"/> Social Media Post](./module4/socialMediaPost.md)
+  - [<img src="./imgs/typescript-icon.jpeg" width="15"/> YouTube Api Search](./module4/youTubeApiSearch.md)
+  - [☑️ Conclusion](./module4/conclusion.md)
 
 ## Part Two
 - ### Module 4 | Job Search
